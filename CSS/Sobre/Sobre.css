@@ -1,0 +1,98 @@
+:root {
+  --fundo-branco: #ffffff;
+  --preto: black;
+  --branco: #ffffff;
+  --cinza-claro: rgba(255, 255, 255, 0.8);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--fundo-branco);
+  color: var(--preto);
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #111;
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: 2px solid var(--branco);
+  color: var(--branco);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5vw;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 3vw;
+  margin-top: 10px;
+}
+
+nav ul li a {
+  color: var(--branco);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: var(--branco);
+}
+
+main {
+  padding: 4vw;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 1.8vw;
+  margin-bottom: 1vw;
+  color: var(--preto);
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: var(--preto);
+}
+
+a {
+  color: var(--preto);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+.arvo-regular {
+  font-family: "Arvo", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.arvo-bold {
+  font-family: "Arvo", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.arvo-regular-italic {
+  font-family: "Arvo", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.arvo-bold-italic {
+  font-family: "Arvo", serif;
+  font-weight: 700;
+  font-style: italic;
+}

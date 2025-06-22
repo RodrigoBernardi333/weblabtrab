@@ -1,0 +1,120 @@
+.cabec {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vw;
+    text-decoration: none;
+    max-width: 100%;
+}
+.op{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5rem;
+}
+#home {
+    padding: 1rem;
+}
+
+#home:hover {
+    background-color: var(--bg-color);
+    transition: 0.5s;
+}
+
+#sobre {
+    padding: 1rem;
+}
+
+#sobre:hover {
+    background-color: var(--bg-color);
+    transition: 0.5s;
+}
+
+#contato {
+    padding: 1rem;
+}
+
+#contato:hover {
+    background-color: var(--bg-color);
+    transition: 0.5s;
+}
+#login{
+    padding: 1rem;
+}
+#login:hover{
+    background-color: var(--bg-color);
+    transition: 0.5s;
+}
+#trilho{
+    background-color: transparent;
+    border: none;
+    padding-left:2rem;
+    padding-right:2rem;
+    margin-left: auto;
+}
+#trilho:hover{
+    background-color: var(--bg-color);
+    transition: 0.5s;
+}
+
+
+.imagens-logo{
+    display: flex;
+    flex-direction: row;
+}
+#tripla{
+    display: flex;
+    width: 10rem;
+}
+#tripla:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+#cloud{
+    display: flex;
+    width: 10rem;
+}
+#cloud:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+#nota{
+    background-color: rgba(0, 0, 0, 0.377);
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 5rem;
+}
+.button{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+#ben{
+    background-color: black;
+    padding: 1rem;
+    border: 1px solid white;
+    border-radius: 50px;
+}
+#ben:hover{
+    background-color: green;
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+#sob{
+    background-color: black;
+    padding: 1rem;
+    border: 1px solid white;
+    border-radius: 50px;
+}
+#sob:hover{
+    background-color: orange;
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+main > section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  text-align: center;
+}

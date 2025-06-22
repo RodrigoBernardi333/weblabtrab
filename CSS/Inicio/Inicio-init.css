@@ -1,0 +1,94 @@
+:root {
+    --color-lt: #fffefe;
+    --bg-color: rgba(255, 255, 255, 0.301);
+}
+
+* {
+    font-family: Arial, sans-serif;
+    color: var(--color-lt);
+    text-decoration: none;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.514);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.295);
+}
+
+body {
+    background-image: url(/images/fundo.jpg);
+    background-color: rgba(0, 0, 0, 0.6);
+
+    /* Evita que a imagem se repita */
+    height: 100vh;
+    /* Garante que o corpo tenha altura total da tela */
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .cabec {
+        flex-direction: row;
+        /* Empilha os itens em telas menores */
+        align-items: flex-start;
+        /* Alinha à esquerda */
+    }
+
+    #trilho{
+        margin-left: 0;
+        /* Remove o "empurrão" lateral */
+        align-self: flex-end;
+        /* Opcional: envia para o fim da coluna */
+    }
+
+    .op {
+        margin-left: 0;
+        flex-direction: row;
+        width: 77%;
+    }
+    #tripla{
+        margin-left: 0;
+        flex-direction: row;
+        width: 50%;
+    }
+    #home,
+    #sobre,
+    #contato,
+    #login {
+        width: 100%;
+        text-align: left;
+        padding: 1rem 0.5rem;
+    }
+}
+
+#home,
+#sobre,
+#contato,
+#login,
+#trilho {
+    cursor: pointer;
+    min-width: 80px;
+    text-align: center;
+    border-radius: 6px;
+}
+.arvo-regular {
+  font-family: "Arvo", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.arvo-bold {
+  font-family: "Arvo", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.arvo-regular-italic {
+  font-family: "Arvo", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.arvo-bold-italic {
+  font-family: "Arvo", serif;
+  font-weight: 700;
+  font-style: italic;
+}

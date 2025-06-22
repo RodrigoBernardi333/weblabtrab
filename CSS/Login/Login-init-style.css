@@ -1,0 +1,41 @@
+#cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+#botao{
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 1vw;
+    background-color: var(--fundo-preto);
+    
+    color: rgb(255, 255, 255);
+
+}
+#botao2{
+    text-decoration: none;
+    color: white;
+   
+    padding: 1vw;
+}
+#registrar{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+#Text {
+    color: rgb(255, 255, 255);
+    font-size: 1vw;
+    /* tamanho responsivo */
+    text-align: center;
+}
+#esquecida{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+#text2{
+    text-decoration: none;
+    color: white;
+}
+
