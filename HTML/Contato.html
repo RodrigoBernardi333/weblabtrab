@@ -14,11 +14,26 @@
 </head>
 
 <body>
-    <main>
+    <header>
         <section>
-            <h1 class="titulo">Fale Conosco</h1>
+            <div class="cabec">
+                <nav class="op">
+                    <a href="inicio.html" id="home">Home</a>
+                    <a href="Sobre.html" id="sobre">Sobre</a>
+                    <a href="Contato.html" id="contato">Contato</a>
+                    <a href="/HTML/Login_init.html" target="_blank" id="login">Login</a>
+                </nav>
+                <button id="trilho">
+                    <img src="/images/icons/dark_mode-light.svg" alt=" icone de lua preto">
+                </button>
+            </div>
         </section>
+    </header>
+    <main>
         <form>
+            <section>
+                <h1 class="titulo">Fale Conosco</h1>
+            </section>
             <label for="nome">Nome</label>
             <input type="text" id="nome" name="nome" required>
 
@@ -34,7 +49,7 @@
             <label for="cargo">Cargo</label>
             <input type="text" id="cargo" name="cargo" required>
 
-            <button type="submit">Enviar</button>
+            <button id="botao" type="submit">Enviar</button>
         </form>
         <div>
             <h1 class="texto1">O que oferecemos?</h1>
@@ -47,7 +62,7 @@
                 <li><img src="/images/icons/aceitar.png" alt="check" class="icone"> Resposta a incidentes</li>
                 <li><img src="/images/icons/aceitar.png" alt="check" class="icone"> Proteção contra malware</li>
             </ul>
-            <button type="submit">Contatar</button>
+            <button id="botao2" type="submit">Contatar</button>
         </div>
     </main>
 </body>
