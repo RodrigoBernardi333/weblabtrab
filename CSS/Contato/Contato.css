@@ -1,13 +1,12 @@
-:root{
+:root {
     --color-lt: #fffefe;
     --bg-color: rgba(255, 255, 255, 0.301);
 }
 
 * {
-    font-family: Arial, sans-serif;
     color: white;
+    font-family: Arial, sans-serif;
     text-decoration: none;
-    color: var(--color-lt);
 }
 
 .titulo {
@@ -15,6 +14,7 @@
 }
 
 form {
+
     background-color: rgba(255, 255, 255, 0.100);
     display: flex;
     margin: 0 auto;
@@ -24,13 +24,18 @@ form {
     padding: 2rem;
     border: 2px solid white;
     margin-top: 5rem;
+    border-radius: 1rem;
 }
 
 label {
     display: block;
 }
 
-input,
+input {
+    color: black;
+}
+
+.inputdoform,
 #botao {
     padding: 8px;
     width: 100%;
@@ -38,19 +43,71 @@ input,
     display: flex;
     flex-direction: row;
     gap: 1rem;
-}
-
-#botao {
+    text-align: center;
     cursor: pointer;
 }
 
+#botao {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 1vw 3vw rgb(0, 0, 0);
+    border-radius: 1rem;
+    margin: 0rem;
+    max-width: 200rem;
+    border-color: solid black;
+    background-color: rgb(255, 166, 0);
+    padding: 8px;
+    gap: 1rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+#botao:hover {
+    transition: 0.5s;
+    transform: scale(1.03);
+}
+
+#botaoservico {
+
+    box-shadow: 0 1vw 3vw rgb(0, 0, 0);
+    border-radius: 1rem;
+    margin: 0rem;
+    max-width: 200rem;
+    border-color: solid black;
+    background-color: rgb(12, 172, 46);
+    padding: 8px;
+    gap: 1rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+#botaoservico:hover {
+    transition: 0.5s;
+    transform: scale(1.03);
+}
+
+ul {
+    list-style-type: none;
+}
+
 .servicos {
+    text-decoration: none;
+    background-color: rgba(206, 120, 40, 0.658);
     list-style: none;
-    padding-left: 0;
     max-width: 40rem;
     margin: 0 auto;
+    flex-direction: column;
+    border: 2px solid white;
+    display: flex;
+    margin-top: 5rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.textoservico {
+    margin-left: 10rem;
     text-align: left;
-    flex-direction: row;
 }
 
 #icon1 {
@@ -109,6 +166,7 @@ main>section {
 /* Header */
 
 .cabec {
+
     display: flex;
     flex-wrap: wrap;
     gap: 1vw;
@@ -117,6 +175,7 @@ main>section {
 }
 
 .op {
+    color: white;
     display: flex;
     flex-direction: row;
     margin-left: 5rem;
