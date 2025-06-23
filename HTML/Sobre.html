@@ -8,34 +8,60 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap"
         rel="stylesheet">
-    <title>Sobre a nossa Equipe</title>
-    <link rel="stylesheet" href="/CSS/Sobre/Sobre.css" />
     <link rel="stylesheet" href="/CSS/Sobre/Sobre-style.css">
-    <link rel="icon" type="image/png" href="/images/icons/icon.png">
+    <link rel="stylesheet" href="/CSS/Sobre/Sobre.css">
     <script src="/JS/dark-mode.js"></script>
+    <title>Ciber Cia</title>
 </head>
 <body>
   <header>
-<div class="sobre">
-    <h1>Sobre a nossa Equipe</h1>
-    <nav>
-      <ul>
-        <li><a href="Inicio.html">Início</a></li>
-        <li><a href="Contato.html">Contato</a></li>
-        <li><a href="Login_init.html">Login</a></li>
-        <li><a href="Registro.html">Registro</a></li>
-      </ul>
-      <button id="dark-mode">
-            <img src="/images/icons/dark_mode_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
-                alt=" icone de lua preto">
-        </button>
-    </nav>
-
-  </header>
-  <main>
     <section>
-      <h2>Sobre Rodrigo Bernardi de Quadros</h2>
-      <p>Oi! Meu nome é Rodrigo Bernardi, atualmente sou estudante de Ciência da Computação, sempre em busca de novos
+      <div class="cabec">
+        <nav class="op">
+          <a href="/HTML/Inicio.html" id="home">Home</a>
+          <a href="/HTML/Sobre.html" id="sobre">Sobre</a>
+          <a href="/HTML/Contato.html" id="contato">Contato</a>
+          <a href="/HTML/Login_init.html" target="_blank" id="login">Login</a>
+        </nav>
+        <button id="trilho" aria-label="Ativar modo escuro">
+          <img src="/images/icons/dark_mode-light.svg" alt="Ícone do modo escuro" />
+        </button>
+      </div>
+    </section>
+  </header>
+ <main>
+  <section>
+    <!-- Rodrigo -->
+    <div class="perfil">
+      <img src="/images/contribuidores/foto_Rodrigo.jpg" id="rodrigo" alt="Foto de Rodrigo Bernardi">
+      <article class="text">
+        <h2>Sobre Rodrigo Bernardi de Quadros</h2>
+         <p>Meu nome é Rodrigo Bernardi, sou estudante de Ciência da Computação e apaixonado por tecnologia. Comecei minha trajetória em 2022 no curso técnico em Informática do IFSul – Campus Passo Fundo, onde desenvolvi interesse por programação, especialmente em desenvolvimento web.</p>
+         <p>Sou uma pessoa dedicada, curiosa e em constante aprendizado, com foco em linguagens como HTML, CSS e JavaScript. Nos momentos livres, gosto de praticar esportes, jogar vôlei e videogames, além de curtir a companhia da minha cachorrinha e do meu gato.</p>
+         <p>Este são alguns detalhes sobre mim. Para saber mais, acesse a aba de Contato ou visite o <a href="https://github.com/RodrigoBernardi333/trab1_WebLab.git" target="_blank">repositório no GitHub</a>.</p>
+
+      </article>
+    </div>
+
+    <!-- Gabriel -->
+    <div class="perfil">
+      <img src="/images/contribuidores/foto_Rodrigo.jpg" id="gabriel" alt="Foto de Gabriel Silva">
+      <article class="text">
+        <h2>Sobre Gabriel Silva</h2>
+        <p>Olá! Eu sou Gabriel Silva, estudante de Sistemas de Informação com paixão por back-end e automação.</p>
+        <p>Iniciei meus estudos técnicos em 2021 no Instituto Federal, onde me envolvi com projetos em Python e banco de dados.</p>
+        <p>Gosto de tocar violão, ler ficção científica e participar de maratonas de programação.</p>
+        <p>Acredito que dedicação e curiosidade são as chaves para o crescimento constante.</p>
+        <p>Repositório deste projeto: <a href="https://github.com/gabrielsilva/projeto" target="_blank">GitHub</a></p>
+      </article>
+    </div>
+
+    <!-- Vitor -->
+    <div class="perfil">
+      <img src="/images/contribuidores/foto_Vitor.jpg" id="vitor" alt="Foto de Vitor Almeida">
+      <article class="text">
+        <h2>Sobre Vitor Almeida</h2>
+         <p>Oi! Meu nome é Rodrigo Bernardi, atualmente sou estudante de Ciência da Computação, sempre em busca de novos
         conhecimentos e desafios na área da tecnologia.</p>
       <p>Minha trajetória na área de informática começou em 2022, no IFSul Campus Passo Fundo, onde fiz o técnico em
         Informática junto com o ensino médio. Durante esse período, adquiri conhecimentos que hoje aplico em projetos
@@ -50,18 +76,14 @@
       <p>No momento, sigo desenvolvendo meus conhecimentos em programação, explorando linguagens como HTML, CSS e
         JavaScript, e aplicando esses aprendizados em trabalhos como este portfólio.</p>
       <p>Se quiser saber mais ou entrar em contato, fique à vontade para acessar a aba de Contato deste site!</p>
-      <p>Repositório deste projeto: <a href="https://github.com/GabrielKobielski/WebLabTrab.git" target="_blank">GitHub</a></p>
-    </section>
-  </main>
+      <p>Repositório deste projeto: <a href="https://github.com/RodrigoBernardi333/trab1_WebLab.git"
+          target="_blank">GitHub</a></p>
+      </article>
+    </div>
+  </section>
+</main>
 
-  <div class="imagens-lado-a-lado">
-    <div class="imagem-container">
-      <img src="images/Ciberseguranca.png" alt="a">
-    </div>
-    <div class="imagem-container">
-      <img src="images/Ciberseguranca.png" alt="a">
-    </div>
-  </div>
+
 </body>
 
 </html>

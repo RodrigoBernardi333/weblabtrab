@@ -1,78 +1,71 @@
 :root {
-  --fundo-branco: #ffffff;
-  --preto: black;
-  --branco: #ffffff;
-  --cinza-claro: rgba(255, 255, 255, 0.8);
+    --color-lt: #fffefe;
+    --bg-color: rgba(255, 255, 255, 0.301);
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  background-color: var(--fundo-branco);
-  color: var(--preto);
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+* {
+    font-family: Arial, sans-serif;
+    color: var(--color-lt);
+    text-decoration: none;
 }
 
 header {
-  background-color: #111;
-  padding: 20px 0;
-  text-align: center;
-  border-bottom: 2px solid var(--branco);
-  color: var(--branco);
+    background-color: rgba(0, 0, 0, 0.514);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.295);
 }
 
-header h1 {
-  margin: 0;
-  font-size: 2.5vw;
+body {
+    background-image: url(/images/fundo.jpg);
+    background-color: rgba(0, 0, 0, 0.6);
+
+    /* Evita que a imagem se repita */
+    height: 100vh;
+    /* Garante que o corpo tenha altura total da tela */
+    margin: 0;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 3vw;
-  margin-top: 10px;
+@media (max-width: 768px) {
+    .cabec {
+        flex-direction: row;
+        /* Empilha os itens em telas menores */
+        align-items: flex-start;
+        /* Alinha à esquerda */
+    }
+
+    #trilho {
+        margin-left: 0;
+        /* Remove o "empurrão" lateral */
+        align-self: flex-end;
+        /* Opcional: envia para o fim da coluna */
+    }
+
+    .op {
+        margin-left: 0;
+        flex-direction: row;
+        width: 77%;
+    }
+
+    #home,
+    #sobre,
+    #contato,
+    #login {
+        width: 100%;
+        text-align: left;
+        padding: 1rem 0.5rem;
+    }
 }
 
-nav ul li a {
-  color: var(--branco);
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s;
+#home,
+#sobre,
+#contato,
+#login,
+#trilho {
+    cursor: pointer;
+    min-width: 80px;
+    text-align: center;
+    border-radius: 6px;
 }
 
-nav ul li a:hover {
-  color: var(--branco);
-}
-
-main {
-  padding: 4vw;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-h2 {
-  font-size: 1.8vw;
-  margin-bottom: 1vw;
-  color: var(--preto);
-}
-
-p {
-  font-size: 1.1rem;
-  margin-bottom: 1.5rem;
-  color: var(--preto);
-}
-
-a {
-  color: var(--preto);
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
 .arvo-regular {
   font-family: "Arvo", serif;
   font-weight: 400;
@@ -96,3 +89,4 @@ a:hover {
   font-weight: 700;
   font-style: italic;
 }
+
