@@ -14,7 +14,6 @@
 }
 
 form {
-
     background-color: rgba(255, 255, 255, 0.100);
     display: flex;
     margin: 0 auto;
@@ -48,42 +47,51 @@ input {
 }
 
 #botao {
-    display: flex;
-    justify-content: center;
-    box-shadow: 0 1vw 3vw rgb(0, 0, 0);
-    border-radius: 1rem;
-    margin: 0rem;
-    max-width: 200rem;
-    border-color: solid black;
-    background-color: rgb(255, 166, 0);
-    padding: 8px;
-    gap: 1rem;
+    color: white;
+    display: block;
+    margin: 2rem auto 1rem auto;
+    padding: 0.8rem;
+    font-size: 1.1rem; 
+    font-weight: bold;
     text-align: center;
+    box-shadow: 0 1vw 3vw rgb(0, 0, 0);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    border-radius: 1rem;
+    width: 60%; 
+    max-width: 15rem;
+    background-color: rgb(211, 101, 12);
     cursor: pointer;
+    border: none;
 }
 
 #botao:hover {
     transition: 0.5s;
-    transform: scale(1.03);
+    background-color: rgb(255, 145, 0);
+    transform: scale(1.05);
 }
 
 #botaoservico {
-
-    box-shadow: 0 1vw 3vw rgb(0, 0, 0);
-    border-radius: 1rem;
-    margin: 0rem;
-    max-width: 200rem;
-    border-color: solid black;
-    background-color: rgb(12, 172, 46);
-    padding: 8px;
-    gap: 1rem;
+    color: white;
+    display: block;
+    margin: 2rem auto 1rem auto;
+    padding: 0.8rem;
+    font-size: 1.1rem; 
+    font-weight: bold;
     text-align: center;
+    box-shadow: 0 1vw 3vw rgb(0, 0, 0);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    border-radius: 1rem;
+    width: 60%; 
+    max-width: 15rem;
+    background-color: rgb(12, 172, 46);
     cursor: pointer;
+    border: none;
 }
 
 #botaoservico:hover {
     transition: 0.5s;
-    transform: scale(1.03);
+    background-color: rgb(10, 140, 38);
+    transform: scale(1.05);
 }
 
 ul {
@@ -91,23 +99,26 @@ ul {
 }
 
 .servicos {
-    text-decoration: none;
-    background-color: rgba(206, 120, 40, 0.658);
-    list-style: none;
+    background-color: rgba(48, 6, 201, 0.185);
     max-width: 40rem;
-    margin: 0 auto;
-    flex-direction: column;
-    border: 2px solid white;
-    display: flex;
-    margin-top: 5rem;
-    font-weight: bold;
-    border-radius: 1rem;
+    margin: 5rem auto;
     padding: 2rem;
+    border: 2px solid white;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
 }
 
 .textoservico {
-    margin-left: 10rem;
+    padding: 1rem 2rem;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
 #icon1 {
@@ -152,9 +163,7 @@ ul {
 
 body {
     background-image: url(/images/fundo.jpg);
-    /* Evita que a imagem se repita */
     height: 100vh;
-    /* Garante que o corpo tenha altura total da tela */
     margin: 0;
 }
 
@@ -238,16 +247,12 @@ header {
 @media (max-width: 768px) {
     .cabec {
         flex-direction: row;
-        /* Empilha os itens em telas menores */
         align-items: flex-start;
-        /* Alinha à esquerda */
     }
 
     #trilho {
         margin-left: 0;
-        /* Remove o "empurrão" lateral */
         align-self: flex-end;
-        /* Opcional: envia para o fim da coluna */
     }
 
     .op {
