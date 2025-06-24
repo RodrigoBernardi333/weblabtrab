@@ -134,6 +134,10 @@
     border: 2px solid white;
     border-radius: 15px;
     padding: 1rem;
+    display: none;
+}
+.cookies-msg.mostrar{
+    display: block;
 }
 .cookies-msg .cookies-txt{
     display: flex;
