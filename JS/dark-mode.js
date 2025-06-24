@@ -1,10 +1,12 @@
-let trilho = document.getElementById('trilho')
-let body = document.querySelector('body')
+function toggleAcessibilidadeMenu() {
+    const menu = document.getElementById('acessibilidade-menu');
+    menu.style.display = (menu.style.display === 'none' || menu.style.display === '') ? 'block' : 'none';
+}
 
-trilho.addEventListener('click', () => {
-  trilho.classList.toggle('light')
-  body.classList.toggle('light')
-})
+function alterarFonte(fonte) {
+    document.body.style.fontFamily = fonte;
+}
 
-//<script src="js/start.js"></script>
-
+function alterarCorTexto(cor) {
+    document.body.style.color = cor;
+}
