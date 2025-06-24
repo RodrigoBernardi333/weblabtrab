@@ -9,14 +9,17 @@ trilho.addEventListener('click', () => {
 //<script src="js/start.js"></script>
 
 
-var msgCookies = document.getElementById('cookies-msg')
+var msgCookies = document.getElementById('cookies-msg');
 
-function aceito(){
-  localStorage.lgpd = "sim"
-  msgCookies.classList.remove('mostrar')
+if (localStorage.getItem('lgpd') === 'sim') {
+  msgCookies.classList.remove('mostrar');
+} else {
+  msgCookies.classList.add('mostrar');
 }
-if(localStorage.lgpd == 'sim'){
-  msgCookies.classList.remove('mostrar')
-}else{
-  msgCookies.classList.add('mostrar')
+
+function aceito() {
+  localStorage.setItem('lgpd', 'sim');
+  msgCookies.classList.remove('mostrar');
 }
+
+// Coloque o botão para chamar essa função aceito() no seu HTML
