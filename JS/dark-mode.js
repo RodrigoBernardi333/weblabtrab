@@ -8,18 +8,9 @@ trilho.addEventListener('click', () => {
 
 //<script src="js/start.js"></script>
 
-document.addEventListener("DOMContentLoaded", function () {
-  const texto = document.getElementById('text4');
 
-  texto.addEventListener('click', () => {
-    texto.classList.toggle('piscando');
-  })
-});
-const slideContainer = document.getElementById('slide-container');
-const totalSlides = slideContainer.children.length;
-let currentIndex = 0;
+var msgCookies = document.getElementById('cookies-msg')
 
-setInterval(() => {
-  currentIndex = (currentIndex + 1) % totalSlides;
-  slideContainer.style.transform = `translateX(-${currentIndex * 300}px)`;
-}, 1000); // Troca a 
+function aceito(){
+  localStorage
+}
