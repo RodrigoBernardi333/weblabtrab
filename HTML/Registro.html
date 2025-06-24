@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/Registro/Registro-style.css">
+    <link rel="stylesheet" href="/CSS/Registro/Registro.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <section class="cadastro">
+            <h1 id="titulo">Cadastro</h1>
+            <input type="text" name="nome" id="nome" placeholder="Nome" required>
+            <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" required>
+            <input type="text" name="usuario" id="usuario" placeholder="Nome de Usuário" required>
+            <input type="email" name="usuario" id="email" placeholder="Email" required>
+            <input type="password" name="senha" id="senha" placeholder="Senha" required>
+            <input type="password" name="senha-conf" id="senha-conf" placeholder="Confirmação de Senha" required>
+            <div id="termos">
+                <input type="checkbox" name="concordo" id="concordo" required><label for="concordo"> eu concordo com os
+                    <a href="#" onclick="alert('estamos em manutenção')">termos</a></label>
+            </div>
+            <button id="cadastrar" onclick="alert('Estamos com problema em avaliar a sua conta')">Cadastrar</button>
+        </section>
+    </main>
+</body>
+
+</html>

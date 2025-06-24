@@ -1,0 +1,68 @@
+.recu {
+    display: flex;
+    flex-direction: column;
+    max-width: 20rem;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20rem;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 2rem;
+    color: white;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.315);
+}
+
+#novasenha {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    color: white;
+    background-color: rgba(255, 255, 255, 0.11);
+    margin-bottom: 1rem;
+}
+
+#confir {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    color: white;
+    background-color: rgba(255, 255, 255, 0.11);
+}
+
+#novasenha:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 0.295);
+}
+
+#confir:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 0.295);
+}
+
+#confirmar {
+    margin-top: 2rem;
+    padding: 1rem;
+    border: 2px solid white;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.397);
+    color: white;
+    font-size: 1rem;
+}
+#confirmar:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.192);
+}
+#novasenha::placeholder,
+#confir::placeholder {
+    color: rgba(255, 255, 255, 0.966);
+    text-align: center;
+}

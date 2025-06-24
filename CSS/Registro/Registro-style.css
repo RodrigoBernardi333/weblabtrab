@@ -1,0 +1,110 @@
+body {
+    background-image: url(/images/fundo.jpg);
+}
+
+.cadastro {
+    background-color: rgba(0, 0, 0, 0.425);
+    display: flex;
+    flex-direction: column;
+    max-width: 15rem;
+    margin: 0 auto;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 4rem;
+    gap: 0.5vw;
+    margin-top: 6vw;
+    text-align: center;
+}
+
+#titulo {
+    border-bottom: 2px solid white;
+    padding-bottom: 1rem;
+}
+
+#nome {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--fundo-preto);
+    border-bottom: 2px solid rgb(255, 255, 255);
+    color: white;
+    text-align: center;
+}
+
+#sobrenome {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--fundo-preto);
+    border-bottom: 2px solid rgb(255, 255, 255);
+    color: white;
+    text-align: center;
+}
+
+#usuario {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--fundo-preto);
+    border-bottom: 2px solid rgb(255, 255, 255);
+    color: white;
+    text-align: center;
+}
+
+#email {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--fundo-preto);
+    border-bottom: 2px solid rgb(255, 255, 255);
+    color: white;
+    text-align: center;
+}
+
+#senha {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--fundo-preto);
+    border-bottom: 2px solid rgb(255, 255, 255);
+    color: white;
+    text-align: center;
+}
+
+#senha-conf {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--fundo-preto);
+    border-bottom: 2px solid rgb(255, 255, 255);
+    color: white;
+    text-align: center;
+}
+
+#cadastrar {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    text-align: center;
+}
+
+#cadastrar:hover {
+    transition: 0.5s;
+    background-color: rgba(255, 255, 255, 0.267);
+}
+
+#termos {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}

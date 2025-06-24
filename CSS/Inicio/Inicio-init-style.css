@@ -81,6 +81,7 @@
     padding: 5px;
     border: 1px solid white;
     border-radius: 5rem;
+    color: rgba(255, 255, 255, 0.63);
 }
 .button{
     display: flex;

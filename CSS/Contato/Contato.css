@@ -9,6 +9,7 @@ form {
     margin: 0 auto;
     gap: 12px;
     padding: 20px;
+    border: 2px solid black;
 }
 
 label {

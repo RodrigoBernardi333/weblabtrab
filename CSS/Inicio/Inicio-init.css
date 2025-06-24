@@ -17,10 +17,8 @@ header {
 body {
     background-image: url(/images/fundo.jpg);
     background-color: rgba(0, 0, 0, 0.6);
-
-    /* Evita que a imagem se repita */
-    height: 100vh;
-    /* Garante que o corpo tenha altura total da tela */
+    background-size:cover ;
+    height: 100%;
     margin: 0;
 }
 

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/recupera/Recupera-style.css">
+    <link rel="stylesheet" href="/CSS/recupera/Recupera.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="/JS/server.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <section class="recu">
+            <p>Recuperação de senha</p>
+            <input type="text" name="novasenha" id="novasenha" placeholder="Nova senha">
+            <input type="text" name="confir" id="confir" placeholder="Confirmar senha">
+            <button id="confirmar">Confirmar</button>
+            <form action="/verificar" method="POST" id="form">
+                <div class="g-recaptcha" data-sitekey="6Lc7aWsrAAAAAOWJ41sceF-6aOuS9VQGkDmz2ZMS"></div>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
