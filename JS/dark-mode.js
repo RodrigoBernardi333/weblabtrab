@@ -8,6 +8,7 @@ function alterarFonte(fonte) {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 function alterarCorTexto(cor) {
     document.body.style.color = cor;
 }
@@ -19,3 +20,11 @@ function alterarCorTexto(cor) {
       texto.classList.toggle('piscando');
 })});
 >>>>>>> 072358a4295c0759419827efa807493e4e82ec52
+=======
+
+var msgCookies = document.getElementById('cookies-msg')
+
+function aceito(){
+  localStorage
+}
+>>>>>>> 574dca9e75f9d432aba3c3e1df84291971c3efc6
