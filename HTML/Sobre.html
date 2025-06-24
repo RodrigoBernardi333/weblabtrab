@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="/CSS/Sobre/Sobre-style.css">
-    <link rel="stylesheet" href="/CSS/Sobre/Sobre.css">
-    <script src="/JS/dark-mode.js"></script>
-    <title>Ciber Cia</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/CSS/Sobre/Sobre-style.css">
+  <link rel="stylesheet" href="/CSS/Sobre/Sobre.css">
+  <script src="/JS/dark-mode.js"></script>
+  <script src="/JS/acessibilidade.js"></script>
+  <title>Ciber Cia</title>
 </head>
+
 <body>
   <header>
     <section>
@@ -23,69 +26,98 @@
           <a href="/HTML/Contato.html" id="contato">Contato</a>
           <a href="/HTML/Login_init.html" target="_blank" id="login">Login</a>
         </nav>
-        <button id="trilho" aria-label="Ativar modo escuro">
-          <img src="/images/icons/dark_mode-light.svg" alt="Ícone do modo escuro" />
-        </button>
+        <div class="top-icons">
+          <img src="/images/icons/dark_mode-light.svg" alt="Modo Escuro" id="dark-mode-toggle"
+            onclick="toggleDarkMode()" />
+          <img src="/images/icons/accessibility.png" alt="Acessibilidade" id="acessibilidade-toggle"
+            onclick="toggleAcessibilidadeMenu()" />
+        </div>
       </div>
     </section>
   </header>
- <main>
-  <section>
-    <!-- Rodrigo -->
-    <div class="perfil">
-      <img src="/images/contribuidores/foto_Rodrigo.jpg" id="rodrigo" alt="Foto de Rodrigo Bernardi">
-      <article class="text">
-        <h2>Sobre Rodrigo Bernardi de Quadros</h2>
-         <p>Meu nome é Rodrigo Bernardi, sou estudante de Ciência da Computação e apaixonado por tecnologia. Comecei minha trajetória em 2022 no curso técnico em Informática do IFSul – Campus Passo Fundo, onde desenvolvi interesse por programação, especialmente em desenvolvimento web.</p>
-         <p>Sou uma pessoa dedicada, curiosa e em constante aprendizado, com foco em linguagens como HTML, CSS e JavaScript. Nos momentos livres, gosto de praticar esportes, jogar vôlei e videogames, além de curtir a companhia da minha cachorrinha e do meu gato.</p>
-         <p>Este são alguns detalhes sobre mim. Para saber mais, acesse a aba de Contato ou visite o <a href="https://github.com/RodrigoBernardi333/trab1_WebLab.git" target="_blank">repositório no GitHub</a>.</p>
+  <main>
+    <section>
+      <!-- Rodrigo -->
+      <div class="perfil">
+        <img src="/images/contribuidores/foto_Rodrigo.jpg" id="rodrigo" alt="Foto de Rodrigo Bernardi">
+        <article class="text">
+          <h2>Sobre Rodrigo Bernardi de Quadros</h2>
+          <p>Meu nome é Rodrigo Bernardi, sou estudante de Ciência da Computação e apaixonado por tecnologia. Comecei
+            minha trajetória em 2022 no curso técnico em Informática do IFSul – Campus Passo Fundo, onde desenvolvi
+            interesse por programação, especialmente em desenvolvimento web.</p>
+          <p>Sou uma pessoa dedicada, curiosa e em constante aprendizado, com foco em linguagens como HTML, CSS e
+            JavaScript. Nos momentos livres, gosto de praticar esportes, jogar vôlei e videogames, além de curtir a
+            companhia da minha cachorrinha e do meu gato.</p>
+          <p>Este são alguns detalhes sobre mim. Para saber mais, acesse a aba de Contato ou visite o <a
+              href="https://github.com/RodrigoBernardi333/trab1_WebLab.git" target="_blank">repositório no GitHub</a>.
+          </p>
 
-      </article>
-    </div>
+        </article>
+      </div>
 
-    <!-- Gabriel -->
-    <div class="perfil">
-      <img src="/images/contribuidores/foto_Rodrigo.jpg" id="gabriel" alt="Foto de Gabriel Silva">
-      <article class="text">
-        <h2>Sobre Gabriel Silva</h2>
-        <p>Olá! Eu sou Gabriel Silva, estudante de Sistemas de Informação com paixão por back-end e automação.</p>
-        <p>Iniciei meus estudos técnicos em 2021 no Instituto Federal, onde me envolvi com projetos em Python e banco de dados.</p>
-        <p>Gosto de tocar violão, ler ficção científica e participar de maratonas de programação.</p>
-        <p>Acredito que dedicação e curiosidade são as chaves para o crescimento constante.</p>
-        <p>Repositório deste projeto: <a href="https://github.com/gabrielsilva/projeto" target="_blank">GitHub</a></p>
-      </article>
-    </div>
+      <!-- Gabriel -->
+      <div class="perfil">
+        <img src="/images/contribuidores/foto_Rodrigo.jpg" id="gabriel" alt="Foto de Gabriel Silva">
+        <article class="text">
+          <h2>Sobre Gabriel Silva</h2>
+          <p>Olá! Eu sou Gabriel Silva, estudante de Sistemas de Informação com paixão por back-end e automação.</p>
+          <p>Iniciei meus estudos técnicos em 2021 no Instituto Federal, onde me envolvi com projetos em Python e banco
+            de dados.</p>
+          <p>Gosto de tocar violão, ler ficção científica e participar de maratonas de programação.</p>
+          <p>Acredito que dedicação e curiosidade são as chaves para o crescimento constante.</p>
+          <p>Repositório deste projeto: <a href="https://github.com/gabrielsilva/projeto" target="_blank">GitHub</a></p>
+        </article>
+      </div>
 
-    <!-- Vitor -->
-    <div class="perfil">
-      <img src="/images/contribuidores/foto_Vitor.jpg" id="vitor" alt="Foto de Vitor Almeida">
-      <article class="text">
-        <h2>Sobre Vitor Almeida</h2>
-         <p>Oi! Meu nome é Rodrigo Bernardi, atualmente sou estudante de Ciência da Computação, sempre em busca de novos
-        conhecimentos e desafios na área da tecnologia.</p>
-      <p>Minha trajetória na área de informática começou em 2022, no IFSul Campus Passo Fundo, onde fiz o técnico em
-        Informática junto com o ensino médio. Durante esse período, adquiri conhecimentos que hoje aplico em projetos
-        acadêmicos e pessoais. Esse aprendizado despertou meu interesse por programação, desenvolvimento web e pela
-        criação de soluções inovadoras para desafios tecnológicos.</p>
-      <p>Além dos estudos, tenho uma grande paixão por esportes e lazer. Gosto muito de jogar vôlei e também me divertir
-        com videogames, atividades que me ajudam a manter o equilíbrio entre a vida acadêmica e pessoal. Em casa, conto
-        com a companhia da minha cachorrinha e do meu gato, que alegram meus dias com muita diversão.</p>
-      <p>Sou uma pessoa calma, dedicada e sempre aberta a aprender novas tecnologias e linguagens. Acredito que a
-        inovação nasce da curiosidade e do esforço contínuo em buscar evoluir, tanto como profissional quanto como
-        pessoa.</p>
-      <p>No momento, sigo desenvolvendo meus conhecimentos em programação, explorando linguagens como HTML, CSS e
-        JavaScript, e aplicando esses aprendizados em trabalhos como este portfólio.</p>
-      <p>Se quiser saber mais ou entrar em contato, fique à vontade para acessar a aba de Contato deste site!</p>
-      <p>Repositório deste projeto: <a href="https://github.com/RodrigoBernardi333/trab1_WebLab.git"
-          target="_blank">GitHub</a></p>
-      </article>
-    </div>
-  </section>
-</main>
+      <!-- Vitor -->
+      <div class="perfil">
+        <img src="/images/contribuidores/foto_Vitor.jpg" id="vitor" alt="Foto de Vitor Almeida">
+        <article class="text">
+          <h2>Sobre Vitor Almeida</h2>
+          <p>Oi! Meu nome é Rodrigo Bernardi, atualmente sou estudante de Ciência da Computação, sempre em busca de
+            novos
+            conhecimentos e desafios na área da tecnologia.</p>
+          <p>Minha trajetória na área de informática começou em 2022, no IFSul Campus Passo Fundo, onde fiz o técnico em
+            Informática junto com o ensino médio. Durante esse período, adquiri conhecimentos que hoje aplico em
+            projetos
+            acadêmicos e pessoais. Esse aprendizado despertou meu interesse por programação, desenvolvimento web e pela
+            criação de soluções inovadoras para desafios tecnológicos.</p>
+          <p>Além dos estudos, tenho uma grande paixão por esportes e lazer. Gosto muito de jogar vôlei e também me
+            divertir
+            com videogames, atividades que me ajudam a manter o equilíbrio entre a vida acadêmica e pessoal. Em casa,
+            conto
+            com a companhia da minha cachorrinha e do meu gato, que alegram meus dias com muita diversão.</p>
+          <p>Sou uma pessoa calma, dedicada e sempre aberta a aprender novas tecnologias e linguagens. Acredito que a
+            inovação nasce da curiosidade e do esforço contínuo em buscar evoluir, tanto como profissional quanto como
+            pessoa.</p>
+          <p>No momento, sigo desenvolvendo meus conhecimentos em programação, explorando linguagens como HTML, CSS e
+            JavaScript, e aplicando esses aprendizados em trabalhos como este portfólio.</p>
+          <p>Se quiser saber mais ou entrar em contato, fique à vontade para acessar a aba de Contato deste site!</p>
+          <p>Repositório deste projeto: <a href="https://github.com/RodrigoBernardi333/trab1_WebLab.git"
+              target="_blank">GitHub</a></p>
+        </article>
+      </div>
+
+      <!-- Menu flutuante de acessibilidade -->
+      <div id="acessibilidade-menu" style="display: none;">
+        <label>Tamanho da fonte:
+          <select onchange="alterarTamanhoFonte(this.value)">
+            <option value="14px">Pequeno</option>
+            <option value="16px" selected>Médio</option>
+            <option value="18px">Grande</option>
+            <option value="20px">Muito grande</option>
+          </select>
+        </label>
+
+        <label>Cor do texto:
+          <input type="color" onchange="alterarCorTexto(this.value)" />
+        </label>
+      </div>
+
+    </section>
+  </main>
 
 
 </body>
 
 </html>
-
-

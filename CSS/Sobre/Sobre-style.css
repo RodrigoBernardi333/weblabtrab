@@ -53,12 +53,6 @@ main > section {
   display: block;
 }
 
-#rodrigo {
-  border: 2px solid white;
-  max-width: 19rem;
-  height: auto;
-}
-
 .perfil {
   display: flex;
   flex-wrap: wrap;
@@ -69,10 +63,69 @@ main > section {
   max-width: 100%;
 }
 
-
-
 #rodrigo, #gabriel, #vitor {
     border: 2px solid white;
     max-width: 19rem;
     height: auto;
+}
+
+
+
+.top-icons {
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  padding-left: 1rem;
+  position: fixed;
+}
+
+
+.top-icons img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  
+}
+
+.top-icons img:hover {
+  transform: scale(1.1);
+  background-color: var(--bg-color);
+  transition: 0.5s;
+  border-radius: 1rem;
+}
+
+#acessibilidade-menu {
+  position: fixed;
+  top: 5rem;
+  right: 1rem;
+  background-color: #ffffffdd;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #999;
+  z-index: 1000;
+  font-size: 0.9rem;
+  color: #000;
+}
+
+#acessibilidade-menu label {
+  color: #000000; /* preto para contraste com fundo claro */
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+
+#acessibilidade-menu select {
+  color: #000;            /* Cor do texto dentro do select */
+  background-color: #fff; /* Cor de fundo (opcional) */
+  border: 1px solid #aaa; /* Borda visível */
+  padding: 0.3rem;
+  border-radius: 4px;
+}
+
+#acessibilidade-menu select option {
+  color: #000;
+  background-color: #fff;
 }

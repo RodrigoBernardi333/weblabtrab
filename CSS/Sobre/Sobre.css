@@ -10,19 +10,24 @@
 }
 
 header {
-    background-color: rgba(0, 0, 0, 0.514);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
     border-bottom: 2px solid rgba(0, 0, 0, 0.295);
+    z-index: 1000;
 }
+
 
 body {
-    background-image: url(/images/fundo.jpg);
-    background-color: rgba(0, 0, 0, 0.6);
-
-    /* Evita que a imagem se repita */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url(/images/fundo.jpg) no-repeat center center fixed;
+    background-size: cover;
     height: 100vh;
-    /* Garante que o corpo tenha altura total da tela */
     margin: 0;
 }
+
 
 @media (max-width: 768px) {
     .cabec {
@@ -32,18 +37,26 @@ body {
         /* Alinha à esquerda */
     }
 
-    #trilho {
-        margin-left: 0;
-        /* Remove o "empurrão" lateral */
-        align-self: flex-end;
-        /* Opcional: envia para o fim da coluna */
+    #trilho,
+    .top-icons img {
+        cursor: pointer;
+        border-radius: 6px;
+        transition: 0.3s;
     }
 
-    .op {
-        margin-left: 0;
-        flex-direction: row;
-        width: 77%;
+    .top-icons img:focus {
+        outline: 2px solid #fff;
+        outline-offset: 4px;
     }
+
+
+    .op {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
 
     #home,
     #sobre,
@@ -67,26 +80,25 @@ body {
 }
 
 .arvo-regular {
-  font-family: "Arvo", serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Arvo", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .arvo-bold {
-  font-family: "Arvo", serif;
-  font-weight: 700;
-  font-style: normal;
+    font-family: "Arvo", serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .arvo-regular-italic {
-  font-family: "Arvo", serif;
-  font-weight: 400;
-  font-style: italic;
+    font-family: "Arvo", serif;
+    font-weight: 400;
+    font-style: italic;
 }
 
 .arvo-bold-italic {
-  font-family: "Arvo", serif;
-  font-weight: 700;
-  font-style: italic;
+    font-family: "Arvo", serif;
+    font-weight: 700;
+    font-style: italic;
 }
-
