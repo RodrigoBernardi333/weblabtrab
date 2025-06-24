@@ -1,39 +1,110 @@
+:root {
+    --color-lt: #fffefe;
+    --bg-color: rgba(255, 255, 255, 0.301);
+}
+
+* {
+    color: white;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+}
+
 .titulo {
     text-align: center;
 }
 
 form {
+
+    background-color: rgba(255, 255, 255, 0.100);
     display: flex;
-    flex-direction: column;
-    max-width: 400px;
     margin: 0 auto;
+    flex-direction: column;
+    max-width: 40rem;
     gap: 12px;
     padding: 20px;
-    border: 2px solid black;
 }
 
 label {
     display: block;
 }
 
-input,
-button {
+input {
+    color: black;
+}
+
+.inputdoform,
+#botao {
     padding: 8px;
     width: 100%;
     box-sizing: border-box;
-}
-
-button {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    text-align: center;
     cursor: pointer;
 }
 
+#botao {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 1vw 3vw rgb(0, 0, 0);
+    border-radius: 1rem;
+    margin: 0rem;
+    max-width: 200rem;
+    border-color: solid black;
+    background-color: rgb(255, 166, 0);
+    padding: 8px;
+    gap: 1rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+#botao:hover {
+    transition: 0.5s;
+    transform: scale(1.03);
+}
+
+#botaoservico {
+
+    box-shadow: 0 1vw 3vw rgb(0, 0, 0);
+    border-radius: 1rem;
+    margin: 0rem;
+    max-width: 200rem;
+    border-color: solid black;
+    background-color: rgb(12, 172, 46);
+    padding: 8px;
+    gap: 1rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+#botaoservico:hover {
+    transition: 0.5s;
+    transform: scale(1.03);
+}
+
+ul {
+    list-style-type: none;
+}
+
 .servicos {
+    text-decoration: none;
+    background-color: rgba(206, 120, 40, 0.658);
     list-style: none;
-    padding-left: 0;
-    max-width: 400px;
+    max-width: 40rem;
     margin: 0 auto;
+    flex-direction: column;
+    border: 2px solid white;
+    display: flex;
+    margin-top: 5rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.textoservico {
+    margin-left: 10rem;
     text-align: left;
-    flex-direction: row;
 }
 
 #icon1 {
@@ -50,26 +121,158 @@ button {
     margin-right: 8px;
     vertical-align: middle;
 }
+
 .arvo-regular {
-  font-family: "Arvo", serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Arvo", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .arvo-bold {
-  font-family: "Arvo", serif;
-  font-weight: 700;
-  font-style: normal;
+    font-family: "Arvo", serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .arvo-regular-italic {
-  font-family: "Arvo", serif;
-  font-weight: 400;
-  font-style: italic;
+    font-family: "Arvo", serif;
+    font-weight: 400;
+    font-style: italic;
 }
 
 .arvo-bold-italic {
-  font-family: "Arvo", serif;
-  font-weight: 700;
-  font-style: italic;
+    font-family: "Arvo", serif;
+    font-weight: 700;
+    font-style: italic;
 }
+
+
+body {
+    background-image: url(/images/fundo.jpg);
+    /* Evita que a imagem se repita */
+    height: 100vh;
+    /* Garante que o corpo tenha altura total da tela */
+    margin: 0;
+}
+
+main>section {
+    border: 2px solid white;
+}
+
+
+/* Header */
+
+.cabec {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vw;
+    text-decoration: none;
+    max-width: 100%;
+}
+
+.op {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    margin-left: 5rem;
+}
+
+#home {
+    padding: 1rem;
+}
+
+#home:hover {
+    background-color: var(--bg-color);
+    transition: 0.5s;
+}
+
+#sobre {
+    padding: 1rem;
+}
+
+#sobre:hover {
+    background-color: var(--bg-color);
+    transition: 0.5s;
+}
+
+#contato {
+    padding: 1rem;
+}
+
+#contato:hover {
+    background-color: var(--bg-color);
+    transition: 0.5s;
+}
+
+#login {
+    padding: 1rem;
+}
+
+#login:hover {
+    background-color: var(--bg-color);
+    transition: 0.5s;
+}
+
+#trilho {
+    background-color: transparent;
+    border: none;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-left: auto;
+}
+
+#trilho:hover {
+    background-color: var(--bg-color);
+    transition: 0.5s;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.514);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.295);
+}
+
+@media (max-width: 768px) {
+    .cabec {
+        flex-direction: row;
+        /* Empilha os itens em telas menores */
+        align-items: flex-start;
+        /* Alinha à esquerda */
+    }
+
+    #trilho {
+        margin-left: 0;
+        /* Remove o "empurrão" lateral */
+        align-self: flex-end;
+        /* Opcional: envia para o fim da coluna */
+    }
+
+    .op {
+        margin-left: 0;
+        flex-direction: row;
+        width: 77%;
+    }
+
+
+    #home,
+    #sobre,
+    #contato,
+    #login {
+        width: 100%;
+        text-align: left;
+        padding: 1rem 0.5rem;
+    }
+}
+
+#home,
+#sobre,
+#contato,
+#login,
+#trilho {
+    cursor: pointer;
+    min-width: 80px;
+    text-align: center;
+    border-radius: 6px;
+}
+
+/* Fim do Header */
