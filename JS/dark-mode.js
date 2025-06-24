@@ -8,3 +8,9 @@ trilho.addEventListener('click', () => {
 
 //<script src="js/start.js"></script>
 
+ document.addEventListener("DOMContentLoaded", function () {
+    const texto = document.getElementById('text4');
+
+    texto.addEventListener('click', () => {
+      texto.classList.toggle('piscando');
+})});

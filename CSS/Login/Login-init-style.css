@@ -54,15 +54,16 @@
     color: white;
 }
 .piscando {
-      animation: piscarCores 0.5s infinite;
+      animation: piscarCores 1s infinite;
     }
 
     @keyframes piscarCores {
       0%   { color: red; }
-      25%  { color: orange; }
-      50%  { color: yellow; }
-      75%  { color: green; }
-      100% { color: blue; }
+      20%  { color: orange; }
+      40%  { color: yellow; }
+      60%  { color: green; }
+      80%  { color: blue; }
+      100% { color: purple; }
     }
 
     .texto {
