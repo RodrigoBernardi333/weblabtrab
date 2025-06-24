@@ -10,46 +10,88 @@
         href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="/CSS/Contato/Contato.css">
-    <title>Document</title>
+    <script src="/JS/dark-mode.js"></script>
+    <script src="/JS/acessibilidade.js"></script>
+    <title>Ciber Cia</title>
 </head>
 
 <body>
-    <main>
+    <header>
         <section>
-            <h1 class="titulo">Fale Conosco</h1>
+            <div class="cabec">
+                <nav class="op">
+                    <a href="/HTML/Inicio.html" id="home">Home</a>
+                    <a href="/HTML/Sobre.html" id="sobre">Sobre</a>
+                    <a href="/HTML/Contato.html" id="contato">Contato</a>
+                    <a href="/HTML/Login_init.html" target="_blank" id="login">Login</a>
+                </nav>
+                <div class="top-icons">
+                    <img src="/images/icons/dark_mode-light.svg" alt="Modo Escuro" id="dark-mode-toggle"
+                        onclick="toggleDarkMode()" />
+                    <img src="/images/icons/accessibility.png" alt="Acessibilidade" id="acessibilidade-toggle"
+                        onclick="toggleAcessibilidadeMenu()" />
+                </div>
+            </div>
         </section>
+    </header>
+    <main>
         <form>
+            <section>
+                <h1 class="titulo">Fale Conosco</h1>
+            </section>
             <label for="nome">Nome</label>
-            <input class="inputdoform" type="text" id="nome" name="nome" required placeholder="Nome">
+            <input class="inputdoform" type="text" id="nome" name="nome" required placeholder="Escreva seu nome">
 
             <label for="email">E-mail</label>
-            <input class="inputdoform" type="email" id="email" name="email" required placeholder="E-mail">
+            <input class="inputdoform" type="email" id="email" name="email" required placeholder="exemplo@gmail.com">
 
             <label for="telefone">Telefone</label>
-            <input class="inputdoform" type="tel" id="telefone" name="telefone" required placeholder="Telefone">
+            <input class="inputdoform" type="tel" id="telefone" name="telefone" required placeholder="54 99999-9999">
 
             <label for="empresa">Empresa</label>
-            <input class="inputdoform" type="text" id="empresa" name="empresa" required placeholder="Empresa">
+            <input class="inputdoform" type="text" id="empresa" name="empresa" required placeholder="Informe sua empresa">
 
             <label for="cargo">Cargo</label>
-            <input class="inputdoform" type="text" id="cargo" name="cargo" required placeholder="Cargo">
+            <input class="inputdoform" type="text" id="cargo" name="cargo" required placeholder="Informe seu cargo">
 
             <button id="botao" type="submit" onclick="alert('Olá estamos em manutenção')">Enviar</button>
         </form>
         <div class="servicos">
             <h1 class="texto1">O que oferecemos?</h1>
             <ul class="textoservico">
-                <li><img src="/images/icons/aceitar.png" alt="check" class="icone"> Testes de Invasão (Pentest) para identificar vulnerabilidades críticas.</li>
-                <li><img src="/images/icons/aceitar.png" alt="check" class="icone"> Monitoramento contínuo 24/7 para garantir a proteção em tempo real.</li>
-                <li><img src="/images/icons/aceitar.png" alt="check" class="icone"> Soluções avançadas de Segurança em Nuvem com alta performance.</li>
-                <li><img src="/images/icons/aceitar.png" alt="check" class="icone"> Consultoria completa para adequação à LGPD.</li>
-                <li><img src="/images/icons/aceitar.png" alt="check" class="icone"> Treinamentos personalizados parafortalecer sua equipe.</li>
-                <li><img src="/images/icons/aceitar.png" alt="check" class="icone"> Resposta rápida e eficaz aincidentes cibernéticos.</li>
-                <li><img src="/images/icons/aceitar.png" alt="check" class="icone"> Proteção ativa contra ameaças comomalwares e ransomwares.</li>
+                <li><img src="/images/icons/aceitar.png" alt="check" class="icone"> Testes de Invasão (Pentest) para
+                    identificar vulnerabilidades críticas.</li>
+                <li><img src="/images/icons/aceitar.png" alt="check" class="icone"> Monitoramento contínuo 24/7 para
+                    garantir a proteção em tempo real.</li>
+                <li><img src="/images/icons/aceitar.png" alt="check" class="icone"> Soluções avançadas de Segurança em
+                    Nuvem com alta performance.</li>
+                <li><img src="/images/icons/aceitar.png" alt="check" class="icone"> Consultoria completa para adequação
+                    à LGPD.</li>
+                <li><img src="/images/icons/aceitar.png" alt="check" class="icone"> Treinamentos personalizados
+                    parafortalecer sua equipe.</li>
+                <li><img src="/images/icons/aceitar.png" alt="check" class="icone"> Resposta rápida e eficaz aincidentes
+                    cibernéticos.</li>
+                <li><img src="/images/icons/aceitar.png" alt="check" class="icone"> Proteção ativa contra ameaças
+                    comomalwares e ransomwares.</li>
             </ul>
             <button id="botaoservico" type="button" onclick="alert('Olá estamos em manutenção!')">Ver planos</button>
         </div>
+        <!-- Menu flutuante de acessibilidade -->
+        <div id="acessibilidade-menu" style="display: none;">
+            <label>Tamanho da fonte:
+                <select onchange="alterarTamanhoFonte(this.value)">
+                    <option value="14px">Pequeno</option>
+                    <option value="16px" selected>Médio</option>
+                    <option value="18px">Grande</option>
+                    <option value="20px">Muito grande</option>
+                </select>
+            </label>
 
+            <label>Cor do texto:
+                <input type="color" onchange="alterarCorTexto(this.value)" />
+            </label>
+        </div>
+    </main>
 </body>
 
 </html>
