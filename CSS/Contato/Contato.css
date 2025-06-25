@@ -10,7 +10,11 @@
 }
 
 .titulo {
+<<<<<<< HEAD
     margin-top: 16px;
+=======
+    margin-top: 1rem;
+>>>>>>> adc84f45329ba9d0df78de0682f155908fe34071
     text-align: center;
     transform: scale(1.3);
 }
@@ -371,10 +375,10 @@ main>section {
     background-color: #fff;
 }
 
+
 .fixo {
   color: black !important;
 }
-
 
 /*Fim da Acessibilidade*/
 /* Fim do Header */

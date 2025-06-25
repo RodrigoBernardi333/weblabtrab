@@ -7,24 +7,22 @@ function alterarFonte(fonte) {
     document.body.style.fontFamily = fonte;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-function alterarCorTexto(cor) {
-    document.body.style.color = cor;
+
+var msgCookies = document.getElementById('cookies-msg');
+
+if (localStorage.getItem('lgpd') === 'sim') {
+  msgCookies.classList.remove('mostrar');
+} else {
+  msgCookies.classList.add('mostrar');
 }
-=======
- document.addEventListener("DOMContentLoaded", function () {
-    const texto = document.getElementById('text4');
 
-    texto.addEventListener('click', () => {
-      texto.classList.toggle('piscando');
-})});
->>>>>>> 072358a4295c0759419827efa807493e4e82ec52
-=======
+function aceito() {
+  localStorage.setItem('lgpd', 'sim');
+  msgCookies.classList.remove('mostrar');
+}
 
-var msgCookies = document.getElementById('cookies-msg')
+// Coloque o botão para chamar essa função aceito() no seu HTML
 
 function aceito(){
   localStorage
 }
->>>>>>> 574dca9e75f9d432aba3c3e1df84291971c3efc6
