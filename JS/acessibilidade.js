@@ -19,7 +19,7 @@ function alterarCorTexto(cor) {
   document.body.style.color = cor;
 
   const textos = document.querySelectorAll(
-    '.text, .perfil p, h1, h2, h3, h4, h5, h6, a, label, .titulo, .texto1, .textoservico, li'
+    '.text, .perfil p, h1, h2, h3, h4, h5, h6, a, label, .titulo, .texto1, .textoservico, li, p'
   );
 
   textos.forEach(el => {
