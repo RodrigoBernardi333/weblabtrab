@@ -10,7 +10,6 @@ function alterarFonte(fonte) {
 
 var msgCookies = document.getElementById('cookies-msg');
 
-<<<<<<< HEAD
 if (localStorage.getItem('lgpd') === 'sim') {
   msgCookies.classList.remove('mostrar');
 } else {
@@ -23,9 +22,7 @@ function aceito() {
 }
 
 // Coloque o botão para chamar essa função aceito() no seu HTML
-=======
+
 function aceito(){
   localStorage
 }
->>>>>>> 574dca9e75f9d432aba3c3e1df84291971c3efc6
->>>>>>> 6cd99bed5b489de17f7b3a4e045575083fa7e55a
