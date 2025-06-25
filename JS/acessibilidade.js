@@ -6,14 +6,25 @@ function toggleAcessibilidadeMenu() {
 
 // Alterar o tamanho da fonte de toda a página
 function alterarTamanhoFonte(tamanho) {
-  document.documentElement.style.fontSize = tamanho;
+  const textos = document.querySelectorAll(
+    'p, h1, h2, h3, h4, h5, h6, a, label, .text, .titulo, .texto1, .textoservico, li, input, button'
+  );
+  textos.forEach(el => {
+    el.style.fontSize = tamanho;
+  });
 }
 
 // Alterar a cor do texto de toda a página
 function alterarCorTexto(cor) {
   document.body.style.color = cor;
 
-  // Atualiza também todos os textos dentro de elementos com classe 'text'
-  const textos = document.querySelectorAll('.text, .perfil p, h2, h1, a, label');
-  textos.forEach(el => el.style.color = cor);
+  const textos = document.querySelectorAll(
+    '.text, .perfil p, h1, h2, h3, h4, h5, h6, a, label, .titulo, .texto1, .textoservico, li'
+  );
+
+  textos.forEach(el => {
+    if (!el.classList.contains('fixo')) {
+      el.style.color = cor;
+    }
+  });
 }
