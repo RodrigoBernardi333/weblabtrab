@@ -8,17 +8,20 @@
     --color-lt: #fffefe;
     --bg-color: rgba(255, 255, 255, 0.301);
     --header: rgba(0, 0, 0, 0.514);
+    --texto: white;
 }
 
 .darkmode {
     --color-lt: #000000;
     --bg-color: rgba(255, 255, 255, 0.301);
     --header: rgb(255, 255, 255);
+    --texto: black;
 }
 
 header {
     background-color: var(--header);
     border-bottom: 2px solid var(--header);
+    color: black
 }
 
 body {
