@@ -1,3 +1,24 @@
+:root {
+  --color-lt: #fffefe;
+  --bg-color: rgba(255, 255, 255, 0.301);
+  --fundo-preto: #1d1d1d;
+  --back: rgba(0, 0, 0, 0.699);
+  --borda: rgb(255, 255, 255);
+  --text: rgb(255, 255, 255);
+  --header-color: rgba(255, 255, 255, 0.699);
+}
+
+.darkmode {
+  --color-lt: #000000;
+  --bg-color: rgba(255, 255, 255, 0.301);
+  --fundo-preto: #1d1d1d;
+  --back: rgba(255, 255, 255, 0.699);
+  --borda: rgb(0, 0, 0);
+  --text: rgb(0, 0, 0);
+  --header-color: #121212;
+}
+
+
 .cabec {
   display: flex;
   flex-wrap: wrap;
@@ -26,6 +47,16 @@
 }
 
 #sobre:hover {
+  background-color: var(--bg-color);
+  transition: 0.5s;
+}
+
+#apresentacao {
+  padding: 1rem;
+
+}
+
+#apresentacao:hover {
   background-color: var(--bg-color);
   transition: 0.5s;
 }
@@ -64,12 +95,6 @@
   padding-right: 2rem;
   margin-left: auto;
 }
-
-#trilho:hover {
-  background-color: var(--bg-color);
-  transition: 0.5s;
-}
-
 
 .imagens-logo {
   display: flex;

@@ -33,6 +33,7 @@ body {
 #sobre,
 #contato,
 #apresentcao,
+<<<<<<< HEAD
 #login,
 #trilho {
     cursor: pointer;
@@ -41,6 +42,15 @@ body {
     border-radius: 6px;
 }
 
+=======
+#login {
+    width: 100%;
+    text-align: left;
+    padding: 1rem 0.5rem;
+}
+
+
+>>>>>>> 586a1e3b8387209aa017c8d9c09d1a4cf5f9bc2d
 footer {
     background-color: white;
     max-width: 100%;

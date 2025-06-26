@@ -1,9 +1,24 @@
-:root{
-    --fundo-preto:#1d1d1d;
+:root {
+    --fundo-preto: #1d1d1d;
+    --back: rgba(0, 0, 0, 0.699);
+    --borda: rgb(255, 255, 255);
+    --text: rgb(255, 255, 255);
 }
+
+* {
+    color: var(--text);
+}
+
+.darkmode {
+    --fundo-preto: #dbdbdb;
+    --back: rgba(255, 255, 255, 0.226);
+    --borda: rgb(255, 115, 0);
+    --text: white;
+}
+
 body {
     background-image: url(/images/fundo.jpg);
-    background-size:cover ;
+    background-size: cover;
     margin: 0;
     height: 100vh;
     display: flex;
@@ -11,12 +26,13 @@ body {
     align-items: center;
     font-family: Arial, sans-serif;
 }
-.login{
-    background-color: rgba(0, 0, 0, 0.699);
+
+.login {
+    background-color: var(--back);
     padding: 4vw;
     border-radius: 5px;
     box-shadow: 0 1vw 2vw rgb(0, 0, 0);
-    border: 2px solid rgb(255, 255, 255);
+    border: 2px solid var(--borda);
 }
 
 input {
@@ -25,21 +41,25 @@ input {
     border-radius: 5px;
     border: none;
     background-color: var(--fundo-preto);
-    border-bottom:2px solid rgb(255, 255, 255) ;
-    color: white;
+    border-bottom: 2px solid var(--borda);
+    color: black;
 }
-#botao:hover{
+
+#botao:hover {
     background-color: #ffffff33;
     color: black;
     cursor: pointer;
 }
-input::placeholder{
+
+input::placeholder {
     color: rgba(255, 255, 255, 0.479);
     text-align: center;
 }
-input:focus{
+
+input:focus {
     color: white;
 }
+
 @media (max-width: 600px) {
     #Text {
         font-size: 3vw;
@@ -49,34 +69,32 @@ input:focus{
         width: 80vw;
     }
 }
+
 .arvo-regular {
-  font-family: "Arvo", serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Arvo", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .arvo-bold {
-  font-family: "Arvo", serif;
-  font-weight: 700;
-  font-style: normal;
+    font-family: "Arvo", serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .arvo-regular-italic {
-  font-family: "Arvo", serif;
-  font-weight: 400;
-  font-style: italic;
+    font-family: "Arvo", serif;
+    font-weight: 400;
+    font-style: italic;
 }
 
 .arvo-bold-italic {
-  font-family: "Arvo", serif;
-  font-weight: 700;
-  font-style: italic;
+    font-family: "Arvo", serif;
+    font-weight: 700;
+    font-style: italic;
 }
 
 /*Darkmode*/
-.darkmode {
-
-}
 
 #dark-mode-toggle img:first-child {
     display: block;
@@ -115,4 +133,5 @@ input:focus{
 #dark-mode-toggle {
     cursor: pointer;
 }
+
 /*Fim darkmode*/

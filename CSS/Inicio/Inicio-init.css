@@ -1,23 +1,47 @@
 :root {
     --color-lt: #fffefe;
     --bg-color: rgba(255, 255, 255, 0.301);
+    --fundo-preto: #1d1d1d;
+    --back: rgba(0, 0, 0, 0.699);
+    --borda: rgb(255, 255, 255);
+    --text: rgb(255, 255, 255);
 }
+
+.darkmode {
+    --color-lt: #000000;
+    --bg-color: rgba(255, 255, 255, 0.301);
+    --fundo-preto: #1d1d1d;
+    --back: rgba(255, 255, 255, 0.699);
+    --borda: rgb(0, 0, 0);
+    --text: rgb(0, 0, 0);
+}
+
 
 * {
     font-family: Arial, sans-serif;
-    color: var(--color-lt);
     text-decoration: none;
+    color: var(--text);
 }
 
+.text,
+.text h2,
+.text p,
+#ben,
+#sob {
+    color: white !important;
+}
+
+
+
 header {
-    background-color: rgba(0, 0, 0, 0.514);
+    background-color: var(--back);
     border-bottom: 2px solid rgba(0, 0, 0, 0.295);
 }
 
 body {
     background-image: url(/images/fundo.jpg);
-    background-color: rgba(0, 0, 0, 0.6);
-    background-size:cover ;
+    background-color: var(--back);
+    background-size: cover;
     height: 100%;
     margin: 0;
 }
@@ -30,7 +54,7 @@ body {
         /* Alinha à esquerda */
     }
 
-    #trilho{
+    #trilho {
         margin-left: 0;
         /* Remove o "empurrão" lateral */
         align-self: flex-end;
@@ -42,11 +66,13 @@ body {
         flex-direction: row;
         width: 77%;
     }
-    #tripla{
+
+    #tripla {
         margin-left: 0;
         flex-direction: row;
         width: 50%;
     }
+
     #home,
     #sobre,
     #contato,
@@ -69,34 +95,32 @@ body {
     text-align: center;
     border-radius: 6px;
 }
+
 .arvo-regular {
-  font-family: "Arvo", serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Arvo", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .arvo-bold {
-  font-family: "Arvo", serif;
-  font-weight: 700;
-  font-style: normal;
+    font-family: "Arvo", serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .arvo-regular-italic {
-  font-family: "Arvo", serif;
-  font-weight: 400;
-  font-style: italic;
+    font-family: "Arvo", serif;
+    font-weight: 400;
+    font-style: italic;
 }
 
 .arvo-bold-italic {
-  font-family: "Arvo", serif;
-  font-weight: 700;
-  font-style: italic;
+    font-family: "Arvo", serif;
+    font-weight: 700;
+    font-style: italic;
 }
 
 /*Darkmode*/
-.darkmode {
-
-}
 
 #dark-mode-toggle img:first-child {
     display: block;
@@ -135,4 +159,5 @@ body {
 #dark-mode-toggle {
     cursor: pointer;
 }
+
 /*Fim darkmode*/

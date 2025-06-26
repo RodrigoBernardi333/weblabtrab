@@ -26,8 +26,8 @@ body {
     --bg-color: rgba(255, 255, 255, 0.301);
     --header: rgba(255, 255, 255, 0.966);
     --texto: rgb(10, 10, 10);
-    --hover-bg: rgba(255, 255, 255, 0.4); 
-    --link-bg: rgba(0, 0, 0, 0.1); 
+    --hover-bg: rgba(255, 255, 255, 0.4);
+    --link-bg: rgba(0, 0, 0, 0.1);
 }
 
 
@@ -36,7 +36,6 @@ body {
 header {
     background-color: var(--header);
     color: black;
-    padding: 1rem 0;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
@@ -96,7 +95,6 @@ header {
     background-color: var(--bg-color);
     transition: 0.5s;
 }
-
 /* Main content */
 main {
     max-width: 1200px;
@@ -346,6 +344,7 @@ main {
 }
 
 /*Icones*/
+
 .top-icons {
     top: 1rem;
     right: 1rem;
@@ -399,7 +398,12 @@ main {
     background-color: #fff;
 }
 
-/*Icones*/
+
+.fixo {
+    color: black !important;
+}
+
+/*Fim dos icones*/
 /*Acessibilidade*/
 .acessibilidade {
     top: 1rem;
