@@ -1,21 +1,57 @@
+/* Variáveis globais para cores no modo claro */
+:root {
+  --color-lt: #fffefe;
+  /* cor clara */
+  --bg-color: rgba(255, 255, 255, 0.301);
+  /* fundo semi-transparente claro */
+  --text: white;
+  /* cor do texto no modo claro */
+  --back: black;
+  /* cor de fundo no modo claro */
+  --backtext: rgba(0, 0, 0, 0.26);
+  /* fundo semi-transparente para blocos de texto */
+}
+
+/* Variáveis globais para cores no modo escuro (classe .darkmode ativa) */
+.darkmode {
+  --color-lt: #fffefe;
+  --bg-color: rgba(255, 255, 255, 0.301);
+  --text: black;
+  /* cor do texto no modo escuro */
+  --back: white;
+  /* cor de fundo no modo escuro */
+  --backtext: rgba(243, 243, 243, 0.568);
+  /* fundo semi-transparente para blocos de texto */
+}
+
+/* Container do cabeçalho - flexível e responsivo */
 .cabec {
   display: flex;
   flex-wrap: wrap;
   gap: 1vw;
+  /* espaçamento entre itens */
   text-decoration: none;
   max-width: 100%;
 }
 
+/* Navegação principal dentro do cabeçalho */
 .op {
   display: flex;
   flex-direction: row;
   margin-left: 5rem;
+  /* afastamento da esquerda */
 }
 
-#home, #sobre, #contato, #apresentcao, #login {
+/* Itens do menu com padding para espaçamento */
+#home,
+#sobre,
+#contato,
+#apresentcao,
+#login {
   padding: 1rem;
 }
 
+/* Efeito hover para os links do menu */
 #home:hover,
 #sobre:hover,
 #contato:hover,
@@ -23,18 +59,13 @@
 #login:hover,
 #trilho:hover {
   background-color: var(--bg-color);
+  /* fundo semi-transparente conforme tema */
   transition: 0.5s;
+  /* transição suave */
 }
 
-#trilho {
-  background-color: transparent;
-  border: none;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  margin-left: auto;
-}
-
-main > section {
+/* Estilização da seção principal */
+main>section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -42,38 +73,48 @@ main > section {
   gap: 4rem;
   padding: 2rem;
   margin-top: 8rem;
+  /* espaço para o header fixo */
 }
 
+/* Blocos de texto */
 .text {
   border: 2px solid white;
+  /* borda branca por padrão */
   padding: 2rem;
-  background-color: rgba(0, 0, 0, 0.26);
+  background-color: var(--backtext);
+  /* fundo semitransparente conforme tema */
   font-size: 15px;
   max-width: 800px;
   text-align: justify;
   display: block;
 }
 
+/* Estilização do container dos perfis (imagem + texto) */
 .perfil {
   display: flex;
   flex-direction: row;
-  align-items: flex-start; /* IMPORTANTE: alinha pelo topo */
+  align-items: flex-start;
+  /* alinha pelo topo */
   justify-content: flex-start;
   gap: 2rem;
+  /* espaçamento entre imagem e texto */
   width: 100%;
   max-width: 1200px;
   margin-bottom: 2rem;
-  flex-wrap: nowrap; /* impede quebra para baixo */
+  flex-wrap: nowrap;
+  /* impede quebra para baixo */
 }
 
-
-
-#rodrigo, #gabriel, #vitor {
+/* Imagens dos perfis com borda branca */
+#rodrigo,
+#gabriel,
+#vitor {
   border: 2px solid white;
   max-width: 19rem;
   height: auto;
 }
 
+/* Container dos ícones no topo direito */
 .top-icons {
   top: 1rem;
   right: 1rem;
@@ -81,8 +122,10 @@ main > section {
   gap: 0.5rem;
   padding-left: 1rem;
   position: fixed;
+  /* fixo na tela */
 }
 
+/* Estilização dos ícones */
 .top-icons img {
   width: 24px;
   height: 24px;
@@ -90,18 +133,22 @@ main > section {
   transition: transform 0.2s;
 }
 
+/* Animação ao passar o mouse nos ícones */
 .top-icons img:hover {
   transform: scale(1.1);
   background-color: var(--bg-color);
+  /* fundo conforme tema */
   transition: 0.5s;
   border-radius: 1rem;
 }
 
+/* Menu de acessibilidade */
 #acessibilidade-menu {
   position: fixed;
   top: 3.5rem;
   right: 1rem;
   background-color: #ffffffdd;
+  /* branco translúcido */
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 0 10px #999;
@@ -110,6 +157,7 @@ main > section {
   color: #000;
 }
 
+/* Labels dentro do menu de acessibilidade */
 #acessibilidade-menu label {
   color: #000000;
   font-weight: bold;
@@ -117,6 +165,7 @@ main > section {
   margin-bottom: 0.5rem;
 }
 
+/* Selects dentro do menu de acessibilidade */
 #acessibilidade-menu select {
   color: #000;
   background-color: #fff;
@@ -125,13 +174,16 @@ main > section {
   border-radius: 4px;
 }
 
+/* Opções dos selects */
 #acessibilidade-menu select option {
   color: #000;
   background-color: #fff;
 }
 
-/* RESPONSIVIDADE */
+/* Estilos responsivos para telas até 768px */
 @media (max-width: 768px) {
+
+  /* Perfil empilhado para telas menores */
   .perfil {
     flex-direction: column;
     align-items: center;
@@ -139,35 +191,38 @@ main > section {
     flex-wrap: wrap;
   }
 
-.perfil img {
-  max-width: 80%;
-  margin-bottom: 1rem;
-  width: 250px;
-  height: auto;
-  object-fit: cover;
-  border: 2px solid white;
-  flex-shrink: 0; /* evita que a imagem diminua */
-}
+  /* Ajusta imagens dos perfis */
+  .perfil img {
+    max-width: 80%;
+    margin-bottom: 1rem;
+    width: 250px;
+    height: auto;
+    object-fit: cover;
+    border: 2px solid white;
+    flex-shrink: 0;
+    /* evita que diminua */
+  }
 
+  /* Ajusta blocos de texto */
+  .text {
+    width: 90%;
+    flex: 1;
+    max-width: 100%;
+    border: 2px solid white;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.26);
+    font-size: 15px;
+    text-align: justify;
+    overflow-wrap: break-word;
+  }
 
-.text {
-  width: 90%;
-  flex: 1;
-  max-width: 100%;
-  border: 2px solid white;
-  padding: 2rem;
-  background-color: rgba(0, 0, 0, 0.26);
-  font-size: 15px;
-  text-align: justify;
-  overflow-wrap: break-word;
-}
-
-
-  main > section {
+  /* Ajusta espaçamento do main > section */
+  main>section {
     padding: 1rem;
     gap: 2rem;
   }
 
+  /* Ajustes para menu de acessibilidade em telas menores */
   #acessibilidade-menu {
     width: 90%;
     right: 0.5rem;
@@ -175,11 +230,13 @@ main > section {
     top: 3rem;
   }
 
+  /* Ajustes nos ícones topo */
   .top-icons {
     top: 0.5rem;
     right: 0.5rem;
   }
 
+  /* Ajusta navegação principal para coluna */
   .op {
     flex-direction: column;
     align-items: center;
@@ -192,6 +249,42 @@ main > section {
   }
 }
 
+/* Classe para texto fixo (exemplo) */
 .fixo {
   color: black !important;
+}
+
+/* Estilo do texto no header e blocos text */
+.text {
+  color: var(--text);
+  /* cor do texto conforme tema */
+  background-color: var(--backtext);
+  /* fundo semitransparente conforme tema */
+}
+
+/* Cores dos links da navegação conforme tema */
+.op a {
+  color: var(--text);
+}
+
+/* Aplica cor do texto para todos os elementos textuais principais */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+li,
+a,
+strong,
+em,
+article,
+section,
+label,
+select,
+input,
+button {
+  color: var(--text);
 }

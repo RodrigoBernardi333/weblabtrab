@@ -1,33 +1,67 @@
+/* Variáveis globais para cores no modo claro */
 :root {
   --color-lt: #fffefe;
+  /* cor clara */
   --bg-color: rgba(255, 255, 255, 0.301);
+  /* fundo semi-transparente claro */
+  --text: white;
+  /* cor do texto no modo claro */
+  --back: black;
+  /* cor de fundo no modo claro */
 }
 
+/* Variáveis globais para cores no modo escuro (classe .darkmode ativa) */
+.darkmode {
+  --color-lt: #fffefe;
+  --bg-color: rgba(255, 255, 255, 0.274);
+  --text: black;
+  /* cor do texto no modo escuro */
+  --back: white;
+  /* cor de fundo no modo escuro */
+}
+
+/* Reset e padrão para todas as tags */
 * {
   font-family: Arial, sans-serif;
-  color: var(--color-lt);
+  /* fonte padrão */
   text-decoration: none;
+  /* sem sublinhado em links */
 }
 
+/* Estilização do header fixo no topo */
 header {
   position: fixed;
+  /* fixo no topo */
   top: 0;
   left: 0;
   width: 100%;
-  background-color: black;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.295);
+  /* ocupa toda largura */
+  background-color: var(--back);
+  /* cor de fundo conforme tema */
+  border-bottom: 2px solid var(--back);
+  /* borda inferior usa mesma cor do fundo */
   z-index: 1000;
+  /* fica acima de outros elementos */
 }
 
+/* Estilo do corpo da página */
 body {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(/images/fundo.jpg) no-repeat center center fixed;
+  /* imagem de fundo com camada escura */
   background-size: cover;
+  /* cobre toda a área */
   height: 100vh;
+  /* altura total da viewport */
   margin: 0;
+  /* remove margem padrão */
   overflow-x: hidden;
+  /* esconde scroll horizontal */
+  color: var(--text);
+  /* cor do texto conforme tema */
 }
 
+/* Estilos para os links do menu */
 #home,
 #sobre,
 #contato,
@@ -35,11 +69,14 @@ body {
 #login,
 #trilho {
   cursor: pointer;
+  /* cursor de clique */
   min-width: 80px;
   text-align: center;
   border-radius: 6px;
+  /* cantos arredondados */
 }
 
+/* Famílias de fontes Arvo com variações para textos específicos */
 .arvo-regular {
   font-family: "Arvo", serif;
   font-weight: 400;
@@ -64,14 +101,16 @@ body {
   font-style: italic;
 }
 
+/* Cor especial para links do GitHub */
 #git {
   color: rgb(0, 255, 221);
 }
 
-/* RESPONSIVO */
+/* Estilos responsivos para telas até 768px (celulares/tablets) */
 @media (max-width: 768px) {
   .cabec {
     flex-direction: row;
+    /* muda layout do header */
     align-items: flex-start;
   }
 
@@ -84,6 +123,7 @@ body {
 
   .top-icons img:focus {
     outline: 2px solid #fff;
+    /* contorno para foco acessível */
     outline-offset: 4px;
   }
 
@@ -100,52 +140,57 @@ body {
   #apresentcao,
   #login {
     width: 100%;
+    /* ocupam toda a largura */
     text-align: left;
     padding: 1rem 0.5rem;
   }
 }
 
-/*Darkmode*/
-.darkmode {
-    --color-lt: #fffefe;
-    --bg-color: rgba(255, 255, 255, 0.301);
-}
+/* Controle da exibição dos ícones do botão dark mode */
 
+/* Ícone do modo claro visível por padrão */
 #dark-mode-toggle img:first-child {
-    display: block;
+  display: block;
 }
 
+/* Ícone do modo escuro escondido por padrão */
 #dark-mode-toggle img:last-child {
-    display: none;
+  display: none;
 }
 
+/* Quando o darkmode está ativo: */
 .darkmode #dark-mode-toggle img:first-child {
-    display: none;
+  display: none;
+  /* esconde o ícone claro */
 }
 
 .darkmode #dark-mode-toggle img:last-child {
-    display: block;
+  display: block;
+  /* mostra o ícone escuro */
 }
 
-/* Mostra apenas o ícone claro */
+/* Ícones de acessibilidade claros visíveis por padrão */
 .acess-icon.light {
-    display: block;
+  display: block;
 }
 
+/* Ícones escuros escondidos por padrão */
 .acess-icon.dark {
-    display: none;
+  display: none;
 }
 
-/* Quando o modo escuro estiver ativo, inverte */
+/* Quando darkmode ativo: inverte a exibição dos ícones */
 .darkmode .acess-icon.light {
-    display: none;
+  display: none;
 }
 
 .darkmode .acess-icon.dark {
-    display: block;
+  display: block;
 }
 
+/* Cursor pointer para o toggle de dark mode */
 #dark-mode-toggle {
-    cursor: pointer;
+  cursor: pointer;
 }
-/*Fim darkmode*/
+
+/* Fim do darkmode */
