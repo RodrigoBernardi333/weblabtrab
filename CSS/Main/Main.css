@@ -1,12 +1,14 @@
-*{
-   font-family: Arial, sans-serif;
+* {
+    font-family: Arial, sans-serif;
     color: var(--color-lt);
     text-decoration: none;
 }
+
 :root {
     --color-lt: #fffefe;
     --bg-color: rgba(255, 255, 255, 0.301);
 }
+
 header {
     background-color: rgba(0, 0, 0, 0.514);
     border-bottom: 2px solid rgba(0, 0, 0, 0.295);
@@ -16,8 +18,15 @@ body {
     background-image: url(/images/fundo.jpg);
     margin: 0;
 }
-footer{
+
+footer {
     background-color: white;
     max-width: 100%;
     border: 5px solid white;
+}
+
+@media (max-width: 450px) {
+    .swiper {
+        height: 270px;
+    }
 }
