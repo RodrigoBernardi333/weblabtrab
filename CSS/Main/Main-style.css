@@ -86,6 +86,12 @@ header {
 #apresentcao:hover,
 #login:hover,
 #trilho:hover {
+  background-color: var(--bg-color);
+  transition: 0.5s;
+}
+
+
+#trilho:hover {
     background-color: var(--bg-color);
     transition: 0.5s;
 }

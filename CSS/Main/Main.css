@@ -33,6 +33,16 @@ body {
 #sobre,
 #contato,
 #apresentcao,
+<<<<<<< HEAD
+#login,
+#trilho {
+    cursor: pointer;
+    min-width: 80px;
+    text-align: center;
+    border-radius: 6px;
+}
+
+=======
 #login {
     width: 100%;
     text-align: left;
@@ -40,6 +50,7 @@ body {
 }
 
 
+>>>>>>> 586a1e3b8387209aa017c8d9c09d1a4cf5f9bc2d
 footer {
     background-color: white;
     max-width: 100%;
@@ -78,22 +89,11 @@ footer {
         justify-content: space-between;
     }
 
+
     #home,
     #sobre,
     #contato,
     #apresentcao,
-    #login,
-    #trilho {
-        cursor: pointer;
-        min-width: 80px;
-        text-align: center;
-        border-radius: 6px;
-    }
-
-
-    #home,
-    #sobre,
-    #contato,
     #login {
         width: 100%;
         text-align: left;
