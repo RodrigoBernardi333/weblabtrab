@@ -36,7 +36,6 @@ body {
 header {
     background-color: var(--header);
     color: black;
-    padding: 1rem 0;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
@@ -62,6 +61,7 @@ header {
 #home,
 #sobre,
 #contato,
+#apresentcao,
 #login {
     padding: 1rem;
     border-radius: 5px;
@@ -70,22 +70,25 @@ header {
     font-weight: 500;
 }
 
+
 #home:hover,
 #sobre:hover,
 #contato:hover,
+#apresentcao:hover,
 #login:hover {
     background-color: var(--hover-bg);
     transform: translateY(-2px);
 }
 
-
-
-
+#home:hover,
+#sobre:hover,
+#contato:hover,
+#apresentcao:hover,
+#login:hover,
 #trilho:hover {
     background-color: var(--bg-color);
     transition: 0.5s;
 }
-
 /* Main content */
 main {
     max-width: 1200px;

@@ -12,7 +12,7 @@
 .darkmode {
     --fundo-preto: #dbdbdb;
     --back: rgba(255, 255, 255, 0.226);
-    --borda: rgb(255, 0, 0);
+    --borda: rgb(255, 115, 0);
     --text: white;
 }
 
