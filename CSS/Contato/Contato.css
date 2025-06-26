@@ -1,10 +1,58 @@
 :root {
     --color-lt: #fffefe;
     --bg-color: rgba(255, 255, 255, 0.301);
+    --fundo: rgba(255, 255, 255, 0.100);
+    --servico: rgba(48, 6, 201, 0.185);
+    --header: black;
+}
+
+.darkmode {
+    --color-lt: #000000;
+    --bg-color: rgba(114, 114, 114, 0.63);
+    --fundo: rgba(219, 219, 219, 0.336);
+    --header: #e6e6e6;
+}
+
+#dark-mode-toggle img:first-child {
+    display: block;
+}
+
+#dark-mode-toggle img:last-child {
+    display: none;
+}
+
+.darkmode #dark-mode-toggle img:first-child {
+    display: none;
+}
+
+.darkmode #dark-mode-toggle img:last-child {
+    display: block;
+}
+
+/* Mostra apenas o ícone claro */
+.acess-icon.light {
+  display: block;
+}
+
+.acess-icon.dark {
+  display: none;
+}
+
+/* Quando o modo escuro estiver ativo, inverte */
+.darkmode .acess-icon.light {
+  display: none;
+}
+
+.darkmode .acess-icon.dark {
+  display: block;
+}
+
+#dark-mode-toggle {
+  cursor: pointer;
 }
 
 * {
-    color: white;
+    color: var(--color-lt);
     font-family: Arial, sans-serif;
     text-decoration: none;
 }
@@ -18,7 +66,7 @@
 
 form {
     padding-top: 1rem;
-    background-color: rgba(255, 255, 255, 0.100);
+    background-color: var(--fundo);
     display: flex;
     margin: 0 auto;
     flex-direction: column;
@@ -50,7 +98,6 @@ input {
 }
 
 #botao {
-    color: white;
     display: block;
     margin: 2rem auto 1rem auto;
     padding: 0.8rem;
@@ -102,11 +149,11 @@ ul {
 }
 
 .servicos {
-    background-color: rgba(48, 6, 201, 0.185);
+    background-color: var(--servico);
     max-width: 40rem;
     margin: 5rem auto;
     padding: 2rem;
-    border: 2px solid white;
+    border: 2px solid var(--color-lt);
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
@@ -179,8 +226,8 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: black;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.295);
+    background-color: var(--header);
+    border-bottom: 2px solid var(--header);
     z-index: 1000;
     margin-bottom: 5rem;
 }
@@ -207,23 +254,6 @@ header {
     padding: 1rem;
 }
 
-#home:hover,
-#sobre:hover,
-#contato:hover,
-#login:hover,
-#trilho:hover {
-    background-color: var(--bg-color);
-    transition: 0.5s;
-}
-
-#trilho {
-    background-color: transparent;
-    border: none;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    margin-left: auto;
-}
-
 main>section {
     display: flex;
     flex-direction: column;
@@ -241,14 +271,12 @@ main>section {
         /* Alinha à esquerda */
     }
 
-    #trilho,
-    .top-icons img {
-        cursor: pointer;
-        border-radius: 6px;
-        transition: 0.3s;
+    .acessibilidade img:focus {
+        outline: 2px solid #fff;
+        outline-offset: 4px;
     }
 
-    .top-icons img:focus {
+    #dark-mode-toggle img:focus {
         outline: 2px solid #fff;
         outline-offset: 4px;
     }
@@ -272,17 +300,7 @@ main>section {
     }
 }
 
-#home,
-#sobre,
-#contato,
-#login,
-#trilho {
-    cursor: pointer;
-    min-width: 80px;
-    text-align: center;
-    border-radius: 6px;
-}
-
+/*Fontes*/
 .arvo-regular {
     font-family: "Arvo", serif;
     font-weight: 400;
@@ -307,9 +325,9 @@ main>section {
     font-style: italic;
 }
 
-/*Acessibilidade*/
+/*Icones*/
 
-.top-icons {
+.icones-topo {
     top: 1rem;
     right: 1rem;
     display: flex;
@@ -319,7 +337,7 @@ main>section {
 }
 
 
-.top-icons img {
+.icones-topo img {
     width: 24px;
     height: 24px;
     cursor: pointer;
@@ -327,14 +345,14 @@ main>section {
 
 }
 
-.top-icons img:hover {
+.icones-topo img:hover {
     transform: scale(1.1);
     background-color: var(--bg-color);
     transition: 0.5s;
     border-radius: 1rem;
 }
 
-#acessibilidade-menu {
+#icones-topo-menu {
     position: fixed;
     top: 5rem;
     right: 1rem;
@@ -347,7 +365,7 @@ main>section {
     color: #000;
 }
 
-#acessibilidade-menu label {
+#icones-topo-menu label {
     color: #000000;
     /* preto para contraste com fundo claro */
     font-weight: bold;
@@ -356,18 +374,8 @@ main>section {
 }
 
 
-#acessibilidade-menu select {
-    color: #000;
-    /* Cor do texto dentro do select */
-    background-color: #fff;
-    /* Cor de fundo (opcional) */
-    border: 1px solid #aaa;
-    /* Borda visível */
-    padding: 0.3rem;
-    border-radius: 4px;
-}
 
-#acessibilidade-menu select option {
+#icones-topo-menu select option {
     color: #000;
     background-color: #fff;
 }
@@ -377,7 +385,19 @@ main>section {
     color: black !important;
 }
 
-/*Fim da Acessibilidade*/
+/*Fim dos icones*/
+
+/* Espaço diferente para os botões */
+
+#dark-mode-toggle {
+    top: 1rem;
+    right: 4rem;
+    /* Distancia da borda direita */
+}
+
+
+
+/* Fim do Header */
 /*Responsividade*/
 @media (max-width: 768px) {
     body {
@@ -418,7 +438,7 @@ main>section {
         font-size: 1rem;
     }
 
-    .top-icons {
+    .acessibilidade {
         top: 0.5rem;
         right: 0.5rem;
     }
@@ -430,5 +450,46 @@ main>section {
         font-size: 1rem;
     }
 }
+
 /*fim da responsividade*/
-/* Fim do Header */
+/*Acessibilidade*/
+.acessibilidade {
+    top: 1rem;
+    right: 1rem;
+    /* Mantém ela na ponta */
+}
+
+#acessibilidade-menu {
+    position: fixed;
+    top: 3.5rem;
+    right: 1rem;
+    background-color: #ffffffdd;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #999;
+    z-index: 1000;
+    font-size: 0.9rem;
+    color: #000;
+}
+
+#acessibilidade-menu label {
+    color: #000000;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+#acessibilidade-menu select {
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #aaa;
+    padding: 0.3rem;
+    border-radius: 4px;
+}
+
+#acessibilidade-menu select option {
+    color: #000;
+    background-color: #fff;
+}
+
+/*Acessibilidade*/

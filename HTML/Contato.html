@@ -10,12 +10,12 @@
         href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="/CSS/Contato/Contato.css">
-    <script src="/JS/dark-mode.js"></script>
+    <script src="/JS/dark-mode.js" defer></script>
     <script src="/JS/acessibilidade.js"></script>
     <title>Ciber Cia</title>
 </head>
 
-<body>
+<body class="darkmode">
     <header>
         <section>
             <div class="cabec">
@@ -25,12 +25,20 @@
                     <a href="/HTML/Contato.html" id="contato">Contato</a>
                     <a href="/HTML/Login_init.html" target="_blank" id="login">Login</a>
                 </nav>
-                <div class="top-icons">
-                    <img src="/images/icons/dark_mode-light.svg" alt="Modo Escuro" id="dark-mode-toggle"
-                        onclick="toggleDarkMode()" />
-                    <img src="/images/icons/accessibility.png" alt="Acessibilidade" id="acessibilidade-toggle"
-                        onclick="toggleAcessibilidadeMenu()" />
+                <div class="icones-topo">
+                    <div id="dark-mode-toggle">
+                        <img class="light-icon" src="/images/icons/dark_mode-light.svg" alt="Modo Escuro">
+                        <img class="dark-icon" src="/images/icons/dark_mode-dark.svg" alt="Modo Claro">
+                    </div>
+                    <div class="acessibilidade">
+                        <img class="acess-icon light" src="/images/icons/accessibility.png" alt="Acessibilidade Claro"
+                            onclick="toggleAcessibilidadeMenu()" />
+                        <img class="acess-icon dark" src="/images/icons/acessibilidadeblack.png"
+                            alt="Acessibilidade Escuro" onclick="toggleAcessibilidadeMenu()" />
+                    </div>
                 </div>
+            </div>
+            </div>
             </div>
         </section>
     </header>
@@ -78,27 +86,22 @@
             </ul>
             <button id="botaoservico" type="button" onclick="alert('Olá estamos em manutenção!')">Ver planos</button>
         </div>
-
-        <!-- Menu flutuante de acessibilidadea-->
+        <!-- Menu flutuante de acessibilidade -->
         <div id="acessibilidade-menu" style="display: none;">
             <label class="fixo">Tamanho da fonte:
-                <!-- Menu flutuante de acessibilidade -->
-                <div id="acessibilidade-menu" style="display: none;">
-                    <label>Tamanho da fonte:
+                <select onchange="alterarTamanhoFonte(this.value)">
+                    <option value="14px">Pequeno</option>
+                    <option value="16px" selected>Médio</option>
+                    <option value="18px">Grande</option>
+                    <option value="20px">Muito grande</option>
+                </select>
+            </label>
 
-                        <select onchange="alterarTamanhoFonte(this.value)">
-                            <option value="14px">Pequeno</option>
-                            <option value="16px" selected>Médio</option>
-                            <option value="18px">Grande</option>
-                            <option value="20px">Muito grande</option>
-                        </select>
-                    </label>
+            <label class="fixo">Cor do texto:
 
-                    <label class="fixo">Cor do texto:
-                        <label>Cor do texto:
-                            <input type="color" onchange="alterarCorTexto(this.value)" />
-                        </label>
-                </div>
+                <input type="color" onchange="alterarCorTexto(this.value)" />
+            </label>
+        </div>
     </main>
 </body>
 
