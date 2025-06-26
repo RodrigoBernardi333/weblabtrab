@@ -26,8 +26,8 @@ body {
     --bg-color: rgba(255, 255, 255, 0.301);
     --header: rgba(255, 255, 255, 0.966);
     --texto: rgb(10, 10, 10);
-    --hover-bg: rgba(255, 255, 255, 0.4); 
-    --link-bg: rgba(0, 0, 0, 0.1); 
+    --hover-bg: rgba(255, 255, 255, 0.4);
+    --link-bg: rgba(0, 0, 0, 0.1);
 }
 
 
@@ -333,10 +333,9 @@ main {
     transition: 0.3s;
     background-color: rgba(255, 255, 255, 0.4);
 }
-<<<<<<< HEAD
-=======
 
 /*Icones*/
+
 .top-icons {
     top: 1rem;
     right: 1rem;
@@ -390,7 +389,12 @@ main {
     background-color: #fff;
 }
 
-/*Icones*/
+
+.fixo {
+    color: black !important;
+}
+
+/*Fim dos icones*/
 /*Acessibilidade*/
 .acessibilidade {
     top: 1rem;
@@ -432,4 +436,3 @@ main {
 }
 
 /*Acessibilidade*/
->>>>>>> 67234b1b2184d69ed327fdb19a13ea4d6f5a4ad7
