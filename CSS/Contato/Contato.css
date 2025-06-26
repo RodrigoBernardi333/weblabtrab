@@ -1,6 +1,6 @@
 :root {
     /* Variáveis CSS para temas claros */
-    --color-lt: #fffefe;
+    --color-lt: #ffffff;
     --bg-color: rgba(255, 255, 255, 0.301);
     --fundo: rgba(255, 255, 255, 0.100);
     --servico: rgba(48, 6, 201, 0.185);
@@ -459,7 +459,7 @@ main>section {
     --bg-color: rgba(114, 114, 114, 0.63);
     --fundo: rgba(219, 219, 219, 0.336);
     --servico: rgba(78, 230, 250, 0.171);
-    --header: #e6e6e6;
+    --header: #ffffff;
 }
 
 #dark-mode-toggle img:first-child {

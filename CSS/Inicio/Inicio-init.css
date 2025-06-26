@@ -13,7 +13,7 @@
     --color-lt: #000000;
     --bg-color: rgba(255, 255, 255, 0.301);
     --fundo-preto: #1d1d1d;
-    --back: rgba(255, 255, 255, 0.699);
+    --back: rgb(255, 255, 255);
     --borda: rgb(0, 0, 0);
     --text: rgb(0, 0, 0);
 }
