@@ -1,7 +1,9 @@
+/* Definição de variáveis para o modo claro */
 :root {
-  /* Cores padrão (modo claro) */
   --color-lt: #fffefe;
   --bg-color: rgba(255, 255, 255, 0.301);
+  --bg-color-hover: rgba(255, 255, 255, 0.2);
+  /* Cor para hover no modo claro */
   --fundo-preto: #1d1d1d;
   --back: rgba(0, 0, 0, 0.699);
   --borda: rgb(255, 255, 255);
@@ -9,10 +11,12 @@
   --header-color: rgba(255, 255, 255, 0.699);
 }
 
+/* Variáveis sobrescritas para modo escuro */
 .darkmode {
-  /* Cores para o modo escuro */
   --color-lt: #000000;
   --bg-color: rgba(255, 255, 255, 0.301);
+  --bg-color-hover: rgba(0, 0, 0, 0.2);
+  /* Cor para hover no modo escuro */
   --fundo-preto: #1d1d1d;
   --back: rgba(255, 255, 255, 0.699);
   --borda: rgb(0, 0, 0);
@@ -34,20 +38,33 @@
   margin-left: 5rem;
 }
 
-/* Navegação - itens com hover */
-
-#home, #sobre, #apresentacao, #contato, #apresentcao, #login {
+/* Navegação - itens com padding e hover */
+#home,
+#sobre,
+#apresentacao,
+#contato,
+#apresentcao,
+#login {
   padding: 1rem;
+  background-color: transparent;
+  /* garante fundo transparente padrão */
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.5s ease, transform 0.3s ease;
+  display: inline-block;
+  /* para hover funcionar */
 }
 
+/* Hover usando a variável --bg-color-hover */
 #home:hover,
 #sobre:hover,
 #apresentacao:hover,
 #contato:hover,
 #apresentcao:hover,
 #login:hover {
-  background-color: var(--bg-color);
-  transition: 0.5s;
+  background-color: var(--bg-color-hover);
+  /* pode adicionar animação de leve escala se quiser */
+  /* transform: scale(1.05); */
 }
 
 #trilho {
@@ -97,21 +114,22 @@
   padding: 1rem;
   border: 1px solid white;
   border-radius: 50px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.5s ease, transform 0.3s ease;
 }
 
 #ben:hover {
   background-color: green;
-  transition: 0.5s;
   transform: scale(1.1);
 }
 
 #sob:hover {
   background-color: orange;
-  transition: 0.5s;
   transform: scale(1.1);
 }
 
-main > section {
+main>section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -135,13 +153,13 @@ main > section {
   width: 24px;
   height: 24px;
   cursor: pointer;
-  transition: transform 0.2s;
+  transition: transform 0.2s ease;
 }
 
 .top-icons img:hover {
   transform: scale(1.1);
   background-color: var(--bg-color);
-  transition: 0.5s;
+  transition: 0.5s ease;
   border-radius: 1rem;
 }
 
@@ -181,7 +199,6 @@ main > section {
 
 /* ===== Responsividade para telas menores ===== */
 @media (max-width: 768px) {
-
   .text {
     width: 90%;
     flex: 1;
@@ -194,7 +211,7 @@ main > section {
     overflow-wrap: break-word;
   }
 
-  main > section {
+  main>section {
     padding: 1rem;
     gap: 2rem;
   }

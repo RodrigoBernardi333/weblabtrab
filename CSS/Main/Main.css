@@ -12,6 +12,7 @@
     --bg-color: rgba(255, 255, 255, 0.301);
     --header: rgba(0, 0, 0, 0.514);
     --texto: white;
+    --bg-color-hover: rgba(255, 255, 255, 0.2); /* cor para hover no claro */
 }
 
 /* Sobrescreve as variáveis para o tema escuro */
@@ -20,6 +21,7 @@
     --bg-color: rgba(255, 255, 255, 0.301);
     --header: rgb(255, 255, 255);
     --texto: black;
+    --bg-color-hover: rgba(0, 0, 0, 0.2); /* cor para hover no escuro */
 }
 
 /* Estilização do cabeçalho */
@@ -47,6 +49,20 @@ body {
     min-width: 80px;
     text-align: center;
     border-radius: 6px;
+    background-color: transparent;
+    transition: background-color 0.4s ease;
+    display: inline-block; /* garante fundo para hover */
+}
+
+/* Efeito hover para itens de navegação */
+#home:hover,
+#sobre:hover,
+#contato:hover,
+#apresentcao:hover,
+#login:hover,
+#trilho:hover {
+    background-color: var(--bg-color-hover);
+    transition: background-color 0.4s ease;
 }
 
 /* Estilo do rodapé */
@@ -105,11 +121,11 @@ footer {
 
 /* ---------- Darkmode ---------- */
 
-/* Essas variáveis já foram definidas acima, você pode manter só uma definição de .darkmode se quiser evitar repetição */
 .darkmode {
     --color-lt: #000000;
     --bg-color: rgba(255, 255, 255, 0.301);
     --header: rgb(255, 255, 255);
+    --bg-color-hover: rgba(0, 0, 0, 0.2);
 }
 
 /* Mostra o ícone do sol (modo claro) por padrão */
