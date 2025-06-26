@@ -137,50 +137,48 @@
     text-align: justify;
     margin: 0 auto;
 }
-
 .cookies-msg {
-    width: 80%;
-    max-width: 600px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.9);
-    position: fixed;
-    bottom: 5%;
-    left: 50%;
-    transform: translateX(-50%);
-    border: 2px solid #fff;
-    border-radius: 15px;
-    padding: 1rem 1.5rem;
-    display: none;
-    z-index: 1000;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-    font-family: sans-serif;
+  display: none; /* começa escondido */
+  width: 80%;
+  max-width: 600px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 2px solid #fff;
+  border-radius: 15px;
+  padding: 1rem 1.5rem;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  font-family: sans-serif;
 }
 
 .cookies-msg.mostrar {
-    display: block;
+  display: block;
 }
 
 .cookies-msg .cookies-txt {
-    display: flex;
-    align-items: center;
-    text-align: justify;
-}
-
-.cookies-msg .cookies-btn {
-    margin-left: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  text-align: justify;
 }
 
 .cookies-msg .cookies-btn button {
-    background-color: black;
-    color: white;
-    padding: 1rem;
-    font-weight: 700;
-    border: 2px solid white;
-    cursor: pointer;
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  font-weight: 700;
+  border: 2px solid white;
+  cursor: pointer;
+  border-radius: 10px;
 }
 
 .cookies-msg .cookies-btn button:hover {
-    transform: scale(1.1);
-    transition: 0.5s;
-    background-color: rgba(255, 255, 255, 0.486);
+  transform: scale(1.1);
+  transition: 0.3s;
+  background-color: rgba(255, 255, 255, 0.4);
 }

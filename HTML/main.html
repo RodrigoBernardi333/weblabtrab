@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/CSS/Main/Main.css">
     <link rel="stylesheet" href="/CSS/Main/Main-style.css">
-    <script src="/JS/dark-mode.js"></script>
+    <script src="/JS/dark-mode.js" defer></script>
+    <script src="/JS/cookies.js" defer></script>
     <title>Document</title>
 </head>
 
@@ -15,13 +16,13 @@
         <section>
             <div class="cabec">
                 <nav class="op">
-                    <a href="#" id="home">Home</a>
-                    <a href="#" id="sobre">Sobre</a>
-                    <a href="#" id="contato">Contato</a>
+                    <a href="/HTML/inicio.html" target="_blank" id="home">Home</a>
+                    <a href="/HTML/Sobre.html" target="_blank" id="sobre">Sobre</a>
+                    <a href="/HTML/Contato.html" target="_blank" id="contato">Contato</a>
                     <a href="/HTML/Login_init.html" target="_blank" id="login">Login</a>
                 </nav>
                 <button id="trilho">
-                    <img src="/images/icons/dark_mode-light.svg" alt=" icone de lua preto">
+                    <img id="icon" src="/images/icons/dark_mode-light.svg" alt="ícone de tema" />
                 </button>
             </div>
         </section>
@@ -66,11 +67,11 @@
             </div>
             <div class="cookies-msg" id="cookies-msg">
                 <div class="cookies-txt">
-                    <p>Utilizamos cookies para personalizar conteúdos e melhorar a sua experiência de navegação em nosso
-                        site. Esses dados nos ajudam a entender melhor como você interage com nossos serviços,
-                        permitindo oferecer funcionalidades mais relevantes e eficientes. Ao continuar navegando em
-                        nosso site, você concorda com o uso de cookies, conforme nossa Política de Privacidade e de
-                        Cookies.</p>
+                    <p>
+                        Utilizamos cookies para personalizar conteúdos e melhorar a sua experiência de navegação em
+                        nosso site.
+                        Ao continuar, você concorda com nossa Política de Privacidade.
+                    </p>
                     <div class="cookies-btn">
                         <button onclick="aceito()">Aceito</button>
                     </div>
