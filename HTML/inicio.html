@@ -2,38 +2,49 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres para UTF-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura viewport para responsividade -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Pré-conexão para otimizar carregamento das fontes -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Pré-conexão para fontes Google com crossorigin -->
     <link
         href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="/CSS/Inicio/Inicio-init-style.css">
-    <link rel="stylesheet" href="/CSS/Inicio/Inicio-init.css">
-    <script src="/JS/dark-mode.js" defer></script>
-    <script src="/JS/acessibilidade.js"></script>
+        rel="stylesheet"> <!-- Importa fontes Google usadas no site -->
+    <link rel="stylesheet" href="/CSS/Inicio/Inicio-init-style.css"> <!-- CSS principal do layout -->
+    <link rel="stylesheet" href="/CSS/Inicio/Inicio-init.css"> <!-- CSS adicional para estilo -->
+    <script src="/JS/dark-mode.js" defer></script> <!-- Script para alternar modo escuro, carregado com defer -->
+    <script src="/JS/acessibilidade.js"></script> <!-- Script para funcionalidades de acessibilidade -->
     <link rel="icon" href="/images/icons/gnuprivacyguard.svg" type="image/svg+xml">
-    <title>CypherNode</title>
+    <!-- Ícone do site na aba do navegador -->
+    <title>CypherNode</title> <!-- Título da página -->
 </head>
 
 <body>
     <header>
         <section>
             <div class="cabec">
+                <!-- Container do cabeçalho -->
                 <nav class="op">
+                    <!-- Navegação principal -->
                     <a href="/HTML/Inicio.html" id="home">Home</a>
                     <a href="/HTML/Sobre.html" id="sobre">Sobre</a>
                     <a href="/HTML/Contato.html" id="contato">Contato</a>
                     <a href="/HTML/index.html" target="_blank" id="apresentacao">Apresentação</a>
-                    <a href="/HTML/Login_init.html" target="_blank" id="login">Login</a>
+                    <!-- Abre em nova aba -->
+                    <a href="/HTML/Login_init.html" target="_blank" id="login">Login</a> <!-- Abre em nova aba -->
                 </nav>
                 <div class="top-icons">
+                    <!-- Ícones no topo, como modo escuro e acessibilidade -->
                     <div id="dark-mode-toggle">
                         <img class="light-icon" src="/images/icons/dark_mode-light.svg" alt="Modo Escuro">
+                        <!-- Ícone modo claro -->
                         <img class="dark-icon" src="/images/icons/dark_mode-dark.svg" alt="Modo Claro">
+                        <!-- Ícone modo escuro -->
                     </div>
                     <div class="acessibilidade">
+                        <!-- Ícone de acessibilidade com eventos para abrir menu -->
                         <img class="acess-icon light" src="/images/icons/accessibility.png" alt="Acessibilidade Claro"
                             onclick="toggleAcessibilidadeMenu()" />
                         <img class="acess-icon dark" src="/images/icons/acessibilidadeblack.png"
@@ -42,28 +53,33 @@
                 </div>
         </section>
     </header>
+
     <main>
         <section>
             <div class="imagens-logo">
+                <!-- Logos das empresas parceiras -->
                 <a href="https://tripla.com.br/" target="_blank"><img src="/images/tripla.png" id="tripla"
                         alt="imagem da empresa 1"></a>
                 <a href="https://www.cloudflare.com/pt-br/" target="_blank"><img src="/images/Cloudflare-Logo.png"
                         id="cloud" alt="imagem da empresa 1"></a>
             </div>
-            <p id="nota">ㅤAs empresas não são fictícias.ㅤ</p>
+            <p id="nota">ㅤAs empresas não são fictícias.ㅤ</p> <!-- Nota sobre a autenticidade das empresas -->
             <article class="text">
-                <h2>Proteja e acelere suas aplicações com as soluções da CypherNode</h2>
-                <p>Soluções completas para segurança, desempenho e conectividade de rede.</p>
+                <h2>Proteja e acelere suas aplicações com as soluções da CypherNode</h2> <!-- Título de destaque -->
+                <p>Soluções completas para segurança, desempenho e conectividade de rede.</p> <!-- Descrição -->
             </article>
             <div class="button">
+                <!-- Botões de ação -->
                 <a href="/HTML/Contato.html" target="_blank" id="ben">Veja nossos beneficios</a>
                 <a href="/HTML/Sobre.html" target="_blank" id="sob">Conheça mais sobre nós</a>
             </div>
 
             <!-- Menu flutuante de acessibilidade -->
             <div id="acessibilidade-menu" style="display: none;">
+                <!-- Menu escondido inicialmente -->
                 <label class="fixo">Tamanho da fonte:
                     <select onchange="alterarTamanhoFonte(this.value)">
+                        <!-- Alterar tamanho da fonte via JS -->
                         <option value="14px">Pequeno</option>
                         <option value="16px" selected>Médio</option>
                         <option value="18px">Grande</option>
@@ -72,7 +88,7 @@
                 </label>
 
                 <label class="fixo">Cor do texto:
-                    <input type="color" onchange="alterarCorTexto(this.value)" />
+                    <input type="color" onchange="alterarCorTexto(this.value)" /> <!-- Alterar cor do texto via JS -->
                 </label>
             </div>
         </section>

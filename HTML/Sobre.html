@@ -3,17 +3,31 @@
 
 <head>
   <meta charset="UTF-8">
+  <!-- Meta tag para garantir responsividade em dispositivos móveis -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Preconexões para otimizar carregamento das fontes do Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Importação das fontes Arvo e STIX Two Text do Google Fonts -->
   <link
     href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap"
     rel="stylesheet">
+
+  <!-- Arquivos CSS para estilos da página Sobre -->
   <link rel="stylesheet" href="/CSS/Sobre/Sobre-style.css">
   <link rel="stylesheet" href="/CSS/Sobre/Sobre.css">
+
+  <!-- Script para alternar modo escuro (defer para execução após parsing do HTML) -->
   <script src="/JS/dark-mode.js" defer></script>
+
+  <!-- Script para funcionalidades de acessibilidade -->
   <script src="/JS/acessibilidade.js"></script>
+
+  <!-- Ícone da aba do navegador -->
   <link rel="icon" href="/images/icons/gnuprivacyguard.svg" type="image/svg+xml">
+
   <title>Sobre</title>
 </head>
 
@@ -22,6 +36,7 @@
     <section>
       <div class="cabec">
         <nav class="op">
+          <!-- Menu de navegação principal -->
           <a href="/HTML/Inicio.html" id="home">Home</a>
           <a href="/HTML/Sobre.html" id="sobre">Sobre</a>
           <a href="/HTML/Contato.html" id="contato">Contato</a>
@@ -30,10 +45,12 @@
         </nav>
         <div class="top-icons">
           <div id="dark-mode-toggle">
+            <!-- Ícones para alternar entre modo claro e modo escuro -->
             <img class="light-icon" src="/images/icons/dark_mode-light.svg" alt="Modo Escuro">
             <img class="dark-icon" src="/images/icons/dark_mode-dark.svg" alt="Modo Claro">
           </div>
           <div class="acessibilidade">
+            <!-- Ícones para ativar menu de acessibilidade, com ação onclick -->
             <img class="acess-icon light" src="/images/icons/accessibility.png" alt="Acessibilidade Claro"
               onclick="toggleAcessibilidadeMenu()" />
             <img class="acess-icon dark" src="/images/icons/acessibilidadeblack.png" alt="Acessibilidade Escuro"
@@ -42,13 +59,15 @@
         </div>
     </section>
   </header>
+
   <main>
     <section>
-      <!-- Rodrigo -->
+      <!-- Perfil de Rodrigo Bernardi -->
       <div class="perfil">
         <img src="/images/contribuidores/foto_Rodrigo.jpg" id="rodrigo" alt="Foto de Rodrigo Bernardi">
         <article class="text">
           <h2>Sobre Rodrigo Bernardi de Quadros</h2>
+          <!-- Texto descritivo sobre Rodrigo -->
           <span>Meu nome é Rodrigo Bernardi, sou estudante de Ciência da Computação e apaixonado por tecnologia. Comecei
             minha trajetória em 2022 no curso técnico em Informática do IFSul – Campus Passo Fundo, onde desenvolvi
             interesse por programação, especialmente em desenvolvimento web.
@@ -58,15 +77,15 @@
           <p>Este são alguns detalhes sobre mim. Para saber mais, acesse a aba de Contato ou visite o repositório no: <a
               href="https://github.com/RodrigoBernardi333" target="_blank" id="git"> GitHub</a>.
           </p>
-
         </article>
       </div>
 
-      <!-- Gabriel -->
+      <!-- Perfil de Gabriel Kobielski -->
       <div class="perfil">
         <img src="/images/contribuidores/foto_Gabriel.jpg" id="gabriel" alt="Foto de Gabriel Silva">
         <article class="text">
           <h2>Sobre Gabriel Kobielski</h2>
+          <!-- Texto descritivo sobre Gabriel -->
           <span>Olá! Meu nome é João Gabriel Kobielski, tenho 22 anos e sou apaixonado por tecnologia e inovação.
             Atualmente, curso Ciência da Computação e atuo como desenvolvedor na Stara, onde tenho a oportunidade de
             aplicar meus conhecimentos em projetos desafiadores e de grande impacto.
@@ -79,25 +98,28 @@
         </article>
       </div>
 
-      <!-- Vitor -->
+      <!-- Perfil de Vitor Helbling -->
       <div class="perfil">
         <img src="/images/contribuidores/foto_Vitor.jpg" id="vitor" alt="Foto de Vitor Almeida">
         <article class="text">
           <h2>Sobre Vitor Frizon Helbling</h2>
+          <!-- Texto descritivo sobre Vitor -->
           <span>Olá! Meu nome é Vitor Helbling, sou estudante de Ciência da Computação na Universidade de Passo
             Fundo (UPF), e desde criança tenho afinidade com tecnologia.
-          Atualmente, busco constantemente desenvolver minhas habilidades em programação, resolução de problemas e
+            Atualmente, busco constantemente desenvolver minhas habilidades em programação, resolução de problemas e
             inovação. Gosto de aprender com os outros e enfrentar desafios que me façam crescer como profissional e como
             pessoa.</span>
           <p>
             Meu GitHub está no repositório.</p>
+          <!-- Link para o GitHub de Vitor -->
           <a href="https://github.com/VitorHelbling" target="_blank" id="git">GitHub</a></p>
         </article>
       </div>
 
-      <!-- Menu flutuante de acessibilidade -->
+      <!-- Menu flutuante de acessibilidade (inicialmente escondido) -->
       <div id="acessibilidade-menu" style="display: none;">
         <label class="fixo">Tamanho da fonte:
+          <!-- Dropdown para alterar tamanho da fonte via JavaScript -->
           <select onchange="alterarTamanhoFonte(this.value)">
             <option value="14px">Pequeno</option>
             <option value="16px" selected>Médio</option>
@@ -107,6 +129,7 @@
         </label>
 
         <label class="fixo">Cor do texto:
+          <!-- Input para alterar cor do texto via JavaScript -->
           <input type="color" onchange="alterarCorTexto(this.value)" />
         </label>
       </div>

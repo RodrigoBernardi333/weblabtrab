@@ -2,49 +2,67 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"><!-- Define a codificação do documento como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Responsividade em dispositivos móveis -->
+
+    <!-- Importação dos estilos do Swiper para o slider -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Estilos principais do site -->
     <link rel="stylesheet" href="/CSS/Main/Main.css">
     <link rel="stylesheet" href="/CSS/Main/Main-style.css">
-    <script src="/JS/dark-mode.js" defer></script>
-    <script src="/JS/acessibilidade.js"></script>
-    <script src="/JS/cookies.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="/JS/swiper.js" defer></script>
+
+    <!-- Scripts JS -->
+    <script src="/JS/dark-mode.js" defer></script><!-- Modo escuro, carregamento atrasado -->
+    <script src="/JS/acessibilidade.js"></script><!-- Acessibilidade, carrega imediatamente -->
+    <script src="/JS/cookies.js" defer></script><!-- Controle de cookies, carregamento atrasado -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script><!-- Script do Swiper -->
+    <script src="/JS/swiper.js" defer></script><!-- Script customizado para o slider, carregamento atrasado -->
+
+    <!-- Ícone da aba do navegador -->
     <link rel="icon" href="/images/icons/gnuprivacyguard.svg" type="image/svg+xml">
-    <title>Document</title>
+    <title>Document</title><!-- Título da página -->
 </head>
 
 <body>
     <header>
         <section>
             <div class="cabec">
+                <!-- Container do cabeçalho -->
                 <nav class="op">
+                    <!-- Navegação principal -->
+                    <!-- Links que abrem em nova aba (target="_blank") -->
                     <a href="/HTML/inicio.html" target="_blank" id="home">Home</a>
                     <a href="/HTML/Sobre.html" target="_blank" id="sobre">Sobre</a>
                     <a href="/HTML/Contato.html" target="_blank" id="contato">Contato</a>
                     <a href="/HTML/index.html" target="_blank" id="apresentcao">Apresentação</a>
                     <a href="/HTML/Login_init.html" target="_blank" id="login">Login</a>
-
                 </nav>
+
                 <div class="top-icons">
+                    <!-- Ícones do modo escuro e acessibilidade -->
                     <div id="dark-mode-toggle">
+                        <!-- Ícones para alternar entre modo claro e escuro -->
                         <img class="light-icon" src="/images/icons/dark_mode-light.svg" alt="Modo Escuro">
                         <img class="dark-icon" src="/images/icons/dark_mode-dark.svg" alt="Modo Claro">
                     </div>
                     <div class="acessibilidade">
+                        <!-- Ícones para abrir o menu de acessibilidade -->
                         <img class="acess-icon light" src="/images/icons/accessibility.png" alt="Acessibilidade Claro"
                             onclick="toggleAcessibilidadeMenu()" />
                         <img class="acess-icon dark" src="/images/icons/acessibilidadeblack.png"
                             alt="Acessibilidade Escuro" onclick="toggleAcessibilidadeMenu()" />
                     </div>
+                </div><!-- Faltava fechar essa div, corrigi aqui -->
+            </div><!-- Faltava fechar a div .cabec, corrigi aqui -->
         </section>
     </header>
+
     <main>
         <section>
             <div class="front">
+                <!-- Container principal da apresentação -->
                 <div id="Text">
+                    <!-- Texto principal -->
                     <h2>Apresentação Institucional – CypherNode</h2>
                     <h1>Protegendo o Futuro Digital</h1>
                     <p>A CypherNode é uma empresa especializada em segurança cibernética, comprometida em proteger
@@ -55,17 +73,24 @@
                         empresas que valorizam a integridade, confidencialidade e disponibilidade de suas
                         informações.
                     </p>
-
                 </div>
 
-                <div id="Text2"></div>
+                <div id="Text2"></div><!-- Div vazia que pode ser usada para layout ou conteúdo futuro -->
             </div>
-            <div id="img"><img src="/images/img.png" alt="foto da lateral" id="img2"></div>
+
+            <div id="img">
+                <!-- Imagem lateral -->
+                <img src="/images/img.png" alt="foto da lateral" id="img2">
+            </div>
+
             <div class="front2">
+                <!-- Segunda seção de conteúdo -->
                 <h1>Por que investir em segurança cibernética?</h1>
                 <p>A segurança digital deixou de ser uma opção e se tornou uma necessidade essencial. Entre os
                     principais benefícios de investir em soluções cibernéticas eficazes, destacamos:</p>
+
                 <ul id="list">
+                    <!-- Lista de benefícios -->
                     <li>Sistemas de detecção e resposta a ameaças (EDR/XDR);</li>
                     <li>Monitoramento em tempo real com SOC 24/7 (Security Operations Center);</li>
                     <li>Firewalls de próxima geração (NGFW) e proteção perimetral;</li>
@@ -73,40 +98,53 @@
                     <li>Simulações de ataques (Pentest) e testes de vulnerabilidade;</li>
                     <li>Consultoria estratégica e programas de conscientização em segurança.</li>
                 </ul>
+
                 <div class="bodySwiper">
+                    <!-- Container do slider/swiper -->
                     <div class="mainSwiper">
                         <div class="swiper">
+                            <!-- Swiper principal -->
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
+                                    <!-- Slide 1 -->
                                     <div class="project-img">
                                         <img src="/images/img1.jpg" alt="foto 1">
                                     </div>
                                 </div>
 
                                 <div class="swiper-slide">
+                                    <!-- Slide 2 -->
                                     <div class="project-img">
                                         <img src="/images/img2.jpg" alt="foto 1">
                                     </div>
                                 </div>
+
                                 <div class="swiper-slide">
+                                    <!-- Slide 3 -->
                                     <div class="project-img">
                                         <img src="/images/img3.jpg" alt="foto 1">
                                     </div>
                                 </div>
                             </div>
+
+                            <!-- Botões de navegação do swiper -->
                             <div class="swiper-button-next"></div>
                             <div class="swiper-button-prev"></div>
+                            <!-- Paginação do swiper -->
                             <div class="swiper-pagination"></div>
                         </div>
                     </div>
                 </div>
+
                 <h1>Nosso compromisso</h1>
                 <p id="compr">Mais do que oferecer ferramentas, a CypherNode entrega tranquilidade, confiança e solidez
                     digital.
                     Atuamos com excelência técnica, agilidade e total foco nas necessidades do cliente, antecipando
                     riscos e garantindo uma estrutura segura para que empresas possam crescer de forma sustentável.</p>
             </div>
+
             <div class="cookies-msg" id="cookies-msg">
+                <!-- Mensagem de cookies -->
                 <div class="cookies-txt">
                     <p>
                         Utilizamos cookies para personalizar conteúdos e melhorar a sua experiência de navegação em
@@ -114,7 +152,7 @@
                         Ao continuar, você concorda com nossa Política de Privacidade.
                     </p>
                     <div class="cookies-btn">
-                        <button onclick="aceito()">Aceito</button>
+                        <button onclick="aceito()">Aceito</button><!-- Botão para aceitar cookies -->
                     </div>
                 </div>
             </div>
@@ -123,6 +161,7 @@
             <div id="acessibilidade-menu" style="display: none;">
                 <label class="fixo">Tamanho da fonte:
                     <select onchange="alterarTamanhoFonte(this.value)">
+                        <!-- Dropdown para alterar tamanho da fonte -->
                         <option value="14px">Pequeno</option>
                         <option value="16px" selected>Médio</option>
                         <option value="18px">Grande</option>
@@ -131,7 +170,7 @@
                 </label>
 
                 <label class="fixo">Cor do texto:
-                    <input type="color" onchange="alterarCorTexto(this.value)" />
+                    <input type="color" onchange="alterarCorTexto(this.value)" /><!-- Seletor de cor para texto -->
                 </label>
             </div>
         </section>

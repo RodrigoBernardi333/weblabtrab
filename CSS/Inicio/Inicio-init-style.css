@@ -1,4 +1,5 @@
 :root {
+  /* Cores padrão (modo claro) */
   --color-lt: #fffefe;
   --bg-color: rgba(255, 255, 255, 0.301);
   --fundo-preto: #1d1d1d;
@@ -9,6 +10,7 @@
 }
 
 .darkmode {
+  /* Cores para o modo escuro */
   --color-lt: #000000;
   --bg-color: rgba(255, 255, 255, 0.301);
   --fundo-preto: #1d1d1d;
@@ -17,7 +19,6 @@
   --text: rgb(0, 0, 0);
   --header-color: #121212;
 }
-
 
 .cabec {
   display: flex;
@@ -33,56 +34,17 @@
   margin-left: 5rem;
 }
 
-#home {
+/* Navegação - itens com hover */
+
+#home, #sobre, #apresentacao, #contato, #apresentcao, #login {
   padding: 1rem;
 }
 
-#home:hover {
-  background-color: var(--bg-color);
-  transition: 0.5s;
-}
-
-#sobre {
-  padding: 1rem;
-}
-
-#sobre:hover {
-  background-color: var(--bg-color);
-  transition: 0.5s;
-}
-
-#apresentacao {
-  padding: 1rem;
-
-}
-
-#apresentacao:hover {
-  background-color: var(--bg-color);
-  transition: 0.5s;
-}
-
-#contato {
-  padding: 1rem;
-}
-
-#contato:hover {
-  background-color: var(--bg-color);
-  transition: 0.5s;
-}
-
-#apresentcao {
-  padding: 1rem;
-}
-
-#apresentcao:hover {
-  background-color: var(--bg-color);
-  transition: 0.5s;
-}
-
-#login {
-  padding: 1rem;
-}
-
+#home:hover,
+#sobre:hover,
+#apresentacao:hover,
+#contato:hover,
+#apresentcao:hover,
 #login:hover {
   background-color: var(--bg-color);
   transition: 0.5s;
@@ -96,26 +58,19 @@
   margin-left: auto;
 }
 
+/* Imagens de logo com efeito ao passar o mouse */
 .imagens-logo {
   display: flex;
   flex-direction: row;
 }
 
-#tripla {
-  display: flex;
-  width: 10rem;
-}
-
-#tripla:hover {
-  transition: 0.5s;
-  transform: scale(1.1);
-}
-
+#tripla,
 #cloud {
   display: flex;
   width: 10rem;
 }
 
+#tripla:hover,
 #cloud:hover {
   transition: 0.5s;
   transform: scale(1.1);
@@ -129,13 +84,15 @@
   color: rgba(255, 255, 255, 0.63);
 }
 
+/* Botões com estilo e hover */
 .button {
   display: flex;
   flex-direction: row;
   gap: 1rem;
 }
 
-#ben {
+#ben,
+#sob {
   background-color: black;
   padding: 1rem;
   border: 1px solid white;
@@ -148,20 +105,13 @@
   transform: scale(1.1);
 }
 
-#sob {
-  background-color: black;
-  padding: 1rem;
-  border: 1px solid white;
-  border-radius: 50px;
-}
-
 #sob:hover {
   background-color: orange;
   transition: 0.5s;
   transform: scale(1.1);
 }
 
-main>section {
+main > section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -170,8 +120,7 @@ main>section {
   text-align: center;
 }
 
-
-/*acessibilidade */
+/* ===== Acessibilidade ===== */
 
 .top-icons {
   top: 1rem;
@@ -230,7 +179,7 @@ main>section {
   background-color: #fff;
 }
 
-/* RESPONSIVIDADE */
+/* ===== Responsividade para telas menores ===== */
 @media (max-width: 768px) {
 
   .text {
@@ -245,8 +194,7 @@ main>section {
     overflow-wrap: break-word;
   }
 
-
-  main>section {
+  main > section {
     padding: 1rem;
     gap: 2rem;
   }
@@ -275,6 +223,7 @@ main>section {
   }
 }
 
+/* Força a cor preta mesmo se for sobrescrita */
 .fixo {
   color: black !important;
 }

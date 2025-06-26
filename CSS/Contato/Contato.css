@@ -1,4 +1,5 @@
 :root {
+    /* Variáveis CSS para temas claros */
     --color-lt: #fffefe;
     --bg-color: rgba(255, 255, 255, 0.301);
     --fundo: rgba(255, 255, 255, 0.100);
@@ -141,6 +142,7 @@ ul {
     vertical-align: middle;
 }
 
+/* Fontes personalizadas com a fonte Arvo */
 .arvo-regular {
     font-family: "Arvo", serif;
     font-weight: 400;
@@ -165,7 +167,6 @@ ul {
     font-style: italic;
 }
 
-
 body {
     background-image: url(/images/fundo.jpg);
     height: 100vh;
@@ -185,9 +186,7 @@ body {
     border-radius: 6px;
 }
 
-
 /* Headerr*/
-
 header {
     position: fixed;
     top: 0;
@@ -206,7 +205,6 @@ header {
     text-decoration: none;
     max-width: 100%;
 }
-
 
 .op {
     display: flex;
@@ -241,12 +239,11 @@ main>section {
     padding: 2rem;
 }
 
+/* Responsividade - telas pequenas */
 @media (max-width: 768px) {
     .cabec {
         flex-direction: row;
-        /* Empilha os itens em telas menores */
         align-items: flex-start;
-        /* Alinha à esquerda */
     }
 
     .acessibilidade img:focus {
@@ -259,14 +256,12 @@ main>section {
         outline-offset: 4px;
     }
 
-
     .op {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
     }
-
 
     #home,
     #sobre,
@@ -279,7 +274,7 @@ main>section {
     }
 }
 
-/*Fontes*/
+/* Fontes novamente (repetido por segurança) */
 .arvo-regular {
     font-family: "Arvo", serif;
     font-weight: 400;
@@ -304,8 +299,7 @@ main>section {
     font-style: italic;
 }
 
-/*Icones*/
-
+/* Ícones do topo */
 .top-icons {
     top: 1rem;
     right: 1rem;
@@ -315,13 +309,11 @@ main>section {
     position: fixed;
 }
 
-
 .top-icons img {
     width: 24px;
     height: 24px;
     cursor: pointer;
     transition: transform 0.2s;
-
 }
 
 .top-icons img:hover {
@@ -346,38 +338,29 @@ main>section {
 
 #top-icons-menu label {
     color: #000000;
-    /* preto para contraste com fundo claro */
     font-weight: bold;
     display: block;
     margin-bottom: 0.5rem;
 }
-
-
 
 #top-icons-menu select option {
     color: #000;
     background-color: #fff;
 }
 
-
 .fixo {
     color: black !important;
 }
 
-/*Fim dos icones*/
+/* Fim dos ícones */
 
-/* Espaço diferente para os botões */
-
+/* Botão de dark mode */
 #dark-mode-toggle {
     top: 1rem;
     right: 4rem;
-    /* Distancia da borda direita */
 }
 
-
-
-/* Fim do Header */
-/*Responsividade*/
+/* Responsividade adicional */
 @media (max-width: 768px) {
     body {
         padding-top: 7rem;
@@ -431,12 +414,10 @@ main>section {
     }
 }
 
-/*fim da responsividade*/
-/*Acessibilidade*/
+/* Acessibilidade */
 .acessibilidade {
     top: 1rem;
     right: 1rem;
-    /* Mantém ela na ponta */
 }
 
 #acessibilidade-menu {
@@ -472,8 +453,7 @@ main>section {
     background-color: #fff;
 }
 
-/*Acessibilidade*/
-/*Darkmode*/
+/* Dark mode - Tema escuro */
 .darkmode {
     --color-lt: #000000;
     --bg-color: rgba(114, 114, 114, 0.63);
@@ -498,7 +478,7 @@ main>section {
     display: block;
 }
 
-/* Mostra apenas o ícone claro */
+/* Alternância de ícones de acessibilidade (claro/escuro) */
 .acess-icon.light {
     display: block;
 }
@@ -507,7 +487,6 @@ main>section {
     display: none;
 }
 
-/* Quando o modo escuro estiver ativo, inverte */
 .darkmode .acess-icon.light {
     display: none;
 }
@@ -520,4 +499,4 @@ main>section {
     cursor: pointer;
 }
 
-/*Fim darkmode*/
+/* Fim do dark mode */

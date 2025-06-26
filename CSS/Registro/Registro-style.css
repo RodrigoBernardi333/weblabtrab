@@ -1,110 +1,94 @@
+/* Define a imagem de fundo da página */
 body {
     background-image: url(/images/fundo.jpg);
 }
 
+/* Estilo principal do container do formulário de cadastro */
 .cadastro {
     background-color: rgba(0, 0, 0, 0.425);
+    /* Fundo semi-transparente preto */
     display: flex;
+    /* Usando flexbox para organizar os elementos */
     flex-direction: column;
+    /* Elementos em coluna */
     max-width: 15rem;
+    /* Largura máxima do formulário */
     margin: 0 auto;
+    /* Centraliza horizontalmente */
     border: 2px solid white;
+    /* Borda branca */
     border-radius: 20px;
+    /* Cantos arredondados */
     padding: 4rem;
+    /* Espaçamento interno */
     gap: 0.5vw;
+    /* Espaço entre os elementos filhos */
     margin-top: 6vw;
+    /* Espaço acima do formulário */
     text-align: center;
+    /* Centraliza o texto */
 }
 
+/* Estilo do título do formulário */
 #titulo {
     border-bottom: 2px solid white;
+    /* Linha branca abaixo do título */
     padding-bottom: 1rem;
+    /* Espaço interno inferior */
 }
 
-#nome {
-    padding: 10px;
-    font-size: 1rem;
-    border-radius: 5px;
-    border: none;
-    background-color: var(--fundo-preto);
-    border-bottom: 2px solid rgb(255, 255, 255);
-    color: white;
-    text-align: center;
-}
-
-#sobrenome {
-    padding: 10px;
-    font-size: 1rem;
-    border-radius: 5px;
-    border: none;
-    background-color: var(--fundo-preto);
-    border-bottom: 2px solid rgb(255, 255, 255);
-    color: white;
-    text-align: center;
-}
-
-#usuario {
-    padding: 10px;
-    font-size: 1rem;
-    border-radius: 5px;
-    border: none;
-    background-color: var(--fundo-preto);
-    border-bottom: 2px solid rgb(255, 255, 255);
-    color: white;
-    text-align: center;
-}
-
-#email {
-    padding: 10px;
-    font-size: 1rem;
-    border-radius: 5px;
-    border: none;
-    background-color: var(--fundo-preto);
-    border-bottom: 2px solid rgb(255, 255, 255);
-    color: white;
-    text-align: center;
-}
-
-#senha {
-    padding: 10px;
-    font-size: 1rem;
-    border-radius: 5px;
-    border: none;
-    background-color: var(--fundo-preto);
-    border-bottom: 2px solid rgb(255, 255, 255);
-    color: white;
-    text-align: center;
-}
-
+/* Estilos comuns para os campos de entrada (nome, sobrenome, usuário, email, senha, senha-confirmação) */
+#nome,
+#sobrenome,
+#usuario,
+#email,
+#senha,
 #senha-conf {
     padding: 10px;
+    /* Espaçamento interno */
     font-size: 1rem;
+    /* Tamanho da fonte */
     border-radius: 5px;
+    /* Cantos levemente arredondados */
     border: none;
+    /* Remove bordas padrão */
     background-color: var(--fundo-preto);
+    /* Fundo preto definido em variável CSS */
     border-bottom: 2px solid rgb(255, 255, 255);
+    /* Linha branca na parte inferior */
     color: white;
+    /* Cor da fonte branca */
     text-align: center;
+    /* Centraliza o texto */
 }
 
+/* Estilo do botão cadastrar */
 #cadastrar {
     padding: 10px;
     font-size: 1rem;
     border-radius: 5px;
     border: none;
     background-color: black;
+    /* Fundo preto */
     border: 2px solid white;
+    /* Borda branca */
     color: white;
     text-align: center;
 }
 
+/* Efeito hover para o botão cadastrar */
 #cadastrar:hover {
     transition: 0.5s;
+    /* Transição suave de meio segundo */
     background-color: rgba(255, 255, 255, 0.267);
+    /* Fundo branco semi-transparente ao passar o mouse */
 }
 
+/* Container para os termos, usa flexbox em linha */
 #termos {
     display: flex;
     flex-direction: row;
+    /* Elementos em linha */
     margin: 0 auto;
+    /* Centraliza horizontalmente */
 }

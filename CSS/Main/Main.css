@@ -1,9 +1,12 @@
+/* Estilo global para todos os elementos */
 * {
     font-family: Arial, sans-serif;
     color: var(--color-lt);
+    /* Usa a variável de cor definida no :root ou .darkmode */
     text-decoration: none;
 }
 
+/* Definição das variáveis para o tema claro */
 :root {
     --color-lt: #fffefe;
     --bg-color: rgba(255, 255, 255, 0.301);
@@ -11,6 +14,7 @@
     --texto: white;
 }
 
+/* Sobrescreve as variáveis para o tema escuro */
 .darkmode {
     --color-lt: #000000;
     --bg-color: rgba(255, 255, 255, 0.301);
@@ -18,22 +22,25 @@
     --texto: black;
 }
 
+/* Estilização do cabeçalho */
 header {
     background-color: var(--header);
     border-bottom: 2px solid var(--header);
-    color: black
+    color: black;
+    /* Poderia ser removido se quiser usar var(--color-lt) */
 }
 
+/* Fundo da página e remoção de margem padrão */
 body {
     background-image: url(/images/fundo.jpg);
     margin: 0;
 }
 
+/* Estilo para itens de navegação */
 #home,
 #sobre,
 #contato,
 #apresentcao,
-<<<<<<< HEAD
 #login,
 #trilho {
     cursor: pointer;
@@ -42,28 +49,28 @@ body {
     border-radius: 6px;
 }
 
-=======
+/* Estilo específico para #login */
 #login {
     width: 100%;
     text-align: left;
     padding: 1rem 0.5rem;
 }
 
-
->>>>>>> 586a1e3b8387209aa017c8d9c09d1a4cf5f9bc2d
+/* Estilo do rodapé */
 footer {
     background-color: white;
     max-width: 100%;
     border: 5px solid white;
 }
 
+/* Responsividade para telas pequenas */
 @media (max-width: 450px) {
     .swiper {
         height: 270px;
     }
 }
 
-/* RESPONSIVO */
+/* Responsividade para telas médias */
 @media (max-width: 768px) {
     .cabec {
         flex-direction: row;
@@ -75,11 +82,13 @@ footer {
         cursor: pointer;
         border-radius: 6px;
         transition: 0.3s;
+        /* Animação suave */
     }
 
     .top-icons img:focus {
         outline: 2px solid #fff;
         outline-offset: 4px;
+        /* Destaque ao focar com teclado */
     }
 
     .op {
@@ -89,7 +98,7 @@ footer {
         justify-content: space-between;
     }
 
-
+    /* Itens de menu ocupam largura total em telas menores */
     #home,
     #sobre,
     #contato,
@@ -101,21 +110,26 @@ footer {
     }
 }
 
-/*Darkmode*/
+/* ---------- Darkmode ---------- */
+
+/* Essas variáveis já foram definidas acima, você pode manter só uma definição de .darkmode se quiser evitar repetição */
 .darkmode {
     --color-lt: #000000;
     --bg-color: rgba(255, 255, 255, 0.301);
     --header: rgb(255, 255, 255);
 }
 
+/* Mostra o ícone do sol (modo claro) por padrão */
 #dark-mode-toggle img:first-child {
     display: block;
 }
 
+/* Esconde o ícone da lua (modo escuro) por padrão */
 #dark-mode-toggle img:last-child {
     display: none;
 }
 
+/* Inverte a visibilidade dos ícones no modo escuro */
 .darkmode #dark-mode-toggle img:first-child {
     display: none;
 }
@@ -124,16 +138,17 @@ footer {
     display: block;
 }
 
-/* Mostra apenas o ícone claro */
+/* Ícone de acessibilidade - claro visível por padrão */
 .acess-icon.light {
     display: block;
 }
 
+/* Ícone de acessibilidade - escuro oculto por padrão */
 .acess-icon.dark {
     display: none;
 }
 
-/* Quando o modo escuro estiver ativo, inverte */
+/* Inverte os ícones de acessibilidade quando em modo escuro */
 .darkmode .acess-icon.light {
     display: none;
 }
@@ -142,8 +157,9 @@ footer {
     display: block;
 }
 
+/* Cursor tipo ponteiro no botão de alternância de modo */
 #dark-mode-toggle {
     cursor: pointer;
 }
 
-/*Fim darkmode*/
+/* ---------- Fim do Darkmode ---------- */

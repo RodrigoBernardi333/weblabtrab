@@ -1,3 +1,4 @@
+/* Variáveis CSS para o modo claro (padrão) */
 :root {
     --fundo-preto: #1d1d1d;
     --back: rgba(0, 0, 0, 0.699);
@@ -5,10 +6,12 @@
     --text: rgb(255, 255, 255);
 }
 
+/* Estilo base para todos os elementos */
 * {
-    color: var(--text);
+    color: var(--text); /* Cor do texto herdada da variável */
 }
 
+/* Variáveis redefinidas para o modo escuro */
 .darkmode {
     --fundo-preto: #dbdbdb;
     --back: rgba(255, 255, 255, 0.226);
@@ -16,60 +19,68 @@
     --text: white;
 }
 
+/* Estilo do corpo da página */
 body {
-    background-image: url(/images/fundo.jpg);
+    background-image: url(/images/fundo.jpg); /* Imagem de fundo */
     background-size: cover;
     margin: 0;
-    height: 100vh;
+    height: 100vh; /* Altura total da janela */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
     font-family: Arial, sans-serif;
 }
 
+/* Estilo do container de login */
 .login {
     background-color: var(--back);
     padding: 4vw;
     border-radius: 5px;
-    box-shadow: 0 1vw 2vw rgb(0, 0, 0);
-    border: 2px solid var(--borda);
+    box-shadow: 0 1vw 2vw rgb(0, 0, 0); /* Sombra escura */
+    border: 2px solid var(--borda); /* Cor da borda com variável */
 }
 
+/* Estilo dos inputs (campos de texto/senha) */
 input {
     padding: 10px;
     font-size: 1rem;
     border-radius: 5px;
     border: none;
-    background-color: var(--fundo-preto);
-    border-bottom: 2px solid var(--borda);
+    background-color: var(--fundo-preto); /* Cor de fundo do input */
+    border-bottom: 2px solid var(--borda); /* Borda inferior personalizada */
     color: black;
 }
 
+/* Estilo do botão ao passar o mouse */
 #botao:hover {
     background-color: #ffffff33;
     color: black;
     cursor: pointer;
 }
 
+/* Placeholder dos inputs */
 input::placeholder {
     color: rgba(255, 255, 255, 0.479);
     text-align: center;
 }
 
+/* Foco no input (quando clicado) */
 input:focus {
     color: white;
 }
 
+/* Responsividade para telas menores (até 600px) */
 @media (max-width: 600px) {
     #Text {
         font-size: 3vw;
     }
 
     input {
-        width: 80vw;
+        width: 80vw; /* Inputs ocupam 80% da largura da viewport */
     }
 }
 
+/* Fontes Arvo (diferentes variações tipográficas) */
 .arvo-regular {
     font-family: "Arvo", serif;
     font-weight: 400;
@@ -94,16 +105,20 @@ input:focus {
     font-style: italic;
 }
 
-/*Darkmode*/
+/* --------------------------- */
+/* Estilos relacionados ao modo escuro (Dark Mode) */
+/* --------------------------- */
 
+/* Ícones de alternância de modo escuro */
 #dark-mode-toggle img:first-child {
-    display: block;
+    display: block; /* Ícone padrão visível */
 }
 
 #dark-mode-toggle img:last-child {
-    display: none;
+    display: none; /* Ícone alternativo escondido */
 }
 
+/* Quando estiver no modo escuro, inverte os ícones */
 .darkmode #dark-mode-toggle img:first-child {
     display: none;
 }
@@ -112,16 +127,17 @@ input:focus {
     display: block;
 }
 
-/* Mostra apenas o ícone claro */
+/* Ícones de acessibilidade: claro visível por padrão */
 .acess-icon.light {
     display: block;
 }
 
+/* Ícone escuro escondido inicialmente */
 .acess-icon.dark {
     display: none;
 }
 
-/* Quando o modo escuro estiver ativo, inverte */
+/* No modo escuro, alterna a visibilidade dos ícones */
 .darkmode .acess-icon.light {
     display: none;
 }
@@ -130,8 +146,11 @@ input:focus {
     display: block;
 }
 
+/* Estilo do botão de alternância do modo escuro */
 #dark-mode-toggle {
     cursor: pointer;
 }
 
-/*Fim darkmode*/
+/* --------------------------- */
+/* Fim do estilo para o darkmode */
+/* --------------------------- */

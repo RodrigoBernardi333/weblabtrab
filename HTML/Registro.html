@@ -2,29 +2,45 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> <!-- Define a codificação dos caracteres da página -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/Registro/Registro-style.css">
-    <link rel="stylesheet" href="/CSS/Registro/Registro.css">
-    <script src="/JS/dark-mode.js" defer></script>
-    <link rel="icon" href="/images/icons/gnuprivacyguard.svg" type="image/svg+xml">
-    <title>Cadastro</title>
+    <!-- Ajusta o layout para dispositivos móveis -->
+    <link rel="stylesheet" href="/CSS/Registro/Registro-style.css"> <!-- Estilos principais do registro -->
+    <link rel="stylesheet" href="/CSS/Registro/Registro.css"> <!-- Estilos adicionais do registro -->
+    <script src="/JS/dark-mode.js" defer></script> <!-- Script para alternar o modo escuro, carregado após o parsing -->
+    <link rel="icon" href="/images/icons/gnuprivacyguard.svg" type="image/svg+xml"> <!-- Ícone da aba do navegador -->
+    <title>Cadastro</title> <!-- Título da página -->
 </head>
 
 <body>
     <main>
         <section class="cadastro">
-            <h1 id="titulo">Cadastro</h1>
-            <input type="text" name="nome" id="nome" placeholder="Nome" required>
+            <!-- Seção do formulário de cadastro -->
+            <h1 id="titulo">Cadastro</h1> <!-- Título do formulário -->
+
+            <!-- Campos do formulário -->
+            <input type="text" name="nome" id="nome" placeholder="Nome" required> <!-- Campo para nome -->
             <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" required>
+            <!-- Campo para sobrenome -->
             <input type="text" name="usuario" id="usuario" placeholder="Nome de Usuário" required>
+            <!-- Campo para nome de usuário -->
             <input type="email" name="usuario" id="email" placeholder="Email" required>
-            <input type="password" name="senha" id="senha" placeholder="Senha" required>
+            <!-- Campo para email (note que name="usuario" está repetido, o ideal seria name="email") -->
+            <input type="password" name="senha" id="senha" placeholder="Senha" required> <!-- Campo para senha -->
             <input type="password" name="senha-conf" id="senha-conf" placeholder="Confirmação de Senha" required>
+            <!-- Campo para confirmação de senha -->
+
+            <!-- Termos de concordância -->
             <div id="termos">
-                <input type="checkbox" name="concordo" id="concordo" required><label for="concordo"> eu concordo com os
-                    <a href="#" onclick="alert('estamos em manutenção')">termos</a></label>
+                <input type="checkbox" name="concordo" id="concordo" required>
+                <!-- Checkbox obrigatório para aceitar termos -->
+                <label for="concordo"> eu concordo com os
+                    <a href="#" onclick="alert('estamos em manutenção')">termos</a>
+                    <!-- Link com alerta de manutenção -->
+                </label>
             </div>
+
+            <!-- Botão para cadastrar, atualmente com alerta informando problema -->
             <button id="cadastrar" onclick="alert('Estamos com problema em avaliar a sua conta')">Cadastrar</button>
         </section>
     </main>

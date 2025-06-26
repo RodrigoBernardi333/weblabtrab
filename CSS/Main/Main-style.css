@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* Garante que padding e border não aumentem a largura/altura total */
 }
 
 body {
@@ -12,6 +13,7 @@ body {
     background-color: #f8f9fa;
 }
 
+/* Variáveis de cor */
 :root {
     --color-lt: #fffefe;
     --bg-color: rgba(255, 255, 255, 0.301);
@@ -21,6 +23,7 @@ body {
     --link-bg: rgba(255, 255, 255, 0.05);
 }
 
+/* Versão darkmode usando as mesmas variáveis */
 .darkmode {
     --color-lt: #000000;
     --bg-color: rgba(255, 255, 255, 0.301);
@@ -30,14 +33,13 @@ body {
     --link-bg: rgba(0, 0, 0, 0.1);
 }
 
-
-
 /* Header */
 header {
     background-color: var(--header);
     color: black;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     position: sticky;
+    /* Mantém fixo no topo ao rolar */
     top: 0;
     z-index: 1000;
 }
@@ -51,6 +53,7 @@ header {
     padding: 0 2rem;
 }
 
+/* Navegação */
 .op {
     display: flex;
     flex-direction: row;
@@ -58,6 +61,7 @@ header {
     gap: 1rem;
 }
 
+/* Links do menu */
 #home,
 #sobre,
 #contato,
@@ -70,7 +74,7 @@ header {
     font-weight: 500;
 }
 
-
+/* Hover dos links */
 #home:hover,
 #sobre:hover,
 #contato:hover,
@@ -86,22 +90,24 @@ header {
 #apresentcao:hover,
 #login:hover,
 #trilho:hover {
-  background-color: var(--bg-color);
-  transition: 0.5s;
+    background-color: var(--bg-color);
+    transition: 0.5s;
 }
 
-
+/* Hover adicional no #trilho */
 #trilho:hover {
     background-color: var(--bg-color);
     transition: 0.5s;
 }
-/* Main content */
+
+/* Conteúdo principal */
 main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
+/* Seção de introdução */
 .front {
     display: flex;
     flex-direction: row;
@@ -111,6 +117,7 @@ main {
     min-height: 80vh;
 }
 
+/* Caixa de texto destacada */
 #Text {
     background-color: var(--bg-color);
     border: 2px solid var(--texto);
@@ -124,11 +131,13 @@ main {
     transition: transform 0.3s ease;
 }
 
+/* Efeito hover do texto */
 #Text:hover {
     transform: scale(1.1);
     transition: 0.5s;
 }
 
+/* Título pequeno */
 #Text h2 {
     color: #e74c3c;
     font-size: 1.2rem;
@@ -137,6 +146,7 @@ main {
     letter-spacing: 1px;
 }
 
+/* Título principal */
 #Text h1 {
     font-size: 2.5rem;
     color: var(--texto);
@@ -145,6 +155,7 @@ main {
     font-weight: 700;
 }
 
+/* Parágrafo */
 #Text p {
     font-size: 1.1rem;
     color: var(--texto);
@@ -156,6 +167,7 @@ main {
     text-align: center;
 }
 
+/* Imagem destacada */
 #img2 {
     display: flex;
     max-width: 40rem;
@@ -169,12 +181,14 @@ main {
     height: auto;
 }
 
+/* Hover na imagem */
 #img2:hover {
     box-shadow: 1rem 1rem blue;
     transform: scale(1.1);
     transition: 0.5s;
 }
 
+/* Seção extra */
 .front2 {
     display: flex;
     flex-direction: column;
@@ -198,6 +212,7 @@ main {
     line-height: 1.8;
 }
 
+/* Lista */
 #list {
     display: flex;
     flex-direction: column;
@@ -215,6 +230,7 @@ main {
     color: var(--texto);
 }
 
+/* Texto complementar */
 #compr {
     display: flex;
     max-width: 50rem;
@@ -224,7 +240,7 @@ main {
     line-height: 1.8;
 }
 
-/* Swiper styles */
+/* Swiper (carrossel de projetos) */
 .bodySwiper {
     background-color: rgba(0, 68, 255, 0.068);
     display: flex;
@@ -259,6 +275,7 @@ main {
     justify-content: center;
 }
 
+/* Imagem do projeto */
 .project-img {
     width: 100%;
     height: 100%;
@@ -272,10 +289,12 @@ main {
     transition: transform 0.3s ease;
 }
 
+/* Zoom na imagem ao passar o mouse */
 .swiper-slide:hover .project-img img {
     transform: scale(1.1);
 }
 
+/* Botões de navegação do swiper */
 .swiper-button-next,
 .swiper-button-prev {
     color: white;
@@ -285,6 +304,7 @@ main {
     height: 50px;
 }
 
+/* Paginação do swiper */
 .swiper-pagination-bullet {
     background: white;
     opacity: 0.7;
@@ -295,7 +315,7 @@ main {
     background: #e74c3c;
 }
 
-/* Cookies */
+/* Mensagem de cookies */
 .cookies-msg {
     display: none;
     width: 80%;
@@ -314,6 +334,7 @@ main {
     font-family: sans-serif;
 }
 
+/* Exibe a mensagem */
 .cookies-msg.mostrar {
     display: block;
 }
@@ -343,8 +364,7 @@ main {
     background-color: rgba(255, 255, 255, 0.4);
 }
 
-/*Icones*/
-
+/* Ícones fixos no topo */
 .top-icons {
     top: 1rem;
     right: 1rem;
@@ -354,13 +374,11 @@ main {
     position: fixed;
 }
 
-
 .top-icons img {
     width: 24px;
     height: 24px;
     cursor: pointer;
     transition: transform 0.2s;
-
 }
 
 .top-icons img:hover {
@@ -370,6 +388,7 @@ main {
     border-radius: 1rem;
 }
 
+/* Menu suspenso dos ícones */
 #top-icons-menu {
     position: fixed;
     top: 5rem;
@@ -385,30 +404,25 @@ main {
 
 #top-icons-menu label {
     color: #000000;
-    /* preto para contraste com fundo claro */
     font-weight: bold;
     display: block;
     margin-bottom: 0.5rem;
 }
-
-
 
 #top-icons-menu select option {
     color: #000;
     background-color: #fff;
 }
 
-
+/* Estilo forçado para textos */
 .fixo {
     color: black !important;
 }
 
-/*Fim dos icones*/
-/*Acessibilidade*/
+/* Acessibilidade */
 .acessibilidade {
     top: 1rem;
     right: 1rem;
-    /* Mantém ela na ponta */
 }
 
 #acessibilidade-menu {
@@ -443,5 +457,3 @@ main {
     color: #000;
     background-color: #fff;
 }
-
-/*Acessibilidade*/

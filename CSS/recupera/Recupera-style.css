@@ -1,3 +1,4 @@
+/* Container principal com layout flex em coluna, largura máxima e centralizado */
 .recu {
     display: flex;
     flex-direction: column;
@@ -5,25 +6,32 @@
     text-align: center;
     margin: 0 auto;
     margin-top: 20rem;
+    /* espaçamento acima */
     border: 2px solid white;
     border-radius: 15px;
     padding: 2rem;
     color: white;
     font-size: 2rem;
     background-color: rgba(0, 0, 0, 0.315);
+    /* fundo semitransparente */
 }
 
+/* Estilo para o input de nova senha */
 #novasenha {
     padding: 10px;
     font-size: 1rem;
     border-radius: 5px;
     border: none;
     border-bottom: 2px solid rgb(255, 255, 255);
+    /* borda inferior branca */
     color: white;
     background-color: rgba(255, 255, 255, 0.11);
+    /* fundo translúcido */
     margin-bottom: 1rem;
+    /* espaçamento abaixo */
 }
 
+/* Estilo para o input de confirmação de senha, igual ao anterior */
 #confir {
     padding: 10px;
     font-size: 1rem;
@@ -34,18 +42,24 @@
     background-color: rgba(255, 255, 255, 0.11);
 }
 
+/* Efeito hover para input nova senha */
 #novasenha:hover {
     transition: 0.5s;
+    /* transição suave */
     transform: scale(1.1);
+    /* aumento de tamanho */
     background-color: rgba(255, 255, 255, 0.295);
+    /* fundo mais claro */
 }
 
+/* Efeito hover para input confirmação */
 #confir:hover {
     transition: 0.5s;
     transform: scale(1.1);
     background-color: rgba(255, 255, 255, 0.295);
 }
 
+/* Botão confirmar com borda, fundo semitransparente e espaçamento */
 #confirmar {
     margin-top: 2rem;
     padding: 1rem;
@@ -55,12 +69,16 @@
     color: white;
     font-size: 1rem;
 }
-#confirmar:hover{
+
+/* Efeito hover para botão confirmar */
+#confirmar:hover {
     transform: scale(1.1);
     transition: 0.5s;
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.192);
 }
+
+/* Cor e alinhamento dos textos placeholder nos inputs */
 #novasenha::placeholder,
 #confir::placeholder {
     color: rgba(255, 255, 255, 0.966);

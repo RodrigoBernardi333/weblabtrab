@@ -2,21 +2,38 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres para UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsivo para dispositivos móveis -->
+
+    <!-- Link para o arquivo CSS principal da página -->
     <link rel="stylesheet" href="/CSS/recupera/Recupera-style.css">
+    <!-- Link para um segundo arquivo CSS que complementa o estilo -->
     <link rel="stylesheet" href="/CSS/recupera/Recupera.css">
+
+    <!-- Script para ativar o modo escuro, carregado de forma assíncrona (defer) -->
     <script src="/JS/dark-mode.js" defer></script>
+
+    <!-- Ícone da aba do navegador -->
     <link rel="icon" href="/images/icons/gnuprivacyguard.svg" type="image/svg+xml">
-    <title>Recuperação</title>
+
+    <title>Recuperação</title> <!-- Título da página que aparece na aba do navegador -->
 </head>
 
 <body>
     <main>
+        <!-- Conteúdo principal da página -->
         <section class="recu">
-            <p>Recuperação de senha</p>
+            <!-- Seção para recuperação de senha -->
+            <p>Recuperação de senha</p> <!-- Texto de título ou orientação -->
+
+            <!-- Campo para inserir a nova senha -->
             <input type="text" name="novasenha" id="novasenha" placeholder="Nova senha">
+
+            <!-- Campo para confirmar a nova senha -->
             <input type="text" name="confir" id="confir" placeholder="Confirmar senha">
+
+            <!-- Botão para confirmar a alteração da senha -->
+            <!-- Atualmente exibe um alerta simples ao ser clicado -->
             <button id="confirmar" onclick="alert('Esta no caminho certo')">Confirmar</button>
 
         </section>

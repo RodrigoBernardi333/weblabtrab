@@ -2,45 +2,75 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura a viewport para responsividade -->
+
+    <!-- Otimização para carregamento de fontes Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Importa as fontes Arvo e STIX Two Text do Google Fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap"
         rel="stylesheet">
+
+    <!-- Arquivos CSS para estilização da página de login -->
     <link rel="stylesheet" href="/CSS/Login/Login_init.css">
     <link rel="stylesheet" href="/CSS/Login/Login-init-style.css">
+
+    <!-- Script para ativar o modo escuro, carregado com defer para aguardar o carregamento do DOM -->
     <script src="/JS/dark-mode.js" defer></script>
+
+    <!-- Script para funcionalidades de acessibilidade -->
     <script src="/JS/acessibilidade.js"></script>
+
+    <!-- Ícone da aba do navegador -->
     <link rel="icon" href="/images/icons/gnuprivacyguard.svg" type="image/svg+xml">
-    <title>Login</title>
+
+    <title>Login</title> <!-- Título da página -->
 </head>
 
 <body>
     <section>
         <div class="login">
+            <!-- Título da área de login -->
             <div id="Text">
                 <h1 id="text4">Login</h1>
             </div>
+
+            <!-- Formulário de login -->
             <div id="cadastro">
                 <label>
+                    <!-- Campo de texto para o usuário -->
                     <input type="text" name="usuario" id="usuario" placeholder="Usuário" required>
                 </label>
                 <label>
+                    <!-- Campo de senha -->
                     <input type="password" name="senha" id="senha" placeholder="Senha" required>
                 </label>
+
+                <!-- Botão de login com link dentro (não ideal, mas segue seu código original) -->
                 <button id="botao"><a href="#" id="botao2">Login</a></button>
+
+                <!-- Link para recuperação de senha -->
                 <p id="text2">
                     Esqueceu a <a href="recupera.html" id="esquecida" target="_blank">senha?</a>
                 </p>
+
+                <!-- Link para página de registro -->
                 <a href="Registro.html" id="registrar" target="_blank">Registrar</a>
             </div>
+
+            <!-- Ícones para funcionalidades adicionais -->
             <div class="top-icons">
+                <!-- Toggle para modo escuro/claro -->
                 <div id="dark-mode-toggle">
                     <img class="light-icon" src="/images/icons/dark_mode-light.svg" alt="Modo Escuro">
                     <img class="dark-icon" src="/images/icons/dark_mode-dark.svg" alt="Modo Claro">
                 </div>
+
+                <!-- Ícone para abrir menu de acessibilidade -->
                 <div class="acessibilidade">
                     <img class="acess-icon light" src="/images/icons/accessibility.png" alt="Acessibilidade Claro"
                         onclick="toggleAcessibilidadeMenu()" />
@@ -49,8 +79,9 @@
                 </div>
             </div>
 
-            <!-- Menu flutuante de acessibilidade -->
+            <!-- Menu flutuante de acessibilidade, inicialmente oculto -->
             <div id="acessibilidade-menu" style="display: none;">
+                <!-- Controle para alteração do tamanho da fonte -->
                 <label class="fixo">Tamanho da fonte:
                     <select onchange="alterarTamanhoFonte(this.value)">
                         <option value="14px">Pequeno</option>
@@ -60,6 +91,7 @@
                     </select>
                 </label>
 
+                <!-- Controle para alteração da cor do texto -->
                 <label class="fixo">Cor do texto:
                     <input type="color" onchange="alterarCorTexto(this.value)" />
                 </label>

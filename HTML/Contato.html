@@ -2,37 +2,45 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"><!-- Define o charset para UTF-8, suportando caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Responsividade em dispositivos móveis -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Preconexão para otimizar carregamento das fontes Google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!-- Preconexão com crossorigin para fontes -->
     <link
         href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="/CSS/Contato/Contato.css">
+        rel="stylesheet"><!-- Importa as fontes Arvo e STIX Two Text -->
+    <link rel="stylesheet" href="/CSS/Contato/Contato.css"><!-- Link para o arquivo CSS da página Contato -->
     <script src="/JS/dark-mode.js" defer></script>
-    <script src="/JS/acessibilidade.js"></script>
-    <link rel="icon" href="/images/icons/gnuprivacyguard.svg" type="image/svg+xml">
-    <title>Contato</title>
+    <!-- Script para o modo escuro, carregado com defer para não bloquear -->
+    <script src="/JS/acessibilidade.js"></script><!-- Script para funcionalidades de acessibilidade -->
+    <link rel="icon" href="/images/icons/gnuprivacyguard.svg" type="image/svg+xml"><!-- Ícone da aba do navegador -->
+    <title>Contato</title><!-- Título da página -->
 </head>
 
 <body>
     <header>
         <section>
             <div class="cabec">
+                <!-- Container principal do cabeçalho -->
                 <nav class="op">
+                    <!-- Menu de navegação -->
                     <a href="/HTML/Inicio.html" id="home">Home</a>
                     <a href="/HTML/Sobre.html" id="sobre">Sobre</a>
                     <a href="/HTML/Contato.html" id="contato">Contato</a>
                     <a href="/HTML/index.html" target="_blank" id="apresentcao">Apresentação</a>
-                    <a href="/HTML/Login_init.html" target="_blank" id="login">Login</a>
+                    <!-- Abre em nova aba -->
+                    <a href="/HTML/Login_init.html" target="_blank" id="login">Login</a><!-- Abre em nova aba -->
                 </nav>
                 <div class="top-icons">
+                    <!-- Área dos ícones no topo -->
                     <div id="dark-mode-toggle">
+                        <!-- Botão para alternar modo escuro/claro -->
                         <img class="light-icon" src="/images/icons/dark_mode-light.svg" alt="Modo Escuro">
                         <img class="dark-icon" src="/images/icons/dark_mode-dark.svg" alt="Modo Claro">
                     </div>
                     <div class="acessibilidade">
+                        <!-- Botão para abrir menu de acessibilidade -->
                         <img class="acess-icon light" src="/images/icons/accessibility.png" alt="Acessibilidade Claro"
                             onclick="toggleAcessibilidadeMenu()" />
                         <img class="acess-icon dark" src="/images/icons/acessibilidadeblack.png"
@@ -41,13 +49,14 @@
                 </div>
             </div>
             </div>
-            </div>
+            </div><!-- Esses fechamentos extras parecem desnecessários e podem ser removidos para evitar bugs -->
         </section>
     </header>
     <main>
         <form>
+            <!-- Formulário de contato -->
             <section>
-                <h1 class="titulo">Fale Conosco</h1>
+                <h1 class="titulo">Fale Conosco</h1><!-- Título do formulário -->
             </section>
             <label for="nome">Nome</label>
             <input class="inputdoform" type="text" id="nome" name="nome" required placeholder="Escreva seu nome">
@@ -59,18 +68,20 @@
             <input class="inputdoform" type="tel" id="telefone" name="telefone" required placeholder="54 99999-9999">
 
             <label for="empresa">Empresa</label>
-
             <input class="inputdoform" type="text" id="empresa" name="empresa" required
                 placeholder="Informe sua empresa">
 
             <label for="cargo">Cargo</label>
             <input class="inputdoform" type="text" id="cargo" name="cargo" required placeholder="Informe seu cargo">
 
+            <!-- Botão para enviar formulário, com alerta de manutenção ao clicar -->
             <button id="botao" type="submit" onclick="alert('Olá estamos em manutenção')">Enviar</button>
         </form>
         <div class="servicos">
+            <!-- Seção que lista os serviços oferecidos -->
             <h1 class="texto1">O que oferecemos?</h1>
             <ul class="textoservico">
+                <!-- Lista dos serviços com ícones -->
                 <li><img src="/images/icons/aceitar.png" alt="check" class="icone"> Testes de Invasão (Pentest) para
                     identificar vulnerabilidades críticas.</li>
                 <li><img src="/images/icons/aceitar.png" alt="check" class="icone"> Monitoramento contínuo 24/7 para
@@ -86,11 +97,13 @@
                 <li><img src="/images/icons/aceitar.png" alt="check" class="icone"> Proteção ativa contra ameaças
                     comomalwares e ransomwares.</li>
             </ul>
+            <!-- Botão para ver planos, com alerta de manutenção -->
             <button id="botaoservico" type="button" onclick="alert('Olá estamos em manutenção!')">Ver planos</button>
         </div>
-        <!-- Menu flutuante de acessibilidade -->
+        <!-- Menu flutuante de acessibilidade, inicialmente escondido -->
         <div id="acessibilidade-menu" style="display: none;">
             <label class="fixo">Tamanho da fonte:
+                <!-- Dropdown para alterar tamanho da fonte via função JS -->
                 <select onchange="alterarTamanhoFonte(this.value)">
                     <option value="14px">Pequeno</option>
                     <option value="16px" selected>Médio</option>
@@ -100,7 +113,7 @@
             </label>
 
             <label class="fixo">Cor do texto:
-
+                <!-- Seletor de cor para alterar cor do texto via função JS -->
                 <input type="color" onchange="alterarCorTexto(this.value)" />
             </label>
         </div>

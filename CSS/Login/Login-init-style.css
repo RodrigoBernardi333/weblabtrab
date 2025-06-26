@@ -1,26 +1,32 @@
+/* Container principal do cadastro */
 #cadastro {
     display: flex;
     flex-direction: column;
+    /* Elementos empilhados verticalmente */
     align-items: center;
+    /* Centraliza horizontalmente */
     gap: 20px;
-
+    /* Espaço entre os elementos */
 }
 
+/* Estilo do botão principal */
 #botao {
     border: 2px solid rgb(255, 255, 255);
     border-radius: 1vw;
+    /* Arredondamento proporcional ao tamanho da tela */
     background-color: var(--fundo-preto);
-
+    /* Usa variável CSS definida em outro local */
     color: rgb(255, 255, 255);
-
 }
 
+/* Estilo para link ou botão secundário */
 #botao2 {
     text-decoration: none;
     color: white;
     padding: 1vw;
 }
 
+/* Estilo do botão de registrar */
 #registrar {
     text-decoration: none;
     color: rgb(233, 113, 0);
@@ -29,40 +35,47 @@
     padding: 1rem;
 }
 
+/* Animação hover do botão registrar */
 #registrar:hover {
     transition: 0.5s;
     transform: scale(1.1);
     background-color: rgba(255, 255, 255, 0.205);
 }
 
+/* Texto genérico com responsividade */
 #Text {
     color: rgb(255, 255, 255);
     font-size: 1vw;
-    /* tamanho responsivo */
+    /* Tamanho relativo à largura da tela */
     text-align: center;
     cursor: pointer;
 }
 
+/* Link de "esqueceu a senha" */
 #esquecida {
     text-decoration: none;
     color: rgb(233, 113, 0);
 }
 
+/* Animação hover para "esquecida" */
 #esquecida:hover {
     transform: scale(1.1);
     transition: 0.5s;
     font-size: 20px;
 }
 
+/* Texto com estilo de link */
 #text2 {
     text-decoration: none;
     color: white;
 }
 
+/* Classe para aplicar efeito de piscar em várias cores */
 .piscando {
     animation: piscarCores 1s infinite;
 }
 
+/* Animação do piscar com mudança de cores */
 @keyframes piscarCores {
     0% {
         color: red;
@@ -89,25 +102,29 @@
     }
 }
 
+/* Texto destacado */
 .texto {
     cursor: pointer;
     font-size: 24px;
     font-weight: bold;
 }
 
+/* Ícone de seta */
 #seta {
     max-width: 2rem;
 }
 
+/* Efeito hover na seta */
 #seta:hover {
     transform: scale(1.3);
     transition: 0.5s;
-
 }
 
+/* ------------------------------ */
+/* Acessibilidade */
+/* ------------------------------ */
 
-/*acessibilidade */
-
+/* Ícones no canto superior fixo */
 .top-icons {
     top: 1rem;
     right: 1rem;
@@ -115,8 +132,10 @@
     gap: 0.5rem;
     padding-left: 1rem;
     position: fixed;
+    /* Fixa na tela mesmo com rolagem */
 }
 
+/* Estilo dos ícones */
 .top-icons img {
     width: 24px;
     height: 24px;
@@ -124,6 +143,7 @@
     transition: transform 0.2s;
 }
 
+/* Hover dos ícones */
 .top-icons img:hover {
     transform: scale(1.1);
     background-color: var(--bg-color);
@@ -131,15 +151,16 @@
     border-radius: 1rem;
 }
 
+/* Input do tipo cor (acessibilidade) */
 #acessibilidade-menu input[type="color"] {
-  background-color: #ffffff; /* cor de fundo visível */
-  padding: 4px;              /* ajuste interno do quadrado */
-  border-radius: 6px;        /* opcional: borda arredondada */
-  border: 1px solid #999;    /* borda visível */
-  cursor: pointer;
+    background-color: #ffffff;
+    padding: 4px;
+    border-radius: 6px;
+    border: 1px solid #999;
+    cursor: pointer;
 }
 
-
+/* Estilo do menu de acessibilidade */
 #acessibilidade-menu {
     position: fixed;
     top: 3.5rem;
@@ -153,6 +174,7 @@
     color: #000;
 }
 
+/* Label do menu de acessibilidade */
 #acessibilidade-menu label {
     color: #000000;
     font-weight: bold;
@@ -160,6 +182,7 @@
     margin-bottom: 0.5rem;
 }
 
+/* Estilo dos selects no menu */
 #acessibilidade-menu select {
     color: #000;
     background-color: #fff;
@@ -168,19 +191,23 @@
     border-radius: 4px;
 }
 
+/* Estilo das opções dos selects */
 #acessibilidade-menu select option {
     color: #000;
     background-color: #fff;
 }
 
-/* RESPONSIVIDADE */
-@media (max-width: 768px) {
+/* ------------------------------ */
+/* Responsividade */
+/* ------------------------------ */
 
+@media (max-width: 768px) {
     main>section {
         padding: 1rem;
         gap: 2rem;
     }
 
+    /* Ajusta menu de acessibilidade para telas menores */
     #acessibilidade-menu {
         width: 90%;
         right: 0.5rem;
@@ -188,12 +215,14 @@
         top: 3rem;
     }
 
+    /* Reposiciona ícones para dispositivos pequenos */
     .top-icons {
         top: 0.5rem;
         right: 0.5rem;
     }
 }
 
+/* Classe para forçar cor preta em textos, mesmo com outras regras */
 .fixo {
     color: black !important;
 }
