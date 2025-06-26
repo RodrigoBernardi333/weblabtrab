@@ -12,13 +12,14 @@
   margin-left: 5rem;
 }
 
-#home, #sobre, #contato, #login {
+#home, #sobre, #contato, #apresentcao, #login {
   padding: 1rem;
 }
 
 #home:hover,
 #sobre:hover,
 #contato:hover,
+#apresentcao:hover,
 #login:hover,
 #trilho:hover {
   background-color: var(--bg-color);

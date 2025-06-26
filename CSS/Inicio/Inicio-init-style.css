@@ -1,31 +1,33 @@
 .cabec {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1vw;
-    text-decoration: none;
-    max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1vw;
+  text-decoration: none;
+  max-width: 100%;
 }
-.op{
-    display: flex;
-    flex-direction: row;
-    margin-left: 5rem;
+
+.op {
+  display: flex;
+  flex-direction: row;
+  margin-left: 5rem;
 }
+
 #home {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 #home:hover {
-    background-color: var(--bg-color);
-    transition: 0.5s;
+  background-color: var(--bg-color);
+  transition: 0.5s;
 }
 
 #sobre {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 #sobre:hover {
-    background-color: var(--bg-color);
-    transition: 0.5s;
+  background-color: var(--bg-color);
+  transition: 0.5s;
 }
 
 #apresentacao{
@@ -37,89 +39,112 @@
     transition: 0.5s;
 }
 #contato {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 #contato:hover {
-    background-color: var(--bg-color);
-    transition: 0.5s;
+  background-color: var(--bg-color);
+  transition: 0.5s;
 }
-#login{
-    padding: 1rem;
+
+#apresentcao {
+  padding: 1rem;
 }
-#login:hover{
-    background-color: var(--bg-color);
-    transition: 0.5s;
+
+#apresentcao:hover {
+  background-color: var(--bg-color);
+  transition: 0.5s;
 }
-#trilho{
-    background-color: transparent;
-    border: none;
-    padding-left:2rem;
-    padding-right:2rem;
-    margin-left: auto;
+
+#login {
+  padding: 1rem;
 }
-#trilho:hover{
-    background-color: var(--bg-color);
-    transition: 0.5s;
+
+#login:hover {
+  background-color: var(--bg-color);
+  transition: 0.5s;
+}
+
+#trilho {
+  background-color: transparent;
+  border: none;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-left: auto;
+}
+
+#trilho:hover {
+  background-color: var(--bg-color);
+  transition: 0.5s;
 }
 
 
-.imagens-logo{
-    display: flex;
-    flex-direction: row;
-}
-#tripla{
-    display: flex;
-    width: 10rem;
-}
-#tripla:hover{
-    transition: 0.5s;
-    transform: scale(1.1);
-}
-#cloud{
-    display: flex;
-    width: 10rem;
-}
-#cloud:hover{
-    transition: 0.5s;
-    transform: scale(1.1);
-}
-#nota{
-    background-color: rgba(0, 0, 0, 0.377);
-    padding: 5px;
-    border: 1px solid white;
-    border-radius: 5rem;
-    color: rgba(255, 255, 255, 0.63);
-}
-.button{
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
+.imagens-logo {
+  display: flex;
+  flex-direction: row;
 }
 
-#ben{
-    background-color: black;
-    padding: 1rem;
-    border: 1px solid white;
-    border-radius: 50px;
+#tripla {
+  display: flex;
+  width: 10rem;
 }
-#ben:hover{
-    background-color: green;
-    transition: 0.5s;
-    transform: scale(1.1);
+
+#tripla:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
 }
-#sob{
-    background-color: black;
-    padding: 1rem;
-    border: 1px solid white;
-    border-radius: 50px;
+
+#cloud {
+  display: flex;
+  width: 10rem;
 }
-#sob:hover{
-    background-color: orange;
-    transition: 0.5s;
-    transform: scale(1.1);
+
+#cloud:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
 }
-main > section {
+
+#nota {
+  background-color: rgba(0, 0, 0, 0.377);
+  padding: 5px;
+  border: 1px solid white;
+  border-radius: 5rem;
+  color: rgba(255, 255, 255, 0.63);
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+#ben {
+  background-color: black;
+  padding: 1rem;
+  border: 1px solid white;
+  border-radius: 50px;
+}
+
+#ben:hover {
+  background-color: green;
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
+#sob {
+  background-color: black;
+  padding: 1rem;
+  border: 1px solid white;
+  border-radius: 50px;
+}
+
+#sob:hover {
+  background-color: orange;
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
+main>section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -191,20 +216,20 @@ main > section {
 /* RESPONSIVIDADE */
 @media (max-width: 768px) {
 
-.text {
-  width: 90%;
-  flex: 1;
-  max-width: 100%;
-  border: 2px solid white;
-  padding: 2rem;
-  background-color: rgba(0, 0, 0, 0.26);
-  font-size: 15px;
-  text-align: justify;
-  overflow-wrap: break-word;
-}
+  .text {
+    width: 90%;
+    flex: 1;
+    max-width: 100%;
+    border: 2px solid white;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.26);
+    font-size: 15px;
+    text-align: justify;
+    overflow-wrap: break-word;
+  }
 
 
-  main > section {
+  main>section {
     padding: 1rem;
     gap: 2rem;
   }
@@ -236,4 +261,3 @@ main > section {
 .fixo {
   color: black !important;
 }
-

@@ -173,6 +173,18 @@ body {
     padding-top: 6rem;
 }
 
+#home,
+#sobre,
+#contato,
+#apresentcao,
+#login,
+#trilho {
+    cursor: pointer;
+    min-width: 80px;
+    text-align: center;
+    border-radius: 6px;
+}
+
 
 /* Headerr*/
 
@@ -205,8 +217,19 @@ header {
 #home,
 #sobre,
 #contato,
+#apresentcao,
 #login {
     padding: 1rem;
+}
+
+#home:hover,
+#sobre:hover,
+#contato:hover,
+#apresentcao:hover,
+#login:hover,
+#trilho:hover {
+    background-color: var(--bg-color);
+    transition: 0.5s;
 }
 
 main>section {
@@ -248,6 +271,7 @@ main>section {
     #home,
     #sobre,
     #contato,
+    #apresentcao,
     #login {
         width: 100%;
         text-align: left;
@@ -386,6 +410,7 @@ main>section {
     #home,
     #sobre,
     #contato,
+    #apresentcao,
     #login {
         width: 100%;
         text-align: left;
@@ -494,4 +519,5 @@ main>section {
 #dark-mode-toggle {
     cursor: pointer;
 }
+
 /*Fim darkmode*/

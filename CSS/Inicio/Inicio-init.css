@@ -50,6 +50,7 @@ body {
     #home,
     #sobre,
     #contato,
+    #apresentcao,
     #login {
         width: 100%;
         text-align: left;
@@ -60,6 +61,7 @@ body {
 #home,
 #sobre,
 #contato,
+#apresentcao,
 #login,
 #trilho {
     cursor: pointer;
