@@ -6,51 +6,6 @@
     --header: black;
 }
 
-.darkmode {
-    --color-lt: #000000;
-    --bg-color: rgba(114, 114, 114, 0.63);
-    --fundo: rgba(219, 219, 219, 0.336);
-    --header: #e6e6e6;
-}
-
-#dark-mode-toggle img:first-child {
-    display: block;
-}
-
-#dark-mode-toggle img:last-child {
-    display: none;
-}
-
-.darkmode #dark-mode-toggle img:first-child {
-    display: none;
-}
-
-.darkmode #dark-mode-toggle img:last-child {
-    display: block;
-}
-
-/* Mostra apenas o ícone claro */
-.acess-icon.light {
-  display: block;
-}
-
-.acess-icon.dark {
-  display: none;
-}
-
-/* Quando o modo escuro estiver ativo, inverte */
-.darkmode .acess-icon.light {
-  display: none;
-}
-
-.darkmode .acess-icon.dark {
-  display: block;
-}
-
-#dark-mode-toggle {
-  cursor: pointer;
-}
-
 * {
     color: var(--color-lt);
     font-family: Arial, sans-serif;
@@ -327,7 +282,7 @@ main>section {
 
 /*Icones*/
 
-.icones-topo {
+.top-icons {
     top: 1rem;
     right: 1rem;
     display: flex;
@@ -337,7 +292,7 @@ main>section {
 }
 
 
-.icones-topo img {
+.top-icons img {
     width: 24px;
     height: 24px;
     cursor: pointer;
@@ -345,14 +300,14 @@ main>section {
 
 }
 
-.icones-topo img:hover {
+.top-icons img:hover {
     transform: scale(1.1);
     background-color: var(--bg-color);
     transition: 0.5s;
     border-radius: 1rem;
 }
 
-#icones-topo-menu {
+#top-icons-menu {
     position: fixed;
     top: 5rem;
     right: 1rem;
@@ -365,7 +320,7 @@ main>section {
     color: #000;
 }
 
-#icones-topo-menu label {
+#top-icons-menu label {
     color: #000000;
     /* preto para contraste com fundo claro */
     font-weight: bold;
@@ -375,7 +330,7 @@ main>section {
 
 
 
-#icones-topo-menu select option {
+#top-icons-menu select option {
     color: #000;
     background-color: #fff;
 }
@@ -493,3 +448,50 @@ main>section {
 }
 
 /*Acessibilidade*/
+/*Darkmode*/
+.darkmode {
+    --color-lt: #000000;
+    --bg-color: rgba(114, 114, 114, 0.63);
+    --fundo: rgba(219, 219, 219, 0.336);
+    --servico: rgba(78, 230, 250, 0.171);
+    --header: #e6e6e6;
+}
+
+#dark-mode-toggle img:first-child {
+    display: block;
+}
+
+#dark-mode-toggle img:last-child {
+    display: none;
+}
+
+.darkmode #dark-mode-toggle img:first-child {
+    display: none;
+}
+
+.darkmode #dark-mode-toggle img:last-child {
+    display: block;
+}
+
+/* Mostra apenas o ícone claro */
+.acess-icon.light {
+    display: block;
+}
+
+.acess-icon.dark {
+    display: none;
+}
+
+/* Quando o modo escuro estiver ativo, inverte */
+.darkmode .acess-icon.light {
+    display: none;
+}
+
+.darkmode .acess-icon.dark {
+    display: block;
+}
+
+#dark-mode-toggle {
+    cursor: pointer;
+}
+/*Fim darkmode*/

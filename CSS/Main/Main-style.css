@@ -238,6 +238,7 @@ main {
     align-items: center;
     justify-content: center;
 }
+<<<<<<< HEAD
 
 .project-img {
     width: 100%;
@@ -321,4 +322,134 @@ main {
     transform: scale(1.1);
     transition: 0.3s;
     background-color: rgba(255, 255, 255, 0.4);
+=======
+@media (max-width: 450px){
+    .swiper{
+        height: 270px;
+    }
+}
+
+
+
+.top-icons {
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  padding-left: 1rem;
+  position: fixed;
+}
+
+.top-icons img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.top-icons img:hover {
+  transform: scale(1.1);
+  background-color: var(--bg-color);
+  transition: 0.5s;
+  border-radius: 1rem;
+}
+
+#acessibilidade-menu {
+  position: fixed;
+  top: 3.5rem;
+  right: 1rem;
+  background-color: #ffffffdd;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #999;
+  z-index: 1000;
+  font-size: 0.9rem;
+  color: #000;
+}
+
+#acessibilidade-menu label {
+  color: #000000;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+#acessibilidade-menu select {
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #aaa;
+  padding: 0.3rem;
+  border-radius: 4px;
+}
+
+#acessibilidade-menu select option {
+  color: #000;
+  background-color: #fff;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  .perfil {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+.perfil img {
+  max-width: 80%;
+  margin-bottom: 1rem;
+  width: 250px;
+  height: auto;
+  object-fit: cover;
+  border: 2px solid white;
+  flex-shrink: 0; /* evita que a imagem diminua */
+}
+
+
+.text {
+  width: 90%;
+  flex: 1;
+  max-width: 100%;
+  border: 2px solid white;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.26);
+  font-size: 15px;
+  text-align: justify;
+  overflow-wrap: break-word;
+}
+
+
+  main > section {
+    padding: 1rem;
+    gap: 2rem;
+  }
+
+  #acessibilidade-menu {
+    width: 90%;
+    right: 0.5rem;
+    font-size: 0.85rem;
+    top: 3rem;
+  }
+
+  .top-icons {
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+
+  .op {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .op a {
+    width: 100%;
+    text-align: center;
+    padding: 0.8rem 0;
+  }
+}
+
+.fixo {
+  color: black !important;
+>>>>>>> ff389102d86c00ecc8533dbafdea90570a0f05a5
 }

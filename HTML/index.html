@@ -7,14 +7,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/CSS/Main/Main.css">
     <link rel="stylesheet" href="/CSS/Main/Main-style.css">
-    <script src="/JS/dark-mode.js" defer></script>
+    <script src="/JS/dark-mode.js"></script>
+    <script src="/JS/acessibilidade.js"></script>
     <script src="/JS/cookies.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="/JS/swiper.js" defer></script>
     <title>Document</title>
 </head>
 
-<body>
+<body class="darkmode">
     <header>
         <section>
             <div class="cabec">
@@ -24,7 +25,17 @@
                     <a href="/HTML/Contato.html" target="_blank" id="contato">Contato</a>
                     <a href="/HTML/Login_init.html" target="_blank" id="login">Login</a>
                 </nav>
-            </div>
+                <div class="top-icons">
+                    <div id="dark-mode-toggle">
+                        <img class="light-icon" src="/images/icons/dark_mode-light.svg" alt="Modo Escuro">
+                        <img class="dark-icon" src="/images/icons/dark_mode-dark.svg" alt="Modo Claro">
+                    </div>
+                    <div class="acessibilidade">
+                        <img class="acess-icon light" src="/images/icons/accessibility.png" alt="Acessibilidade Claro"
+                            onclick="toggleAcessibilidadeMenu()" />
+                        <img class="acess-icon dark" src="/images/icons/acessibilidadeblack.png"
+                            alt="Acessibilidade Escuro" onclick="toggleAcessibilidadeMenu()" />
+                    </div>
         </section>
     </header>
     <main>
@@ -103,6 +114,22 @@
                         <button onclick="aceito()">Aceito</button>
                     </div>
                 </div>
+            </div>
+
+            <!-- Menu flutuante de acessibilidade -->
+            <div id="acessibilidade-menu" style="display: none;">
+                <label class="fixo">Tamanho da fonte:
+                    <select onchange="alterarTamanhoFonte(this.value)">
+                        <option value="14px">Pequeno</option>
+                        <option value="16px" selected>Médio</option>
+                        <option value="18px">Grande</option>
+                        <option value="20px">Muito grande</option>
+                    </select>
+                </label>
+
+                <label class="fixo">Cor do texto:
+                    <input type="color" onchange="alterarCorTexto(this.value)" />
+                </label>
             </div>
         </section>
     </main>
