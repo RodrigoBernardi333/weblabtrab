@@ -21,3 +21,39 @@ footer{
     max-width: 100%;
     border: 5px solid white;
 }
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .cabec {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  #trilho,
+  .top-icons img {
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.3s;
+  }
+
+  .top-icons img:focus {
+    outline: 2px solid #fff;
+    outline-offset: 4px;
+  }
+
+  .op {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  #home,
+  #sobre,
+  #contato,
+  #login {
+    width: 100%;
+    text-align: left;
+    padding: 1rem 0.5rem;
+  }
+}
