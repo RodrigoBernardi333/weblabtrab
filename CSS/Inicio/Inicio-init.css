@@ -6,6 +6,7 @@
     --back: rgba(0, 0, 0, 0.699);
     --borda: rgb(255, 255, 255);
     --text: rgb(255, 255, 255);
+    --bg-color-hover: rgba(255, 255, 255, 0.2); /* cor para hover */
 }
 
 /* Variáveis sobrescritas para modo escuro */
@@ -16,6 +17,7 @@
     --back: rgb(255, 255, 255);
     --borda: rgb(0, 0, 0);
     --text: rgb(0, 0, 0);
+    --bg-color-hover: rgba(0, 0, 0, 0.2); /* cor para hover no modo escuro */
 }
 
 /* Estilos globais para todos os elementos */
@@ -100,6 +102,19 @@ body {
     min-width: 80px;
     text-align: center;
     border-radius: 6px;
+    background-color: transparent;
+    transition: background-color 0.4s ease;
+}
+
+/* Efeito hover para os botões/menu */
+#home:hover,
+#sobre:hover,
+#contato:hover,
+#apresentcao:hover,
+#login:hover,
+#trilho:hover {
+    background-color: var(--bg-color-hover);
+    transition: background-color 0.4s ease;
 }
 
 /* Estilos de fonte personalizados com Arvo */

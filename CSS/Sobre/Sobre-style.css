@@ -10,6 +10,7 @@
   /* cor de fundo no modo claro */
   --backtext: rgba(0, 0, 0, 0.26);
   /* fundo semi-transparente para blocos de texto */
+  --bg-color-hover: rgba(255, 255, 255, 0.2);
 }
 
 /* Variáveis globais para cores no modo escuro (classe .darkmode ativa) */
@@ -22,6 +23,7 @@
   /* cor de fundo no modo escuro */
   --backtext: rgba(243, 243, 243, 0.568);
   /* fundo semi-transparente para blocos de texto */
+  --bg-color-hover: rgba(0, 0, 0, 0.2);
 }
 
 /* Container do cabeçalho - flexível e responsivo */
@@ -49,6 +51,12 @@
 #apresentcao,
 #login {
   padding: 1rem;
+  cursor: pointer;
+  background-color: transparent;
+  transition: background-color 0.5s ease;
+  color: var(--text);
+  border-radius: 6px; /* Opcional, para hover mais suave */
+  text-decoration: none;
 }
 
 /* Efeito hover para os links do menu */
@@ -56,12 +64,9 @@
 #sobre:hover,
 #contato:hover,
 #apresentcao:hover,
-#login:hover,
-#trilho:hover {
-  background-color: var(--bg-color);
-  /* fundo semi-transparente conforme tema */
-  transition: 0.5s;
-  /* transição suave */
+#login:hover {
+  background-color: var(--bg-color-hover);
+  transition: background-color 0.5s ease;
 }
 
 /* Estilização da seção principal */
@@ -87,6 +92,7 @@ main>section {
   max-width: 800px;
   text-align: justify;
   display: block;
+  color: var(--text);
 }
 
 /* Estilização do container dos perfis (imagem + texto) */
@@ -214,6 +220,7 @@ main>section {
     font-size: 15px;
     text-align: justify;
     overflow-wrap: break-word;
+    color: var(--text);
   }
 
   /* Ajusta espaçamento do main > section */
@@ -252,14 +259,6 @@ main>section {
 /* Classe para texto fixo (exemplo) */
 .fixo {
   color: black !important;
-}
-
-/* Estilo do texto no header e blocos text */
-.text {
-  color: var(--text);
-  /* cor do texto conforme tema */
-  background-color: var(--backtext);
-  /* fundo semitransparente conforme tema */
 }
 
 /* Cores dos links da navegação conforme tema */

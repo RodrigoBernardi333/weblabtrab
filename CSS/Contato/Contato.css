@@ -224,8 +224,7 @@ header {
 #sobre:hover,
 #contato:hover,
 #apresentcao:hover,
-#login:hover,
-#trilho:hover {
+#login:hover {
     background-color: var(--bg-color);
     transition: 0.5s;
 }

@@ -8,6 +8,7 @@
   /* cor do texto no modo claro */
   --back: black;
   /* cor de fundo no modo claro */
+  --bg-color-hover: rgba(255, 255, 255, 0.2);
 }
 
 /* Variáveis globais para cores no modo escuro (classe .darkmode ativa) */
