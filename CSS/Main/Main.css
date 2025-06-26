@@ -6,9 +6,10 @@
 :root {
     --color-lt: #fffefe;
     --bg-color: rgba(255, 255, 255, 0.301);
+    --header: rgba(0, 0, 0, 0.514);
 }
 header {
-    background-color: rgba(0, 0, 0, 0.514);
+    background-color: var(--header);
     border-bottom: 2px solid rgba(0, 0, 0, 0.295);
 }
 
@@ -60,7 +61,8 @@ footer{
 
 /*Darkmode*/
 .darkmode {
-
+    --color-lt: #000000;
+    --bg-color: rgba(255, 255, 255, 0.301);
 }
 
 #dark-mode-toggle img:first-child {
