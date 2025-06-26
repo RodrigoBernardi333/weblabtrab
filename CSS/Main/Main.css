@@ -49,13 +49,6 @@ body {
     border-radius: 6px;
 }
 
-/* Estilo específico para #login */
-#login {
-    width: 100%;
-    text-align: left;
-    padding: 1rem 0.5rem;
-}
-
 /* Estilo do rodapé */
 footer {
     background-color: white;
