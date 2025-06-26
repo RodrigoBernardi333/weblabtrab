@@ -4,10 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/CSS/Main/Main.css">
     <link rel="stylesheet" href="/CSS/Main/Main-style.css">
     <script src="/JS/dark-mode.js" defer></script>
     <script src="/JS/cookies.js" defer></script>
+    <script src="/JS/swiper.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <title>Document</title>
 </head>
 
@@ -21,9 +25,6 @@
                     <a href="/HTML/Contato.html" target="_blank" id="contato">Contato</a>
                     <a href="/HTML/Login_init.html" target="_blank" id="login">Login</a>
                 </nav>
-                <button id="trilho">
-                    <img id="icon" src="/images/icons/dark_mode-light.svg" alt="ícone de tema" />
-                </button>
             </div>
         </section>
     </header>
@@ -58,7 +59,33 @@
                     <li>Simulações de ataques (Pentest) e testes de vulnerabilidade;</li>
                     <li>Consultoria estratégica e programas de conscientização em segurança.</li>
                 </ul>
+                <div class="bodySwiper">
+                    <div class="mainSwiper">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="project-img">
+                                        <img src="/images/img1.jpg" alt="foto 1">
+                                    </div>
+                                </div>
 
+                                <div class="swiper-slide">
+                                    <div class="project-img">
+                                        <img src="/images/img2.jpg" alt="foto 1">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="project-img">
+                                        <img src="/images/img3.jpg" alt="foto 1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
                 <h1>Nosso compromisso</h1>
                 <p id="compr">Mais do que oferecer ferramentas, a CypherNode entrega tranquilidade, confiança e solidez
                     digital.
