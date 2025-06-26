@@ -31,6 +31,7 @@ body {
 #home,
 #sobre,
 #contato,
+#apresentcao,
 #login,
 #trilho {
   cursor: pointer;
@@ -96,6 +97,7 @@ body {
   #home,
   #sobre,
   #contato,
+  #apresentcao,
   #login {
     width: 100%;
     text-align: left;
@@ -105,7 +107,8 @@ body {
 
 /*Darkmode*/
 .darkmode {
-
+    --color-lt: #fffefe;
+    --bg-color: rgba(255, 255, 255, 0.301);
 }
 
 #dark-mode-toggle img:first-child {
