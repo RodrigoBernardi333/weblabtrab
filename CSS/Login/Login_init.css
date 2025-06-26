@@ -72,3 +72,47 @@ input:focus{
   font-weight: 700;
   font-style: italic;
 }
+
+/*Darkmode*/
+.darkmode {
+
+}
+
+#dark-mode-toggle img:first-child {
+    display: block;
+}
+
+#dark-mode-toggle img:last-child {
+    display: none;
+}
+
+.darkmode #dark-mode-toggle img:first-child {
+    display: none;
+}
+
+.darkmode #dark-mode-toggle img:last-child {
+    display: block;
+}
+
+/* Mostra apenas o ícone claro */
+.acess-icon.light {
+    display: block;
+}
+
+.acess-icon.dark {
+    display: none;
+}
+
+/* Quando o modo escuro estiver ativo, inverte */
+.darkmode .acess-icon.light {
+    display: none;
+}
+
+.darkmode .acess-icon.dark {
+    display: block;
+}
+
+#dark-mode-toggle {
+    cursor: pointer;
+}
+/*Fim darkmode*/

@@ -16,7 +16,7 @@
     <title>Document</title>
 </head>
 
-<body>
+<body class="darkmode">
     <header>
         <section>
             <div class="cabec">
@@ -27,12 +27,16 @@
                     <a href="/HTML/Login_init.html" target="_blank" id="login">Login</a>
                 </nav>
                 <div class="top-icons">
-                    <img src="/images/icons/dark_mode-light.svg" alt="Modo Escuro" id="dark-mode-toggle"
-                        onclick="toggleDarkMode()" />
-                    <img src="/images/icons/accessibility.png" alt="Acessibilidade" id="acessibilidade-toggle"
-                        onclick="toggleAcessibilidadeMenu()" />
-                </div>
-            </div>
+                    <div id="dark-mode-toggle">
+                        <img class="light-icon" src="/images/icons/dark_mode-light.svg" alt="Modo Escuro">
+                        <img class="dark-icon" src="/images/icons/dark_mode-dark.svg" alt="Modo Claro">
+                    </div>
+                    <div class="acessibilidade">
+                        <img class="acess-icon light" src="/images/icons/accessibility.png" alt="Acessibilidade Claro"
+                            onclick="toggleAcessibilidadeMenu()" />
+                        <img class="acess-icon dark" src="/images/icons/acessibilidadeblack.png"
+                            alt="Acessibilidade Escuro" onclick="toggleAcessibilidadeMenu()" />
+                    </div>
         </section>
     </header>
     <main>
