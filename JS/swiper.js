@@ -1,4 +1,4 @@
-
+//API do JS conhecida como Swiper, https://swiperjs.com/swiper-api
 
 var swiper = new Swiper(".swiper",{
     cssMode: true,
