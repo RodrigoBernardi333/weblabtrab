@@ -29,6 +29,18 @@ body {
     margin: 0;
 }
 
+#home,
+#sobre,
+#contato,
+#apresentcao,
+#login,
+#trilho {
+    cursor: pointer;
+    min-width: 80px;
+    text-align: center;
+    border-radius: 6px;
+}
+
 footer {
     background-color: white;
     max-width: 100%;
@@ -67,9 +79,11 @@ footer {
         justify-content: space-between;
     }
 
+
     #home,
     #sobre,
     #contato,
+    #apresentcao,
     #login {
         width: 100%;
         text-align: left;

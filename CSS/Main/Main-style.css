@@ -62,6 +62,7 @@ header {
 #home,
 #sobre,
 #contato,
+#apresentcao,
 #login {
     padding: 1rem;
     border-radius: 5px;
@@ -70,15 +71,25 @@ header {
     font-weight: 500;
 }
 
+
 #home:hover,
 #sobre:hover,
 #contato:hover,
+#apresentcao:hover,
 #login:hover {
     background-color: var(--hover-bg);
     transform: translateY(-2px);
 }
 
-
+#home:hover,
+#sobre:hover,
+#contato:hover,
+#apresentcao:hover,
+#login:hover,
+#trilho:hover {
+  background-color: var(--bg-color);
+  transition: 0.5s;
+}
 
 
 #trilho:hover {
