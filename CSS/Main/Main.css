@@ -10,9 +10,15 @@
     --header: rgba(0, 0, 0, 0.514);
 }
 
+.darkmode {
+    --color-lt: #000000;
+    --bg-color: rgba(255, 255, 255, 0.301);
+    --header: rgb(255, 255, 255);
+}
+
 header {
     background-color: var(--header);
-    border-bottom: 2px solid rgba(0, 0, 0, 0.295);
+    border-bottom: 2px solid var(--header);
 }
 
 body {
@@ -26,53 +32,53 @@ footer {
     border: 5px solid white;
 }
 
-<<<<<<< HEAD
 @media (max-width: 450px) {
     .swiper {
         height: 270px;
     }
 }
-=======
+
 /* RESPONSIVO */
 @media (max-width: 768px) {
-  .cabec {
-    flex-direction: row;
-    align-items: flex-start;
-  }
+    .cabec {
+        flex-direction: row;
+        align-items: flex-start;
+    }
 
-  #trilho,
-  .top-icons img {
-    cursor: pointer;
-    border-radius: 6px;
-    transition: 0.3s;
-  }
+    #trilho,
+    .top-icons img {
+        cursor: pointer;
+        border-radius: 6px;
+        transition: 0.3s;
+    }
 
-  .top-icons img:focus {
-    outline: 2px solid #fff;
-    outline-offset: 4px;
-  }
+    .top-icons img:focus {
+        outline: 2px solid #fff;
+        outline-offset: 4px;
+    }
 
-  .op {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
+    .op {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 
-  #home,
-  #sobre,
-  #contato,
-  #login {
-    width: 100%;
-    text-align: left;
-    padding: 1rem 0.5rem;
-  }
+    #home,
+    #sobre,
+    #contato,
+    #login {
+        width: 100%;
+        text-align: left;
+        padding: 1rem 0.5rem;
+    }
 }
 
 /*Darkmode*/
 .darkmode {
     --color-lt: #000000;
     --bg-color: rgba(255, 255, 255, 0.301);
+    --header: rgb(255, 255, 255);
 }
 
 #dark-mode-toggle img:first-child {
@@ -112,5 +118,5 @@ footer {
 #dark-mode-toggle {
     cursor: pointer;
 }
+
 /*Fim darkmode*/
->>>>>>> ff389102d86c00ecc8533dbafdea90570a0f05a5
