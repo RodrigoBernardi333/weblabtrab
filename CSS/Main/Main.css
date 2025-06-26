@@ -1,13 +1,15 @@
-*{
-   font-family: Arial, sans-serif;
+* {
+    font-family: Arial, sans-serif;
     color: var(--color-lt);
     text-decoration: none;
 }
+
 :root {
     --color-lt: #fffefe;
     --bg-color: rgba(255, 255, 255, 0.301);
     --header: rgba(0, 0, 0, 0.514);
 }
+
 header {
     background-color: var(--header);
     border-bottom: 2px solid rgba(0, 0, 0, 0.295);
@@ -17,12 +19,20 @@ body {
     background-image: url(/images/fundo.jpg);
     margin: 0;
 }
-footer{
+
+footer {
     background-color: white;
     max-width: 100%;
     border: 5px solid white;
 }
 
+<<<<<<< HEAD
+@media (max-width: 450px) {
+    .swiper {
+        height: 270px;
+    }
+}
+=======
 /* RESPONSIVO */
 @media (max-width: 768px) {
   .cabec {
@@ -103,3 +113,4 @@ footer{
     cursor: pointer;
 }
 /*Fim darkmode*/
+>>>>>>> ff389102d86c00ecc8533dbafdea90570a0f05a5
