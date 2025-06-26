@@ -28,6 +28,14 @@
     transition: 0.5s;
 }
 
+#apresentacao{
+      padding: 1rem;
+
+}
+#apresentacao:hover{
+  background-color: var(--bg-color);
+    transition: 0.5s;
+}
 #contato {
     padding: 1rem;
 }
