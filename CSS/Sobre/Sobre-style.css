@@ -1,19 +1,19 @@
 .cabec {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1vw;
-    text-decoration: none;
-    max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1vw;
+  text-decoration: none;
+  max-width: 100%;
 }
 
 .op {
-    display: flex;
-    flex-direction: row;
-    margin-left: 5rem;
+  display: flex;
+  flex-direction: row;
+  margin-left: 5rem;
 }
 
 #home, #sobre, #contato, #login {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 #home:hover,
@@ -21,16 +21,16 @@
 #contato:hover,
 #login:hover,
 #trilho:hover {
-    background-color: var(--bg-color);
-    transition: 0.5s;
+  background-color: var(--bg-color);
+  transition: 0.5s;
 }
 
 #trilho {
-    background-color: transparent;
-    border: none;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    margin-left: auto;
+  background-color: transparent;
+  border: none;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-left: auto;
 }
 
 main > section {
@@ -40,8 +40,8 @@ main > section {
   justify-content: center;
   gap: 4rem;
   padding: 2rem;
+  margin-top: 8rem;
 }
-
 
 .text {
   border: 2px solid white;
@@ -55,21 +55,23 @@ main > section {
 
 .perfil {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  align-items: center;
-  justify-content: center;
-  text-align: left;
-  max-width: 100%;
+  flex-direction: row;
+  align-items: flex-start; /* IMPORTANTE: alinha pelo topo */
+  justify-content: flex-start;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 2rem;
+  flex-wrap: nowrap; /* impede quebra para baixo */
 }
+
+
 
 #rodrigo, #gabriel, #vitor {
-    border: 2px solid white;
-    max-width: 19rem;
-    height: auto;
+  border: 2px solid white;
+  max-width: 19rem;
+  height: auto;
 }
-
-
 
 .top-icons {
   top: 1rem;
@@ -80,13 +82,11 @@ main > section {
   position: fixed;
 }
 
-
 .top-icons img {
   width: 24px;
   height: 24px;
   cursor: pointer;
   transition: transform 0.2s;
-  
 }
 
 .top-icons img:hover {
@@ -98,7 +98,7 @@ main > section {
 
 #acessibilidade-menu {
   position: fixed;
-  top: 5rem;
+  top: 3.5rem;
   right: 1rem;
   background-color: #ffffffdd;
   padding: 1rem;
@@ -110,17 +110,16 @@ main > section {
 }
 
 #acessibilidade-menu label {
-  color: #000000; /* preto para contraste com fundo claro */
+  color: #000000;
   font-weight: bold;
   display: block;
   margin-bottom: 0.5rem;
 }
 
-
 #acessibilidade-menu select {
-  color: #000;            /* Cor do texto dentro do select */
-  background-color: #fff; /* Cor de fundo (opcional) */
-  border: 1px solid #aaa; /* Borda visível */
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #aaa;
   padding: 0.3rem;
   border-radius: 4px;
 }
@@ -128,4 +127,70 @@ main > section {
 #acessibilidade-menu select option {
   color: #000;
   background-color: #fff;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  .perfil {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+.perfil img {
+  max-width: 80%;
+  margin-bottom: 1rem;
+  width: 250px;
+  height: auto;
+  object-fit: cover;
+  border: 2px solid white;
+  flex-shrink: 0; /* evita que a imagem diminua */
+}
+
+
+.text {
+  width: 90%;
+  flex: 1;
+  max-width: 100%;
+  border: 2px solid white;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.26);
+  font-size: 15px;
+  text-align: justify;
+  overflow-wrap: break-word;
+}
+
+
+  main > section {
+    padding: 1rem;
+    gap: 2rem;
+  }
+
+  #acessibilidade-menu {
+    width: 90%;
+    right: 0.5rem;
+    font-size: 0.85rem;
+    top: 3rem;
+  }
+
+  .top-icons {
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+
+  .op {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .op a {
+    width: 100%;
+    text-align: center;
+    padding: 0.8rem 0;
+  }
+}
+
+.fixo {
+  color: black !important;
 }

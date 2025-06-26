@@ -49,7 +49,9 @@
             <input class="inputdoform" type="tel" id="telefone" name="telefone" required placeholder="54 99999-9999">
 
             <label for="empresa">Empresa</label>
-            <input class="inputdoform" type="text" id="empresa" name="empresa" required placeholder="Informe sua empresa">
+
+            <input class="inputdoform" type="text" id="empresa" name="empresa" required
+                placeholder="Informe sua empresa">
 
             <label for="cargo">Cargo</label>
             <input class="inputdoform" type="text" id="cargo" name="cargo" required placeholder="Informe seu cargo">
@@ -76,21 +78,27 @@
             </ul>
             <button id="botaoservico" type="button" onclick="alert('Olá estamos em manutenção!')">Ver planos</button>
         </div>
-        <!-- Menu flutuante de acessibilidade -->
-        <div id="acessibilidade-menu" style="display: none;">
-            <label>Tamanho da fonte:
-                <select onchange="alterarTamanhoFonte(this.value)">
-                    <option value="14px">Pequeno</option>
-                    <option value="16px" selected>Médio</option>
-                    <option value="18px">Grande</option>
-                    <option value="20px">Muito grande</option>
-                </select>
-            </label>
 
-            <label>Cor do texto:
-                <input type="color" onchange="alterarCorTexto(this.value)" />
-            </label>
-        </div>
+        <!-- Menu flutuante de acessibilidadea-->
+        <div id="acessibilidade-menu" style="display: none;">
+            <label class="fixo">Tamanho da fonte:
+                <!-- Menu flutuante de acessibilidade -->
+                <div id="acessibilidade-menu" style="display: none;">
+                    <label>Tamanho da fonte:
+
+                        <select onchange="alterarTamanhoFonte(this.value)">
+                            <option value="14px">Pequeno</option>
+                            <option value="16px" selected>Médio</option>
+                            <option value="18px">Grande</option>
+                            <option value="20px">Muito grande</option>
+                        </select>
+                    </label>
+
+                    <label class="fixo">Cor do texto:
+                        <label>Cor do texto:
+                            <input type="color" onchange="alterarCorTexto(this.value)" />
+                        </label>
+                </div>
     </main>
 </body>
 

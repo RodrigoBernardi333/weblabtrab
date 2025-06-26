@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/CSS/Login/Login_init.css">
     <link rel="stylesheet" href="/CSS/Login/Login-init-style.css">
     <script src="/JS/dark-mode.js"></script>
+    <script src="/JS/acessibilidade.js"></script>
     <title>Login</title>
 </head>
 
@@ -28,12 +29,34 @@
                 <label>
                     <input type="password" name="senha" id="senha" placeholder="Senha" required>
                 </label>
-                <button id="botao"><a href="#" id="botao2" >Login</a></button>
+                <button id="botao"><a href="#" id="botao2">Login</a></button>
                 <p id="text2">
                     Esqueceu a <a href="recupera.html" id="esquecida" target="_blank">senha?</a>
                 </p>
-                    <a href="Registro.html" id="registrar" target="_blank">Registrar</a>             
+                <a href="Registro.html" id="registrar" target="_blank">Registrar</a>
             </div>
+            <div class="top-icons">
+                <img src="/images/icons/dark_mode-light.svg" alt="Modo Escuro" id="dark-mode-toggle"
+                    onclick="toggleDarkMode()" />
+                <img src="/images/icons/accessibility.png" alt="Acessibilidade" id="acessibilidade-toggle"
+                    onclick="toggleAcessibilidadeMenu()" />
+            </div>
+        </div>
+
+        <!-- Menu flutuante de acessibilidade -->
+        <div id="acessibilidade-menu" style="display: none;">
+            <label class="fixo">Tamanho da fonte:
+                <select onchange="alterarTamanhoFonte(this.value)">
+                    <option value="14px">Pequeno</option>
+                    <option value="16px" selected>Médio</option>
+                    <option value="18px">Grande</option>
+                    <option value="20px">Muito grande</option>
+                </select>
+            </label>
+
+            <label class="fixo">Cor do texto:
+                <input type="color" onchange="alterarCorTexto(this.value)" />
+            </label>
         </div>
     </section>
 </body>

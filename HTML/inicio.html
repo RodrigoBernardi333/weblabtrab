@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/CSS/Inicio/Inicio-init-style.css">
     <link rel="stylesheet" href="/CSS/Inicio/Inicio-init.css">
     <script src="/JS/dark-mode.js"></script>
+    <script src="/JS/acessibilidade.js"></script>
     <title>CypherNode</title>
 </head>
 
@@ -25,6 +26,12 @@
                     <a href="/HTML/Contato.html" id="contato">Contato</a>
                     <a href="/HTML/Login_init.html" target="_blank" id="login">Login</a>
                 </nav>
+                <div class="top-icons">
+                    <img src="/images/icons/dark_mode-light.svg" alt="Modo Escuro" id="dark-mode-toggle"
+                        onclick="toggleDarkMode()" />
+                    <img src="/images/icons/accessibility.png" alt="Acessibilidade" id="acessibilidade-toggle"
+                        onclick="toggleAcessibilidadeMenu()" />
+                </div>
             </div>
         </section>
     </header>
@@ -36,7 +43,7 @@
                 <a href="https://www.cloudflare.com/pt-br/" target="_blank"><img src="/images/Cloudflare-Logo.png"
                         id="cloud" alt="imagem da empresa 1"></a>
             </div>
-            <p id="nota">As empresas não são fictícias</p>
+            <p id="nota">ㅤAs empresas não são fictícias.ㅤ</p>
             <article class="text">
                 <h2>Proteja e acelere suas aplicações com as soluções da Cloudflare</h2>
                 <p>Soluções completas para segurança, desempenho e conectividade de rede.</p>
@@ -44,6 +51,22 @@
             <div class="button">
                 <a href="/HTML/Contato.html" target="_blank" id="ben">Veja nossos beneficios</a>
                 <a href="/HTML/Sobre.html" target="_blank" id="sob">Conheça mais sobre nós</a>
+            </div>
+
+            <!-- Menu flutuante de acessibilidade -->
+            <div id="acessibilidade-menu" style="display: none;">
+                <label class="fixo">Tamanho da fonte:
+                    <select onchange="alterarTamanhoFonte(this.value)">
+                        <option value="14px">Pequeno</option>
+                        <option value="16px" selected>Médio</option>
+                        <option value="18px">Grande</option>
+                        <option value="20px">Muito grande</option>
+                    </select>
+                </label>
+
+                <label class="fixo">Cor do texto:
+                    <input type="color" onchange="alterarCorTexto(this.value)" />
+                </label>
             </div>
         </section>
     </main>
